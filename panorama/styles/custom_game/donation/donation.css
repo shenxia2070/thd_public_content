@@ -1,0 +1,47 @@
+
+.Root{
+	width: 100%;
+	height: 100%;
+}
+
+#DonationFrame{
+	width: 1200px;
+	height: 800px;
+	background-color: #000;
+	horizontal-align: middle;
+	vertical-align: middle;
+}
+
+#Html{
+	width: 100%;
+	height: 100%;
+}
+
+#Donation{
+	background-color: #1000;
+	border-radius: 10px;
+    x:-200px;
+    y:2px;
+	horizontal-align: right;
+	padding: 10px;
+}
+
+#Donation Label{
+	font-size: 18px;
+}
+
+#Close{
+	width: 50px;
+	height: 50px;
+	background-image: url("s2r://panorama/images/control_icons/x_close_png.vtex");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+	wash-color: #7B1400;
+	horizontal-align: right;
+	margin-right: 15px;
+}
+
+#Close:hover{
+	wash-color: #EA2700;
+}

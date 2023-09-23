@@ -1,0 +1,233 @@
+@define defaultFont: Radiance,FZLanTingHei-R-GBK,TH Sarabun New,YDYGO 540,Gulim,MingLiU;
+/* 以下是改建的小窗口style */
+.root{
+	width: 100%;
+	height: 100%;
+}
+.key_bind_box {
+    padding: 5px;
+    flow-children: right;
+    width: fit-children;
+    height: fit-children;
+    y: 300px;
+    /* background-color: #fff; */
+}
+
+.key_unit_box {
+    padding: 1px;
+    width: 98px;
+    height: fit-children;
+    background-color: black;
+    flow-children: down;
+}
+
+.key_Label_box {
+    padding: 1px;
+    width: 220px;
+    flow-children: right-wrap;
+}
+
+.key_bind_label {
+    border: 2px solid #888888;
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    horizontal-align: center;
+    text-align: center;
+}
+.sub_label {
+    width: 100%;
+    text-align: center;
+}
+
+.key_TextEntry_box {
+    padding: 1px;
+    flow-children: right;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    background-color: gray;
+    horizontal-align: center;
+}
+
+.key_TextEntry_box_child {
+    width: 80px;
+    border: 2px solid #888888;
+    font-size: 30px;
+    horizontal-align: center;
+    text-align: center;
+    /* background-color: green; */
+}
+
+/* 以下是选技能窗口的style */
+.background {
+    width: 100%;
+    height: 100%;
+}
+
+#MyUI_OMG {
+    margin-top: 10px;
+    margin-left: 0px;
+    /* height: 1080px;
+    width: 1920px; */
+    height: 100%;
+    width: 100%;
+    background-color: #a5141400;
+    background-position: center top;
+    position: 0px 50px 0px;
+    vertical-align: center;
+    horizontal-align: center;
+    opacity: 1;
+}
+
+
+.checkbox {
+    width: fit-children;
+    height: fit-children;
+    padding: 5px;
+    font-size: 20px;
+    border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+    border: 2px solid gray;
+    background-color: black;
+    horizontal-align: center;
+    flow-children: down;
+    opacity: 1;
+}
+
+
+/* 英雄小窗口style，暂时没用 */
+/* .heroes_box {
+    width: 414px;
+    height: 164px;
+    background-color: blue; 
+    horizontal-align:center;
+    flow-children:right-wrap;
+}
+.heroes_box > .hero {
+    width: 128px;
+    height: width-percentage(56.25%);
+    margin: 5px;
+  } */
+.abilities_box {
+    width: 365px;
+    height: fit-children;
+    margin-top: 20px;
+    /* background-color: pink; */
+    horizontal-align: center;
+    flow-children: right-wrap;
+}
+
+/* 所有小技能共用一个style */
+.ability {
+    width: 80px;
+    height: width-percentage(100%);
+    margin: 5px;
+}
+.select_ability { 
+    padding: 5px;
+    background-color: greenyellow;
+    horizontal-align: center;
+    flow-children: down;
+    opacity: 1;
+    border: 2px solid #888888;
+}
+
+.ult_abilities_box {
+    width: 100%;
+    height: fit-children;
+    margin-top: 20px;
+    /* background-color: pink; */
+    horizontal-align: center;
+    flow-children: right-wrap;
+}
+
+
+/* 确定与取消按钮style */
+.OMG_button_box {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* background-color: purple; */
+    horizontal-align: center;
+    flow-children: right-wrap;
+}
+
+.OMG_button {
+    width: fit-children;
+    height: fit-children;
+    margin: 5px 5px 5px 30px;
+    padding: 5px;
+    color: rgb(223, 203, 203);
+    font-size: 25px;
+    /* vertical-align: center; */
+
+    background-color: #00454d;
+    border: 2px solid #444444;
+    transition-property: border;
+    transition-duration: 0.3s;
+    tooltip-position: right;
+    tooltip-body-position: 50% 50%;
+}
+
+.OMG_button:hover {
+    border: 2px solid #888888;
+}
+
+.OMG_button_text {
+    margin: 5px;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    vertical-align: center;
+}
+
+/* 隐藏toggle按钮 */
+.key_bind_button {
+    width: 20px;
+    height: 50px;
+    background-color: black;
+    font-size: 20px;
+}
+
+/* 快速施法Class */
+.quickcast_true {
+    background-color: greenyellow;
+}
+.quickcast_false {
+    background-color: black;
+}
+
+.invisible {
+    opacity: 0;
+    visibility: collapse;
+    transition-property: opacity;
+    transition-delay: 0.0s;
+    transition-duration: 0.8s;
+    transition-timing-function: ease-in-out;
+}
+
+.show_box {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+}
+
+/* 显示代码复制Panel */
+.text_panel {
+    margin-top: 500px;
+    width: fit-children;
+    height: fit-children;
+    font-size: 20px;
+    border: 2px solid #888888;
+    horizontal-align: center;
+    flow-children: down;
+    background-color: black;
+}
+#key_bind_text_button{
+    border: 2px solid #888888;
+}
+
+.key_bind_TextEntry {
+    color: blue;
+}

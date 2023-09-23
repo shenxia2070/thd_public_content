@@ -1,0 +1,96 @@
+"Voice_Thdots_Cirno.AbilityLyrica01"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"wave0"		"sounds/abilityvoice/lyrica_ability1_1.vsnd"
+							"wave1"		"sounds/abilityvoice/lyrica_ability1_2.vsnd"
+							"wave2"		"sounds/abilityvoice/lyrica_ability1_3.vsnd"
+						}
+					}
+					"volume"       			{	"value" 	"10.00000"	}
+					"pitch_rand_min"       	{	"value" 	"-0.05000"	}			
+					"pitch_rand_max"       	{	"value" 	"0.050000" 	}			
+					"pitch"       			{	"value" 	"1.000000"	}	
+					"soundlevel"       		{	"value" 	"70.00000"	}		
+					"distance_max"       	{	"value"	 	"2500.000"	}			
+					"event_type"       		{	"value"		"1.000000"	}
+				}
+			}
+		}
+	}
+}
+"Voice_Thdots_Cirno.AbilityLyrica02"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_update_default"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/abilityvoice/lyrica_ability2_1.vsnd"
+							"value0"		"sounds/abilityvoice/lyrica_ability2_2.vsnd"
+						}
+					}
+					"volume"       			{	"value" 	"10.00000"	}
+					"pitch_rand_min"       	{	"value" 	"-0.05000"	}			
+					"pitch_rand_max"       	{	"value" 	"0.050000" 	}			
+					"pitch"       			{	"value" 	"1.000000"	}	
+					"soundlevel"       		{	"value" 	"50.00000"	}		
+					"distance_max"       	{	"value"	 	"2500.000"	}			
+					"event_type"       		{	"value"		"1.000000"	}
+				}
+			}
+		}
+	}
+}
+"Voice_Thdots_Cirno.AbilityLyrica04"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_update_default"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/abilityvoice/lyrica_ability4_1.vsnd"
+						}
+					}
+					"volume"       			{	"value" 	"5.000000"	}
+					"pitch_rand_min"       	{	"value" 	"-0.05000"	}			
+					"pitch_rand_max"       	{	"value" 	"0.050000" 	}			
+					"pitch"       			{	"value" 	"1.000000"	}	
+					"soundlevel"       		{	"value" 	"75.00000"	}		
+					"distance_max"       	{	"value"	 	"2500.000"	}			
+					"event_type"       		{	"value"		"1.000000"	}
+				}
+			}
+		}
+	}
+}

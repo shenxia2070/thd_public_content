@@ -1,0 +1,19 @@
+<root>
+    <styles>
+        <include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="file://{resources}/styles/custom_game/info.css" />
+        <include src="file://{resources}/styles/custom_game/dots_test.css" />
+        
+    </styles>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/Dots_test.js" />
+    </scripts>
+
+
+    <Panel hittest="false">
+        <!-- MyUI_OMG是一个大板 -->
+        <Panel id="MyUI_OMG" class = "all_box" hittest="false">
+
+        </Panel> 
+    </Panel>
+</root>

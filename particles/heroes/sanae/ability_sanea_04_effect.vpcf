@@ -1,0 +1,121 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_BoundingBoxMin = [ -40.0, -150.0, -10.0 ]
+	m_BoundingBoxMax = [ 150.0, 20.0, 180.0 ]
+	m_nMaxParticles = 300
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_Decay"
+		},
+		{
+			_class = "C_OP_InterpolateRadius"
+			m_flStartScale = 0.0
+			m_flBias = 0.98
+			m_nOpEndCapState = 0
+		},
+		{
+			_class = "C_OP_RampScalarLinearSimple"
+			m_Rate = -24.0
+			m_nOpEndCapState = 1
+		},
+		{
+			_class = "C_OP_EndCapTimedDecay"
+		},
+		{
+			_class = "C_OP_FadeOutSimple"
+			m_flFadeOutTime = 0.75
+			m_bDisableOperator = true
+		},
+	]
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderRopes"
+			m_nMinTesselation = 4
+			m_nMaxTesselation = 4
+			m_flTextureVWorldSize = 2500.0
+			m_flFinalTextureScaleU = -1.0
+			m_flFinalTextureScaleV = -1.0
+			m_flFinalTextureOffsetU = 1.0
+			m_flFinalTextureOffsetV = 1.0
+			m_flRadiusScale = 2.0
+			m_nSequenceCombineMode = "2"
+			m_bAdditive = true
+			m_nRefractBlurType = "2"
+			m_flOverbrightFactor = 2.0
+			m_hTexture = resource:"materials/particle/beam_hotblue.vtex"
+		},
+	]
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMin = 30.0
+			m_flRadiusMax = 30.0
+		},
+		{
+			_class = "C_INIT_InitialVelocityNoise"
+			m_vecOutputMin = [ 0.0, 0.0, 35.0 ]
+			m_vecOutputMax = [ 0.0, 0.0, 35.0 ]
+		},
+		{
+			_class = "C_INIT_RandomAlpha"
+			m_bDisableOperator = true
+		},
+		{
+			_class = "C_INIT_PositionOffset"
+			m_OffsetMin = [ 0.0, 0.0, 10.0 ]
+			m_OffsetMax = [ 0.0, 0.0, 10.0 ]
+		},
+		{
+			_class = "C_INIT_CreateInEpitrochoid"
+			m_flParticleDensity = 0.18
+			m_flOffset = 14.0
+			m_flRadius1 = 120.0
+			m_flRadius2 = -48.5
+			m_bUseCount = true
+			m_bDisableOperator = true
+		},
+		{
+			_class = "C_INIT_CreateInEpitrochoid"
+			m_flParticleDensity = 50.0
+			m_flOffset = 320.0
+			m_flRadius1 = 400.0
+			m_flRadius2 = -240.0
+		},
+		{
+			_class = "C_INIT_PositionWarp"
+			m_vecWarpMin = [ 0.1, 0.1, 0.1 ]
+			m_flWarpTime = 0.1
+		},
+		{
+			_class = "C_INIT_RemapParticleCountToScalar"
+			m_nFieldOutput = 16
+			m_nInputMax = 64
+			m_bActiveRange = true
+		},
+		{
+			_class = "C_INIT_CreateWithinSphere"
+		},
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMin = 0.3
+			m_fLifetimeMax = 0.3
+		},
+		{
+			_class = "C_INIT_OffsetVectorToVector"
+			m_vecOutputMin = [ 0.0, 0.0, 128.0 ]
+			m_vecOutputMax = [ 1.0, 1.0, 128.0 ]
+		},
+	]
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_ContinuousEmitter"
+			m_flEmissionDuration = 5.0
+			m_flEmitRate = 200.0
+		},
+	]
+}

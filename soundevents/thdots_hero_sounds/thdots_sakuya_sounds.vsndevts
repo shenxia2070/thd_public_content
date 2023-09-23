@@ -1,0 +1,108 @@
+"Voice_Thdots_Sakuya.AbilitySakuya04"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_update_default"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/abilityvoice/abilitysakuya04.vsnd"
+						}
+					}
+					"volume"
+					{
+						"value" "5.00000"
+					}
+					"pitch"
+					{
+						"value" "1.000000"
+					}
+					"pitch_rand_min"
+					{
+						"value" "-0.050000"
+					}
+					"pitch_rand_max"
+					{
+						"value" "0.050000"
+					}
+					"event_type"
+					{
+						"value"		"6"
+					}
+					"memory_type"
+					{
+						"value"		"0"
+					}
+					"soundlevel"
+					{
+						"value" "81.000000"
+					}
+					"mixgroup"
+					{
+						"value"		"Weapons"
+					}
+					"spread_radius"
+					{
+						"value"		"300.000000"
+					}
+				}
+			}
+		}
+	}
+}
+"Voice_Thdots_Sakuya.AbilitySakuya04_WanBaoChui"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_addon_src1_2d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/abilityvoice/abilitysakuya04.vsnd"
+						}
+					}
+					"volume_min"
+					{
+						"value"		"1.000000"
+					}
+					"volume_max"
+					{
+						"value"		"1.000000"
+					}
+					"pitch_min"
+					{
+						"value"		"1.000000"
+					}
+					"pitch_max"
+					{
+						"value"		"1.000000"
+					}
+					"event_type"
+					{
+						"value"		"0"
+					}
+					"memory_type"
+					{
+						"value"		"0"
+					}
+				}
+			}
+		}
+	}
+}

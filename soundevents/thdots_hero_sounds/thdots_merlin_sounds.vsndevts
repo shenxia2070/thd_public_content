@@ -1,0 +1,93 @@
+"Voice_Thdots_Merlin.AbilityMerlin01"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"wave0"		"sounds/abilityvoice/merlin_abilities_01.vsnd"
+						}
+					}
+					"volume"       			{	"value" 	"10.00000"	}
+					"pitch_rand_min"       	{	"value" 	"-0.05000"	}			
+					"pitch_rand_max"       	{	"value" 	"0.050000" 	}			
+					"pitch"       			{	"value" 	"1.000000"	}	
+					"soundlevel"       		{	"value" 	"100.00000"	}		
+					"distance_max"       	{	"value"	 	"2500.000"	}			
+					"event_type"       		{	"value"		"1.000000"	}
+				}
+			}
+		}
+	}
+}
+"Voice_Thdots_Merlin.AbilityMerlin02"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"wave0"		"sounds/abilityvoice/merlin_abilities_02.vsnd"
+						}
+					}
+					"volume"       			{	"value" 	"10.00000"	}
+					"pitch_rand_min"       	{	"value" 	"-0.05000"	}			
+					"pitch_rand_max"       	{	"value" 	"0.050000" 	}			
+					"pitch"       			{	"value" 	"1.000000"	}	
+					"soundlevel"       		{	"value" 	"100.00000"	}		
+					"distance_max"       	{	"value"	 	"2500.000"	}			
+					"event_type"       		{	"value"		"1.000000"	}
+				}
+			}
+		}
+	}
+}
+"Voice_Thdots_Merlin.AbilityMerlin04"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"wave0"		"sounds/abilityvoice/merlin_ability4.vsnd"
+						}
+					}
+					"volume"       			{	"value" 	"10.00000"	}
+					"pitch_rand_min"       	{	"value" 	"-0.05000"	}			
+					"pitch_rand_max"       	{	"value" 	"0.050000" 	}			
+					"pitch"       			{	"value" 	"1.000000"	}	
+					"soundlevel"       		{	"value" 	"100.00000"	}		
+					"distance_max"       	{	"value"	 	"2500.000"	}			
+					"event_type"       		{	"value"		"1.000000"	}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,36 @@
+"Hero_Weaver.Attack"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"wave0"		"sounds/weapons/hero/weaver/lyrica_attack_1.vsnd"
+							"wave1"		"sounds/weapons/hero/weaver/lyrica_attack_2.vsnd"
+							"wave2"		"sounds/weapons/hero/weaver/lyrica_attack_3.vsnd"
+							"wave3"		"sounds/weapons/hero/weaver/lyrica_attack_4.vsnd"
+							"wave4"		"sounds/weapons/hero/weaver/lyrica_attack_5.vsnd"
+							"wave5"		"sounds/weapons/hero/weaver/lyrica_attack_6.vsnd"
+						}
+					}
+					"volume"       			{	"value" 	"5.000000"	}
+					"pitch_rand_min"       	{	"value" 	"-0.05000"	}			
+					"pitch_rand_max"       	{	"value" 	"0.050000" 	}			
+					"pitch"       			{	"value" 	"1.000000"	}	
+					"soundlevel"       		{	"value" 	"70.00000"	}		
+					"distance_max"       	{	"value"	 	"2500.000"	}			
+					"event_type"       		{	"value"		"1.000000"	}
+				}
+			}
+		}
+	}
+}

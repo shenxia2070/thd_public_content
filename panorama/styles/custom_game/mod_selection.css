@@ -1,0 +1,73 @@
+.Mod_box {
+    width: 450px;
+    /* width: fill-parent-flow(1); */
+    height: 500px;
+    font-size: 20px;
+    text-align: center;
+    /* color: black; */
+    /* background-color: #000D; */
+    /* vertical-align: center; */
+    /* border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+    border: 2px solid gray; */
+    /* horizontal-align: center; */
+    flow-children: right-wrap;
+    opacity: 1;
+}
+.Select_box {
+    width: 150px;
+    /* width: fill-parent-flow(1); */
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    background-color: #000D;
+    /* vertical-align: center; */
+    border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+    border: 2px solid gray;
+    horizontal-align: center;
+    flow-children: down;
+    opacity: 1;
+}
+.Change_box {
+    width: 200px;
+    height: 300px;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+    border: 2px solid gray;
+    horizontal-align: center;
+    flow-children: down;
+    opacity: 1;
+}
+.MaxPlayer_box {
+    width: 100%;
+    /* width: fill-parent-flow(1); */
+    height: 40px;
+    font-size: 20px;
+    text-align: left;
+    /* color: black; */
+    background-color: #000D;
+    flow-children: right;
+    opacity: 1;
+    margin-top:5px;
+}
+.OMG_MaxPlayer_Enter {
+    width: 70px;
+}
+.Max_Label {
+    width: 60%;
+    text-align: center;
+    horizontal-align: left;
+    vertical-align: center;
+}
+
+.Mod_Label{
+    width: 100%;
+    text-align: center;
+    horizontal-align: center;
+    vertical-align: center;
+}

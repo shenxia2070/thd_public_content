@@ -1,0 +1,337 @@
+.InfoRoot {
+	width: 100%;
+	height: 100%;
+}
+
+#InfoPanel {
+	background-color: #000D;
+	padding: 10px;
+	flow-children: down;
+	horizontal-align: right;
+	margin-top: 50px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+/*.HUDFlipped #InfoPanel {
+	horizontal-align: left;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}*/
+
+#InfoPanel Label {
+	color: gradient(linear, 0% 100%, 0% 0%, from(#B70081), to(#FF9AD7));
+	font-size: 24px;
+	margin: 5px;
+}
+
+#Difficulty {
+	horizontal-align: center;
+}
+
+#VideosButton {
+	padding: 5px 20px;
+	border-radius: 1000px;
+	background-color: #12191f;
+	vertical-align: bottom;
+	margin-bottom: 256px;
+	margin-left: 10px;
+}
+
+#VideosButton Label {
+	color: #4a677f;
+	font-size: 22px;
+}
+
+#VideosButton:hover Label {
+	color: #fac900;
+}
+
+.HUDFlipped #VideosButton {
+	horizontal-align: right;
+	margin-left: 0px;
+	margin-right: 10px;
+}
+
+#RankingButton {
+	padding: 5px 20px;
+	border-radius: 1000px;
+	background-color: #12191f;
+	vertical-align: bottom;
+	margin-bottom: 300px;
+	margin-left: 10px;
+}
+
+#RankingButton Label {
+	color: #4a677f;
+	font-size: 22px;
+}
+
+#RankingButton:hover Label {
+	color: #fac900;
+}
+
+.HUDFlipped #RankingButton {
+	horizontal-align: right;
+	margin-left: 0px;
+	margin-right: 10px;
+}
+
+/*============ 进攻进度 ===============*/
+#AttackingPanel {
+	horizontal-align: center;
+	flow-children: down;
+	/*width: 364px;*/
+	/*margin-top: 15px;*/
+}
+
+#CreepCountProcessBar{
+	width: 366px;
+	height: 36px;
+	background-image: url("file://{images}/custom_game/cc_process_bar_bg.png");
+	background-repeat: no-repeat;
+	/*background-size: 100%;*/
+}
+
+#CreepCountProcessBarPCT{
+	width: 0%;
+	height: 36px;
+	background-image: url("file://{images}/custom_game/cc_process_bar_pct.png");
+	background-repeat: no-repeat;
+}
+
+#CreepCount{
+	vertical-align: middle;
+	horizontal-align: center;
+	font-size: 18px;
+	color: #fff;
+	/*text-shadow: #abffff 0px 0px 2px;*/
+	text-overflow: shrink;
+}
+
+#DifficultyWavePanel{
+	flow-children: right;
+	height: 28px;
+	horizontal-align: center;
+}
+
+#Difficulty , #WaveText{
+	vertical-align: middle;
+	font-size: 22px;
+	color: #fff;
+	/*text-shadow: #abffff 0px 0px 5px;*/
+	text-shadow: #000 0px 0px 5px 2.0;
+	padding-right: 8px;
+}
+
+#AttackingProcessTimePanel{
+	width: 100%;
+	height: 60px;
+	horizontal-align: center;
+	background-image: url("file://{images}/custom_game/attacking_time_bg.png");
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+#AttackingProcessTime{
+	horizontal-align: center;
+	padding-top: 10px;
+	font-size: 28px;
+	color: #fff;
+	font-weight: bold;
+	text-shadow: #abffff 0px 0px 3px 2.0;
+	min-width: 100px;
+	text-align: center;
+}
+
+#AttackingProcessTime.soon{
+	text-shadow: #ff0000 0px 0px 8px 5.0;
+	animation-name: AttackingProcessTimeSoon;
+	animation-timing-function: ease;
+	animation-duration: 1.0s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes 'AttackingProcessTimeSoon'
+{
+	0%
+	{
+		transform: scale3d(1.0,1.0,1.0);
+	}
+	20%
+	{
+		transform: scale3d(1.5,1.5,1.0);
+	}
+	90%
+	{
+		transform: scale3d(0.9,0.9,1.0);
+	}
+	100%
+	{
+		transform: scale3d(1.0,1.0,1.0);
+	}
+}
+
+/*#WavePanel {
+	width: 120px;
+	padding: 10px 20px;
+	border-radius: 5px;
+	background-color: gradient( linear, 0% 100%, 0% 0%, from( #1c262f ), to( #374d60 ) );
+	box-shadow: fill #000 -3px -3px 10px 6px;
+}
+
+.Language_english #WavePanel {
+	width: 180px;
+}
+
+#WaveText {
+	color: #8993a1;
+	transform: translateY(2px);
+	horizontal-align: center;
+	font-size: 22px;
+}
+
+#AttackingProcessBar {
+	width: 300px;
+	height: 33px;
+	margin-left: 116px;
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #1c262f ), to( #1b262f ) );
+	vertical-align: middle;
+	box-shadow: fill #000 -3px -3px 10px 6px;
+	border-radius: 5px;
+}
+
+.Language_english #AttackingProcessBar {
+	margin-left: 175px;
+}
+
+#AttackingProcess {
+	width: 100%;
+	height: 100%;
+	overflow: clip;
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #002D5F ), color-stop(0.5,#004892),to( #002D5F ) );
+}
+#AttackingProcessScene {
+	width: 300px;
+	height: 100%;
+}
+#AttackingProcessTime {
+	horizontal-align: center;
+	vertical-align: middle;
+	color: #99DBFF;
+	transform: translateY(3px);
+}*/
+
+/*===================================*/
+@keyframes 'SelectStartCardSpawn'
+{
+	0%
+	{
+		opacity: 0;
+		transform: translate3d(0px, -500px, 0px);
+	}
+	100%
+	{
+		opacity: 1;
+		transform: translate3d(0px, 0px, 0px);
+	}
+}
+#SelectStartCard {
+	background-color: #000A;
+	horizontal-align: center;
+	vertical-align: middle;
+	padding: 15px;
+	border-radius: 5px;
+	flow-children: right;
+	opacity: 0;
+}
+#SelectStartCard.Spawn {
+	opacity: 1;
+	animation-name: SelectStartCardSpawn;
+	animation-timing-function: linear;
+	animation-duration: 1.0s;
+}
+
+#SelectStartCard .Card {
+	width: 300px;
+	min-height: 400px;
+	flow-children: down;
+	margin: 10px;
+	border-radius: 5px;
+	box-shadow: fill #000 -2px -2px 5px 4px;
+	background-color: gradient(linear, 0% 100%, 0% 0%, from(#2a2a2a), to(#3a3a3a));
+
+	transition-property: transform;
+	transition-duration: 0.2s;
+}
+
+#SelectStartCard .Card:hover {
+	box-shadow: fill #006A3E -4px -4px 10px 8px;
+	transform: translateZ(20px);
+}
+
+#SelectStartCard .Card .ItemImage {
+	width: 100%;
+	background-color: gradient(linear, 0% 100%, 0% 0%, from(#000000), to(#2f2f2f));
+	background-image: url("s2r://panorama/images/hud/ability_tooltip_psd.vtex");
+	background-repeat: no-repeat;
+	background-position: 0px -45px;
+}
+
+#SelectStartCard .Card DOTAItemImage {
+	horizontal-align: center;
+}
+
+#SelectStartCard .Card .ItemName {
+	width: 100%;
+	text-align: center;
+	background-color: #000;
+	padding: 7px;
+	color: #fff;
+}
+
+#SelectStartCard .Card .ItemContent {
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	background-color: #10171c;
+	background-image: url("s2r://panorama/images/hud/ability_tooltip_psd.vtex");
+	background-repeat: no-repeat;
+	background-position: 0px -45px;
+}
+
+#SelectStartCard .Card .Description {
+	flow-children: down;
+}
+
+#SelectStartCard .Card .Description > Label {
+	color: #9ab0cd;
+}
+
+#SelectStartCard .Card .Description > Label.block {
+	width: 100%;
+	padding: 5px;
+	color: #626d7b;
+	margin-top: 5px;
+	text-shadow: 2px 2px 0px 1.0 #00000090;
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #1c262f ), to( #1b262f ) );
+}
+
+@keyframes 'HideSelectStartCard'
+{
+	0%
+	{
+		opacity: 1;
+		transform: scale3d(1.0, 1.0, 1.0) translate3d(0px, 0px, 0px);
+	}
+	100%
+	{
+		opacity: 0;
+		transform: scale3d(0.1, 0.1, 1.0) translate3d(350px, 500px, 0px);
+	}
+}
+#SelectStartCard.Hidden {
+	animation-name: HideSelectStartCard;
+	animation-timing-function: linear;
+	animation-duration: 0.3s;
+	opacity: 0;
+}

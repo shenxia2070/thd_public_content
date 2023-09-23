@@ -1,0 +1,49 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_bShouldHitboxesFallbackToRenderBounds = false
+	m_nMaxParticles = 4
+	m_ConstantColor =
+	[
+		255,
+		0,
+		0,
+		255,
+	]
+	m_Children =
+	[
+		{
+			m_ChildRef = resource:"particles/econ/items/tidehunter/tidehunter_divinghelmet/tidehunter_gush_diving_helmet_f0.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/econ/items/tidehunter/tidehunter_divinghelmet/tidehunter_gush_diving_helmet_f1.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/econ/items/tidehunter/tidehunter_divinghelmet/tidehunter_gush_diving_helmet_f2.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/econ/items/tidehunter/tidehunter_divinghelmet/tidehunter_gush_diving_helmet_f3.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/econ/items/tidehunter/tidehunter_divinghelmet/tidehunter_gush_diving_helmet_f4.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/econ/items/tidehunter/tidehunter_divinghelmet/tidehunter_gush_diving_helmet_f5.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/econ/items/tidehunter/tidehunter_divinghelmet/tidehunter_gush_diving_helmet_f6.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/econ/items/tidehunter/tidehunter_divinghelmet/tidehunter_gush_diving_helmet_f7.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/econ/items/tidehunter/tidehunter_divinghelmet/tidehunter_gush_diving_helmet_f8.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/econ/items/tidehunter/tidehunter_divinghelmet/tidehunter_gush_diving_helmet_f9.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/econ/items/tidehunter/tidehunter_divinghelmet/tidehunter_gush_diving_helmet_f10.vpcf"
+		},
+	]
+}

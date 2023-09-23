@@ -1,0 +1,396 @@
+"Voice_Thdots_Alice.AbilityAlice03"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_update_default"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/abilityvoice/abilityalice03.vsnd"
+						}
+					}
+					"volume"
+					{
+						"value" "0.750000"
+					}
+					"pitch"
+					{
+						"value" "1.000000"
+					}
+					"pitch_rand_min"
+					{
+						"value" "-0.050000"
+					}
+					"pitch_rand_max"
+					{
+						"value" "0.050000"
+					}
+					"event_type"
+					{
+						"value"		"6"
+					}
+					"memory_type"
+					{
+						"value"		"0"
+					}
+					"soundlevel"
+					{
+						"value" "81.000000"
+					}
+					"mixgroup"
+					{
+						"value"		"Weapons"
+					}
+					"spread_radius"
+					{
+						"value"		"300.000000"
+					}
+				}
+			}
+		}
+	}
+}
+"Voice_Thdots_Alice.AbilityAlice011"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_update_default"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/abilityvoice/abilityalice011.vsnd"
+						}
+					}
+					"volume"
+					{
+						"value" "0.750000"
+					}
+					"pitch"
+					{
+						"value" "1.000000"
+					}
+					"pitch_rand_min"
+					{
+						"value" "-0.050000"
+					}
+					"pitch_rand_max"
+					{
+						"value" "0.050000"
+					}
+					"event_type"
+					{
+						"value"		"6"
+					}
+					"memory_type"
+					{
+						"value"		"0"
+					}
+					"soundlevel"
+					{
+						"value" "81.000000"
+					}
+					"mixgroup"
+					{
+						"value"		"Weapons"
+					}
+					"spread_radius"
+					{
+						"value"		"300.000000"
+					}
+				}
+			}
+		}
+	}
+}
+"Voice_Thdots_Alice.AbilityAlice022"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_update_default"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/abilityvoice/abilityalice022.vsnd"
+						}
+					}
+					"volume"
+					{
+						"value" "0.750000"
+					}
+					"pitch"
+					{
+						"value" "1.000000"
+					}
+					"pitch_rand_min"
+					{
+						"value" "-0.050000"
+					}
+					"pitch_rand_max"
+					{
+						"value" "0.050000"
+					}
+					"event_type"
+					{
+						"value"		"6"
+					}
+					"memory_type"
+					{
+						"value"		"0"
+					}
+					"soundlevel"
+					{
+						"value" "81.000000"
+					}
+					"mixgroup"
+					{
+						"value"		"Weapons"
+					}
+					"spread_radius"
+					{
+						"value"		"300.000000"
+					}
+				}
+			}
+		}
+	}
+}
+"Voice_Thdots_Alice.AbilityAlice012"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_update_default"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/abilityvoice/abilityalice012.vsnd"
+						}
+					}
+					"volume"
+					{
+						"value" "0.750000"
+					}
+					"pitch"
+					{
+						"value" "1.000000"
+					}
+					"pitch_rand_min"
+					{
+						"value" "-0.050000"
+					}
+					"pitch_rand_max"
+					{
+						"value" "0.050000"
+					}
+					"event_type"
+					{
+						"value"		"6"
+					}
+					"memory_type"
+					{
+						"value"		"0"
+					}
+					"soundlevel"
+					{
+						"value" "81.000000"
+					}
+					"mixgroup"
+					{
+						"value"		"Weapons"
+					}
+					"spread_radius"
+					{
+						"value"		"300.000000"
+					}
+				}
+			}
+		}
+	}
+}
+"Voice_Thdots_Alice.AbilityAlice031"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_update_default"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/abilityvoice/abilityalice031.vsnd"
+						}
+					}
+					"volume"
+					{
+						"value" "0.750000"
+					}
+					"pitch"
+					{
+						"value" "1.000000"
+					}
+					"pitch_rand_min"
+					{
+						"value" "-0.050000"
+					}
+					"pitch_rand_max"
+					{
+						"value" "0.050000"
+					}
+					"event_type"
+					{
+						"value"		"6"
+					}
+					"memory_type"
+					{
+						"value"		"0"
+					}
+					"soundlevel"
+					{
+						"value" "81.000000"
+					}
+					"mixgroup"
+					{
+						"value"		"Weapons"
+					}
+					"spread_radius"
+					{
+						"value"		"300.000000"
+					}
+				}
+			}
+		}
+	}
+}
+"Voice_Thdots_Alice.AbilityAliceEx"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_update_default"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/abilityvoice/abilityaliceex.vsnd"
+						}
+					}
+					"volume"
+					{
+						"value" "0.750000"
+					}
+					"pitch"
+					{
+						"value" "1.000000"
+					}
+					"pitch_rand_min"
+					{
+						"value" "-0.050000"
+					}
+					"pitch_rand_max"
+					{
+						"value" "0.050000"
+					}
+					"event_type"
+					{
+						"value"		"6"
+					}
+					"memory_type"
+					{
+						"value"		"0"
+					}
+					"soundlevel"
+					{
+						"value" "81.000000"
+					}
+					"mixgroup"
+					{
+						"value"		"Weapons"
+					}
+					"spread_radius"
+					{
+						"value"		"300.000000"
+					}
+				}
+			}
+		}
+	}
+}
+"Voice_Thdots_Alice.AbilityAlice04"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"		"sos_reference_stack"
+				"reference_stack"		"dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/vo/visage/visa_attack_04.vsnd"
+						}
+					}
+					"volume"
+					{
+						"value"		"4.000000"
+					}
+					"pitch"
+					{
+						"value"		"1.000000"
+					}
+					"soundlevel"
+					{
+						"value"		"81.000000"
+					}
+				}
+			}
+		}
+	}
+}

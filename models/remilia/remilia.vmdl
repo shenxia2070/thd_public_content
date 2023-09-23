@@ -1,0 +1,2517 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	m_meshList = 
+	{
+		m_meshList = 
+		[
+			{
+				m_meshName = "remilia"
+				m_meshFile = "models/remilia/remilia.fbx"
+				m_materialSearchPath = "models\\remilia\\remilia.fbm"
+				m_bSkinParentedObjects = true
+				m_bLegacySkinParentedTransforms = false
+				m_bExpensiveTangents = false
+				m_bHighPrecisionTexCoords = false
+				m_bPerVertexCurvature = false
+				m_bBentNormals = false
+				m_bIgnoreCloth = false
+				m_bGetSkinningFromLod0 = false
+				m_bPreferHighDensityTrianglesInUvDensityCalculation = false
+				m_pMorphInfo = null
+			},
+		]
+	}
+	m_clothProxyMeshList = 
+	{
+		_class = "CVClothProxyMeshList"
+		m_flClothEnableThreshold = 0.05
+		m_bCreateStaticBone = false
+		m_nMaxBonesPerVertex = 4
+		m_bRemoveUnusedBonesEnabled = false
+		m_bDriveMeshesWithBacksolvedJointsOnly = true
+		m_flMatchProxiesToMeshes = 1.0
+		m_flFallbackEnvelope = 1.0
+		m_nReservedInt = 0
+		m_bSoftSkinAnimation = false
+		m_bReservedBool2 = false
+		m_bReservedBool3 = false
+		m_bReservedBool4 = false
+		m_clothProxyMeshList = [  ]
+	}
+	m_physicsMeshList = 
+	{
+		m_meshList = [  ]
+	}
+	m_pModelInfo = null
+	m_pBoneFlagList = 
+	{
+		m_pObject = null
+	}
+	m_pHitBoxSetLists = 
+	[
+		{
+			m_pObject = 
+			{
+				m_HitBoxSets = 
+				[
+					{
+						m_name = "default"
+						m_HitBoxes = 
+						[
+							{
+								m_name = "7.joint_HipMaster"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "7.joint_HipMaster"
+								m_vMinBounds = [ -18.275053, -110.248497, -24.300406 ]
+								m_vMaxBounds = [ 18.275053, 38.321148, 11.53373 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "4.joint_Torso"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "4.joint_Torso"
+								m_vMinBounds = [ -9.317101, -0.124611, -8.92701 ]
+								m_vMaxBounds = [ 9.317101, 9.604836, 7.008043 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "5.joint_Torso2"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "5.joint_Torso2"
+								m_vMinBounds = [ -15.720942, -0.053459, -20.01232 ]
+								m_vMaxBounds = [ 15.720942, 23.118729, 10.264811 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "8.joint_LeftShoulder"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "8.joint_LeftShoulder"
+								m_vMinBounds = [ 0.139194, -7.292404, -4.726756 ]
+								m_vMaxBounds = [ 7.775824, 2.183434, 6.344612 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "35.joint_RightShoulder"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "35.joint_RightShoulder"
+								m_vMinBounds = [ -7.775824, -7.292404, -4.726756 ]
+								m_vMaxBounds = [ -0.139194, 2.183434, 6.344612 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "9.joint_LeftArm"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "9.joint_LeftArm"
+								m_vMinBounds = [ -3.968742, -12.381607, -7.307125 ]
+								m_vMaxBounds = [ 18.637175, 4.074074, 7.469597 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "36.joint_RightArm"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "36.joint_RightArm"
+								m_vMinBounds = [ -18.637169, -12.381569, -7.307125 ]
+								m_vMaxBounds = [ 3.968746, 4.074112, 7.469597 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "12.joint_LeftElbow"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "12.joint_LeftElbow"
+								m_vMinBounds = [ -2.043381, -11.50396, -3.750234 ]
+								m_vMaxBounds = [ 15.362381, 1.977905, 2.650963 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "39.joint_RightElbow"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "39.joint_RightElbow"
+								m_vMinBounds = [ -14.424767, -9.980515, -2.645194 ]
+								m_vMaxBounds = [ 2.043385, 1.977913, 2.267529 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "88.joint_RightHipD"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "88.joint_RightHipD"
+								m_vMinBounds = [ -7.335754, -39.202488, -7.922882 ]
+								m_vMaxBounds = [ 5.423834, 1.62944, 7.353117 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "92.joint_LeftHipD"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "92.joint_LeftHipD"
+								m_vMinBounds = [ -5.423836, -39.202579, -7.922882 ]
+								m_vMaxBounds = [ 7.335752, 1.629349, 7.353117 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "6.joint_Neck"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "6.joint_Neck"
+								m_vMinBounds = [ -3.88696, -0.121742, -4.946158 ]
+								m_vMaxBounds = [ 3.88696, 3.836555, 2.552045 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "16.joint_LeftWrist"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "16.joint_LeftWrist"
+								m_vMinBounds = [ -0.516407, -4.150002, -3.066534 ]
+								m_vMaxBounds = [ 6.959595, 0.7323, 3.202284 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "43.joint_RightWrist"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "43.joint_RightWrist"
+								m_vMinBounds = [ -6.959595, -4.149979, -3.066534 ]
+								m_vMaxBounds = [ 0.516407, 0.732323, 3.202284 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "89.joint_RightKneeD"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "89.joint_RightKneeD"
+								m_vMinBounds = [ -6.847126, -38.976467, -7.120748 ]
+								m_vMaxBounds = [ 3.817943, 2.991776, 5.075692 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "93.joint_LeftKneeD"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "93.joint_LeftKneeD"
+								m_vMinBounds = [ -3.817945, -38.976475, -7.120748 ]
+								m_vMaxBounds = [ 6.847124, 2.991768, 5.075692 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "96.joint_Head"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "96.joint_Head"
+								m_vMinBounds = [ -12.711588, -9.606529, -13.025593 ]
+								m_vMaxBounds = [ 12.711588, 24.594711, 15.055161 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "20.joint_LeftIndex1"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "20.joint_LeftIndex1"
+								m_vMinBounds = [ 0.731575, -2.031548, -0.851101 ]
+								m_vMaxBounds = [ 3.344933, 0.194496, 0.728647 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "23.joint_LeftMiddle1"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "23.joint_LeftMiddle1"
+								m_vMinBounds = [ 0.329887, -2.445175, -0.67076 ]
+								m_vMaxBounds = [ 3.464912, 0.1455, 0.849272 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "26.joint_LeftRing1"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "26.joint_LeftRing1"
+								m_vMinBounds = [ 0.234146, -2.065193, -0.531106 ]
+								m_vMaxBounds = [ 3.128033, 0.200539, 0.751381 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "29.joint_LeftPinky1"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "29.joint_LeftPinky1"
+								m_vMinBounds = [ 0.368298, -1.581932, -0.485842 ]
+								m_vMaxBounds = [ 2.696766, 0.355934, 0.886221 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "47.joint_RightIndex1"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "47.joint_RightIndex1"
+								m_vMinBounds = [ -2.519516, -1.837845, -0.809531 ]
+								m_vMaxBounds = [ 0.093842, 0.388199, 0.770216 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "50.joint_RightMiddle1"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "50.joint_RightMiddle1"
+								m_vMinBounds = [ -2.909801, -2.135323, -0.608525 ]
+								m_vMaxBounds = [ 0.225224, 0.455353, 0.911507 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "53.joint_RightRing1"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "53.joint_RightRing1"
+								m_vMinBounds = [ -2.582787, -2.043655, -0.504219 ]
+								m_vMaxBounds = [ 0.3111, 0.222076, 0.778268 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "56.joint_RightPinky1"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "56.joint_RightPinky1"
+								m_vMinBounds = [ -2.151524, -1.560402, -0.458955 ]
+								m_vMaxBounds = [ 0.176945, 0.377464, 0.913108 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "114.joint_hidarisetsubasa1"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "114.joint_hidarisetsubasa1"
+								m_vMinBounds = [ 0.501396, -11.116035, -13.789428 ]
+								m_vMaxBounds = [ 23.296291, 19.476601, -1.628988 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "117.joint_migisetsubasa1"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "117.joint_migisetsubasa1"
+								m_vMinBounds = [ -23.296291, -11.116035, -13.789428 ]
+								m_vMaxBounds = [ -0.501396, 19.476601, -1.628988 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "90.joint_RightFootD"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "90.joint_RightFootD"
+								m_vMinBounds = [ -3.996943, -9.728694, -5.721489 ]
+								m_vMaxBounds = [ 4.551401, 1.803304, 8.953375 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "94.joint_LeftFootD"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "94.joint_LeftFootD"
+								m_vMinBounds = [ -4.551404, -9.72869, -5.721489 ]
+								m_vMaxBounds = [ 3.99694, 1.803308, 8.953375 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "136.joint_Skirt_0_0"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "136.joint_Skirt_0_0"
+								m_vMinBounds = [ -8.505731, -18.924309, 1.412513 ]
+								m_vMaxBounds = [ 8.505731, -0.530014, 7.997395 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "137.joint_Skirt_0_1"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "137.joint_Skirt_0_1"
+								m_vMinBounds = [ -0.614171, -18.5746, 1.66498 ]
+								m_vMaxBounds = [ 5.917041, -0.507797, 9.898963 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "138.joint_Skirt_0_2"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "138.joint_Skirt_0_2"
+								m_vMinBounds = [ -0.135579, -18.288002, 3.993698 ]
+								m_vMaxBounds = [ 4.879663, -3.678528, 10.638674 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "139.joint_Skirt_0_3"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "139.joint_Skirt_0_3"
+								m_vMinBounds = [ 0.99582, -18.402275, 2.124237 ]
+								m_vMaxBounds = [ 6.71585, -0.081871, 8.790379 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "140.joint_Skirt_0_4"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "140.joint_Skirt_0_4"
+								m_vMinBounds = [ 2.124277, -17.855606, 1.068382 ]
+								m_vMaxBounds = [ 10.292873, 0.036957, 7.213515 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "141.joint_Skirt_0_5"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "141.joint_Skirt_0_5"
+								m_vMinBounds = [ 3.02864, -17.054459, -0.333872 ]
+								m_vMaxBounds = [ 9.884511, -0.076637, 5.712615 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "142.joint_Skirt_0_6"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "142.joint_Skirt_0_6"
+								m_vMinBounds = [ 3.354637, -17.136627, -4.584683 ]
+								m_vMaxBounds = [ 11.871233, -0.56321, 2.804575 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "143.joint_Skirt_0_7"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "143.joint_Skirt_0_7"
+								m_vMinBounds = [ 2.403694, -16.350449, -8.017168 ]
+								m_vMaxBounds = [ 12.212039, -0.781914, 0.580594 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "144.joint_Skirt_0_8"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "144.joint_Skirt_0_8"
+								m_vMinBounds = [ 1.986327, -16.582947, -11.515239 ]
+								m_vMaxBounds = [ 10.473065, -0.787827, -0.172973 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "145.joint_Skirt_0_9"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "145.joint_Skirt_0_9"
+								m_vMinBounds = [ 0.737111, -16.463211, -11.789315 ]
+								m_vMaxBounds = [ 9.263441, -0.812195, -2.178167 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "146.joint_Skirt_0_10"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "146.joint_Skirt_0_10"
+								m_vMinBounds = [ -0.108083, -16.586441, -10.460001 ]
+								m_vMaxBounds = [ 7.405806, -1.038887, -2.808444 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "147.joint_Skirt_0_11"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "147.joint_Skirt_0_11"
+								m_vMinBounds = [ -0.930704, -16.743645, -11.678142 ]
+								m_vMaxBounds = [ 4.619437, -1.110954, -2.75071 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "148.joint_Skirt_0_12"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "148.joint_Skirt_0_12"
+								m_vMinBounds = [ -2.298613, -15.529732, -12.160654 ]
+								m_vMaxBounds = [ 2.298615, -1.08136, -3.133159 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "149.joint_Skirt_0_13"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "149.joint_Skirt_0_13"
+								m_vMinBounds = [ -4.619433, -16.743645, -11.678142 ]
+								m_vMaxBounds = [ 0.930708, -1.110954, -2.75071 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "150.joint_Skirt_0_14"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "150.joint_Skirt_0_14"
+								m_vMinBounds = [ -7.405806, -16.586441, -10.460001 ]
+								m_vMaxBounds = [ 0.108083, -1.038887, -2.808444 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "151.joint_Skirt_0_15"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "151.joint_Skirt_0_15"
+								m_vMinBounds = [ -9.263439, -16.463211, -11.789317 ]
+								m_vMaxBounds = [ -0.737108, -0.812195, -2.178169 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "152.joint_Skirt_0_16"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "152.joint_Skirt_0_16"
+								m_vMinBounds = [ -10.473063, -16.582947, -11.515243 ]
+								m_vMaxBounds = [ -1.986324, -0.787827, -0.172976 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "153.joint_Skirt_0_17"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "153.joint_Skirt_0_17"
+								m_vMinBounds = [ -12.212039, -16.350449, -8.017167 ]
+								m_vMaxBounds = [ -2.403694, -0.781914, 0.580596 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "154.joint_Skirt_0_18"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "154.joint_Skirt_0_18"
+								m_vMinBounds = [ -11.871233, -17.136627, -4.584683 ]
+								m_vMaxBounds = [ -3.354637, -0.56321, 2.804575 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "155.joint_Skirt_0_19"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "155.joint_Skirt_0_19"
+								m_vMinBounds = [ -9.884511, -17.054459, -0.333874 ]
+								m_vMaxBounds = [ -3.02864, -0.076637, 5.712613 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "156.joint_Skirt_0_20"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "156.joint_Skirt_0_20"
+								m_vMinBounds = [ -10.292873, -17.855606, 1.068382 ]
+								m_vMaxBounds = [ -2.124277, 0.036957, 7.213515 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "157.joint_Skirt_0_21"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "157.joint_Skirt_0_21"
+								m_vMinBounds = [ -6.71585, -18.402275, 2.124237 ]
+								m_vMaxBounds = [ -0.99582, -0.081871, 8.790379 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "158.joint_Skirt_0_22"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "158.joint_Skirt_0_22"
+								m_vMinBounds = [ -4.879664, -18.288002, 3.993697 ]
+								m_vMaxBounds = [ 0.135578, -3.678528, 10.638673 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "159.joint_Skirt_0_23"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "159.joint_Skirt_0_23"
+								m_vMinBounds = [ -5.91704, -18.5746, 1.66498 ]
+								m_vMaxBounds = [ 0.614171, -0.507797, 9.898963 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "108.joint_RightEye"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "108.joint_RightEye"
+								m_vMinBounds = [ -2.515065, -2.41452, 0.885228 ]
+								m_vMaxBounds = [ 0.34273, 1.514954, 5.060944 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "110.joint_LeftEye"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "110.joint_LeftEye"
+								m_vMinBounds = [ -0.34273, -2.41452, 0.885228 ]
+								m_vMaxBounds = [ 2.515065, 1.514954, 5.060944 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "120.joint_boushi"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "120.joint_boushi"
+								m_vMinBounds = [ -23.712498, -11.580795, -19.045353 ]
+								m_vMaxBounds = [ 17.836506, 14.02681, 20.254452 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "18.joint_LeftThumb1"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "18.joint_LeftThumb1"
+								m_vMinBounds = [ -0.064713, -1.336235, -0.67976 ]
+								m_vMaxBounds = [ 1.837803, 0.608421, 1.089058 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "21.joint_LeftIndex2"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "21.joint_LeftIndex2"
+								m_vMinBounds = [ 0.430325, -1.301529, -0.513121 ]
+								m_vMaxBounds = [ 2.226448, 0.515854, 0.604579 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "24.joint_LeftMiddle2"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "24.joint_LeftMiddle2"
+								m_vMinBounds = [ 0.256069, -1.780602, -0.587883 ]
+								m_vMaxBounds = [ 2.116539, 0.348404, 0.654069 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "27.joint_LeftRing2"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "27.joint_LeftRing2"
+								m_vMinBounds = [ 0.322639, -1.526947, -0.419711 ]
+								m_vMaxBounds = [ 2.207207, 0.442184, 0.637139 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "30.joint_LeftPinky2"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "30.joint_LeftPinky2"
+								m_vMinBounds = [ 0.479134, -1.126801, -0.348659 ]
+								m_vMaxBounds = [ 1.848927, 0.402679, 0.631373 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "45.joint_RightThumb1"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "45.joint_RightThumb1"
+								m_vMinBounds = [ -1.567497, -1.452362, -0.700426 ]
+								m_vMaxBounds = [ 0.335018, 0.492294, 1.068393 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "48.joint_RightIndex2"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "48.joint_RightIndex2"
+								m_vMinBounds = [ -1.849617, -1.287903, -0.548331 ]
+								m_vMaxBounds = [ -0.053493, 0.52948, 0.569369 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "51.joint_RightMiddle2"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "51.joint_RightMiddle2"
+								m_vMinBounds = [ -1.955948, -1.631401, -0.593862 ]
+								m_vMaxBounds = [ -0.095478, 0.497604, 0.64809 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "54.joint_RightRing2"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "54.joint_RightRing2"
+								m_vMinBounds = [ -1.830383, -1.513344, -0.454921 ]
+								m_vMaxBounds = [ 0.054184, 0.455788, 0.601929 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "57.joint_RightPinky2"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "57.joint_RightPinky2"
+								m_vMinBounds = [ -1.418034, -1.093758, -0.375303 ]
+								m_vMaxBounds = [ -0.048241, 0.435722, 0.604729 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "86.joint_migikoshiribon"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "86.joint_migikoshiribon"
+								m_vMinBounds = [ -16.992962, -16.200226, -11.261064 ]
+								m_vMaxBounds = [ -1.130381, 5.35508, 2.619723 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "87.joint_hidarikoshiribon"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "87.joint_hidarikoshiribon"
+								m_vMinBounds = [ 1.130381, -16.200226, -11.261064 ]
+								m_vMaxBounds = [ 16.992962, 5.35508, 2.619723 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "91.joint_migiashisakiEX"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "91.joint_migiashisakiEX"
+								m_vMinBounds = [ -3.878267, -4.089119, -2.078053 ]
+								m_vMaxBounds = [ 4.901858, 3.443856, 7.77404 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "95.joint_hidariashisakiEX"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "95.joint_hidariashisakiEX"
+								m_vMinBounds = [ -4.901861, -4.089117, -2.078052 ]
+								m_vMaxBounds = [ 3.878264, 3.443858, 7.774041 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "160.joint_Skirt_1_0"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "160.joint_Skirt_1_0"
+								m_vMinBounds = [ -6.224409, -23.651928, -0.078781 ]
+								m_vMaxBounds = [ 6.224408, -2.634354, 13.272114 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "161.joint_Skirt_1_1"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "161.joint_Skirt_1_1"
+								m_vMinBounds = [ -4.249601, -23.730656, -0.322151 ]
+								m_vMaxBounds = [ 9.578554, -1.612953, 15.861973 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "162.joint_Skirt_1_2"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "162.joint_Skirt_1_2"
+								m_vMinBounds = [ -2.407162, -23.522583, -0.980399 ]
+								m_vMaxBounds = [ 10.900929, -1.834145, 16.144827 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "163.joint_Skirt_1_3"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "163.joint_Skirt_1_3"
+								m_vMinBounds = [ -2.379814, -23.844849, -1.001013 ]
+								m_vMaxBounds = [ 12.4245, -1.050148, 9.519677 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "164.joint_Skirt_1_4"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "164.joint_Skirt_1_4"
+								m_vMinBounds = [ -0.193615, -22.028282, -1.848696 ]
+								m_vMaxBounds = [ 16.010065, -1.405487, 11.917192 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "165.joint_Skirt_1_5"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "165.joint_Skirt_1_5"
+								m_vMinBounds = [ 0.768913, -21.403469, -2.3081 ]
+								m_vMaxBounds = [ 16.871494, -1.753433, 9.978008 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "166.joint_Skirt_1_6"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "166.joint_Skirt_1_6"
+								m_vMinBounds = [ 0.589359, -17.884445, -7.894982 ]
+								m_vMaxBounds = [ 18.83172, -0.251915, 5.068229 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "167.joint_Skirt_1_7"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "167.joint_Skirt_1_7"
+								m_vMinBounds = [ 1.023275, -17.816639, -10.914665 ]
+								m_vMaxBounds = [ 19.520092, -0.479195, 2.285522 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "168.joint_Skirt_1_8"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "168.joint_Skirt_1_8"
+								m_vMinBounds = [ -0.077768, -17.307491, -13.221628 ]
+								m_vMaxBounds = [ 19.053913, -0.77887, 2.532857 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "169.joint_Skirt_1_9"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "169.joint_Skirt_1_9"
+								m_vMinBounds = [ -1.014273, -18.949135, -19.78083 ]
+								m_vMaxBounds = [ 16.174166, -0.336952, 2.187103 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "170.joint_Skirt_1_10"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "170.joint_Skirt_1_10"
+								m_vMinBounds = [ -2.442595, -19.859768, -19.647949 ]
+								m_vMaxBounds = [ 15.693748, -0.326424, -1.102568 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "171.joint_Skirt_1_11"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "171.joint_Skirt_1_11"
+								m_vMinBounds = [ -3.050544, -20.531689, -20.253231 ]
+								m_vMaxBounds = [ 9.311911, -0.053741, -0.611126 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "172.joint_Skirt_1_12"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "172.joint_Skirt_1_12"
+								m_vMinBounds = [ -6.59688, -19.83617, -19.974039 ]
+								m_vMaxBounds = [ 6.596882, 0.414154, -1.252626 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "173.joint_Skirt_1_13"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "173.joint_Skirt_1_13"
+								m_vMinBounds = [ -9.311905, -20.531689, -20.253231 ]
+								m_vMaxBounds = [ 3.05055, -0.053741, -0.611126 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "174.joint_Skirt_1_14"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "174.joint_Skirt_1_14"
+								m_vMinBounds = [ -15.693748, -19.859768, -19.647947 ]
+								m_vMaxBounds = [ 2.442595, -0.326424, -1.102564 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "175.joint_Skirt_1_15"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "175.joint_Skirt_1_15"
+								m_vMinBounds = [ -16.174164, -18.949135, -19.78083 ]
+								m_vMaxBounds = [ 1.014275, -0.336952, 2.187103 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "176.joint_Skirt_1_16"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "176.joint_Skirt_1_16"
+								m_vMinBounds = [ -19.053904, -17.307491, -13.221633 ]
+								m_vMaxBounds = [ 0.077778, -0.77887, 2.532852 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "177.joint_Skirt_1_17"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "177.joint_Skirt_1_17"
+								m_vMinBounds = [ -19.520092, -17.816639, -10.91466 ]
+								m_vMaxBounds = [ -1.023275, -0.479195, 2.285526 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "178.joint_Skirt_1_18"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "178.joint_Skirt_1_18"
+								m_vMinBounds = [ -18.83172, -17.884445, -7.894981 ]
+								m_vMaxBounds = [ -0.589359, -0.251915, 5.06823 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "179.joint_Skirt_1_19"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "179.joint_Skirt_1_19"
+								m_vMinBounds = [ -16.871494, -21.403469, -2.308101 ]
+								m_vMaxBounds = [ -0.768913, -1.753433, 9.978007 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "180.joint_Skirt_1_20"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "180.joint_Skirt_1_20"
+								m_vMinBounds = [ -16.010065, -22.028282, -1.848695 ]
+								m_vMaxBounds = [ 0.193615, -1.405487, 11.917192 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "181.joint_Skirt_1_21"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "181.joint_Skirt_1_21"
+								m_vMinBounds = [ -12.424496, -23.844849, -1.001013 ]
+								m_vMaxBounds = [ 2.379818, -1.050148, 9.519677 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "182.joint_Skirt_1_22"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "182.joint_Skirt_1_22"
+								m_vMinBounds = [ -10.900933, -23.522583, -0.9804 ]
+								m_vMaxBounds = [ 2.407158, -1.834145, 16.144825 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "183.joint_Skirt_1_23"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "183.joint_Skirt_1_23"
+								m_vMinBounds = [ -9.578552, -23.730656, -0.322151 ]
+								m_vMaxBounds = [ 4.249603, -1.612953, 15.861973 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "99.joint_FrontHairLeft0"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "99.joint_FrontHairLeft0"
+								m_vMinBounds = [ -2.540551, -10.623322, -2.022105 ]
+								m_vMaxBounds = [ 2.451921, 0.120117, 1.552004 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "100.joint_LeftFrontHair"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "100.joint_LeftFrontHair"
+								m_vMinBounds = [ -3.481527, -11.360199, -1.917284 ]
+								m_vMaxBounds = [ 2.282534, -0.163544, 1.798935 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "101.joint_RightFrontHair"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "101.joint_RightFrontHair"
+								m_vMinBounds = [ -2.282579, -11.360199, -1.917291 ]
+								m_vMaxBounds = [ 3.481483, -0.163544, 1.798929 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "102.joint_FrontHairRight0"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "102.joint_FrontHairRight0"
+								m_vMinBounds = [ -1.663983, -10.484512, -3.428468 ]
+								m_vMaxBounds = [ 3.898252, 0.2052, 2.730367 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "103.joint_LeftSideHair"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "103.joint_LeftSideHair"
+								m_vMinBounds = [ -4.979378, -18.163292, -7.599088 ]
+								m_vMaxBounds = [ 2.75051, -0.069748, 4.496627 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "104.joint_RightSideHair"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "104.joint_RightSideHair"
+								m_vMinBounds = [ -2.750525, -18.163292, -8.07353 ]
+								m_vMaxBounds = [ 4.979362, -0.069748, 4.49661 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "105.joint_FrontHairMiddle"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "105.joint_FrontHairMiddle"
+								m_vMinBounds = [ -3.388373, -11.66748, -3.386649 ]
+								m_vMaxBounds = [ 4.776161, -0.034882, 1.692375 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "109.joint_migimehairaito"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "109.joint_migimehairaito"
+								m_vMinBounds = [ -2.386372, -1.715561, 4.205826 ]
+								m_vMaxBounds = [ 0.430699, 0.517944, 5.092503 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "111.joint_hidarimehairaito"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "111.joint_hidarimehairaito"
+								m_vMinBounds = [ -0.383832, -1.718582, 4.141101 ]
+								m_vMaxBounds = [ 2.740986, 0.617538, 5.029668 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "121.joint_boushiribon"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "121.joint_boushiribon"
+								m_vMinBounds = [ -10.876795, -12.756989, -7.651357 ]
+								m_vMaxBounds = [ 0.300211, 12.850616, 10.055063 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "122.joint_y_0_0"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "122.joint_y_0_0"
+								m_vMinBounds = [ -5.113407, -16.430634, -8.009929 ]
+								m_vMaxBounds = [ 9.041961, -0.162415, 4.962258 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "123.joint_y_0_1"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "123.joint_y_0_1"
+								m_vMinBounds = [ -5.613256, -16.38414, -9.915212 ]
+								m_vMaxBounds = [ 8.542112, -0.077744, 4.576535 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "124.joint_y_0_2"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "124.joint_y_0_2"
+								m_vMinBounds = [ -9.270703, -16.690865, -8.176451 ]
+								m_vMaxBounds = [ 6.080034, -0.001312, 8.635262 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "125.joint_y_0_3"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "125.joint_y_0_3"
+								m_vMinBounds = [ -6.985511, -16.690865, -5.120866 ]
+								m_vMaxBounds = [ 6.985511, -0.001312, 10.030598 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "126.joint_y_0_4"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "126.joint_y_0_4"
+								m_vMinBounds = [ -6.080037, -16.690865, -8.176453 ]
+								m_vMaxBounds = [ 9.2707, -0.001312, 8.635262 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "127.joint_y_0_5"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "127.joint_y_0_5"
+								m_vMinBounds = [ -8.542112, -16.38414, -9.915212 ]
+								m_vMaxBounds = [ 5.613256, -0.077744, 4.576535 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "128.joint_y_0_6"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "128.joint_y_0_6"
+								m_vMinBounds = [ -9.041961, -16.430634, -4.194969 ]
+								m_vMaxBounds = [ 5.113407, -0.162415, 4.674919 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "19.joint_LeftThumb2"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "19.joint_LeftThumb2"
+								m_vMinBounds = [ -0.4809, -1.620476, -0.643229 ]
+								m_vMaxBounds = [ 2.617653, 0.835274, 1.535952 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "22.joint_LeftIndex3"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "22.joint_LeftIndex3"
+								m_vMinBounds = [ -0.022354, -1.809532, -0.442225 ]
+								m_vMaxBounds = [ 3.272736, 0.330627, 0.545554 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "25.joint_LeftMiddle3"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "25.joint_LeftMiddle3"
+								m_vMinBounds = [ 0.340069, -1.827805, -0.52525 ]
+								m_vMaxBounds = [ 3.3241, 0.291, 0.510056 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "28.joint_LeftRing3"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "28.joint_LeftRing3"
+								m_vMinBounds = [ -0.164879, -1.594154, -0.39242 ]
+								m_vMaxBounds = [ 3.264755, 0.646057, 0.537911 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "31.joint_LeftPinky3"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "31.joint_LeftPinky3"
+								m_vMinBounds = [ 0.468639, -1.430511, -0.264456 ]
+								m_vMaxBounds = [ 2.806938, 0.242409, 0.603417 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "17.joint_LeftThumb0"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "17.joint_LeftThumb0"
+								m_vMinBounds = [ 0.125782, -1.254929, 0.112637 ]
+								m_vMaxBounds = [ 2.029343, 0.645889, 1.342306 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "13.joint_sawanmojiueito"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "13.joint_sawanmojiueito"
+								m_vMinBounds = [ -9.489428, -2.668083, -2.569036 ]
+								m_vMaxBounds = [ 1.990507, 7.726746, 2.881797 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "46.joint_RightThumb2"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "46.joint_RightThumb2"
+								m_vMinBounds = [ -2.347347, -1.736603, -0.663894 ]
+								m_vMaxBounds = [ 0.751205, 0.719147, 1.515286 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "49.joint_RightIndex3"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "49.joint_RightIndex3"
+								m_vMinBounds = [ -2.730629, -1.739052, -0.468034 ]
+								m_vMaxBounds = [ 0.564461, 0.401108, 0.519745 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "52.joint_RightMiddle3"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "52.joint_RightMiddle3"
+								m_vMinBounds = [ -3.052307, -1.641174, -0.530395 ]
+								m_vMaxBounds = [ -0.068275, 0.477631, 0.504912 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "55.joint_RightRing3"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "55.joint_RightRing3"
+								m_vMinBounds = [ -2.722664, -1.523682, -0.418229 ]
+								m_vMaxBounds = [ 0.70697, 0.71653, 0.512102 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "58.joint_RightPinky3"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "58.joint_RightPinky3"
+								m_vMinBounds = [ -2.264851, -1.360046, -0.290267 ]
+								m_vMaxBounds = [ 0.073448, 0.312874, 0.577607 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "44.joint_RightThumb0"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "44.joint_RightThumb0"
+								m_vMinBounds = [ -1.759041, -1.371056, 0.091972 ]
+								m_vMaxBounds = [ 0.14452, 0.529762, 1.321641 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "40.joint_uwanmojiueito"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "40.joint_uwanmojiueito"
+								m_vMinBounds = [ -1.990505, -2.668076, -2.569036 ]
+								m_vMaxBounds = [ 9.489429, 7.726753, 2.881797 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "85.joint_muneribon"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "85.joint_muneribon"
+								m_vMinBounds = [ -6.62825, -8.484634, 0.701431 ]
+								m_vMaxBounds = [ 6.390802, -0.388214, 8.596675 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+						]
+					},
+				]
+				m_AutoCreateSetName = ""
+			}
+		},
+	]
+	m_pAttachmentLists = 
+	[
+		{
+			m_pObject = 
+			{
+				m_name = ""
+				m_attachments = 
+				[
+					{
+						m_name = "attach_attack1"
+						m_influences = 
+						[
+							{
+								m_influenceName = "43.joint_RightWrist"
+								m_vTranslationOffset = [ -3.106712, -3.022015, 0.257668 ]
+								m_vRotationOffset = [ 46.65633, 8.114428, -64.550247 ]
+								m_flWeight = 1.0
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						m_name = "attach_attack2"
+						m_influences = 
+						[
+							{
+								m_influenceName = "16.joint_LeftWrist"
+								m_vTranslationOffset = [ 8.668549, -3.348885, -3.611374 ]
+								m_vRotationOffset = [ -25.100767, -6.928418, -104.440315 ]
+								m_flWeight = 1.0
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						m_name = "attach_hitloc"
+						m_influences = 
+						[
+							{
+								m_influenceName = "4.joint_Torso"
+								m_vTranslationOffset = [ 0.0, 0.0, 0.0 ]
+								m_vRotationOffset = [ 0.0, 0.0, 0.0 ]
+								m_flWeight = 1.0
+								m_bRoot = false
+							},
+						]
+					},
+				]
+			}
+		},
+	]
+	m_pAnimGroup = 
+	{
+		m_pObject = 
+		{
+			m_Name = ""
+			m_pBoneFlagList = 
+			{
+				m_pObject = null
+			}
+			m_pSeqGroup = 
+			{
+				m_pObject = null
+			}
+			m_pAnimGroups = [  ]
+			m_Vanim = 
+			[
+				{
+					m_Animationname = "remilia rip"
+					m_Filepath = "models/remilia/remilia rip.fbx"
+					m_nStartframe = 0
+					m_nEndframe = 60
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_TELEPORT_END"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "remiliaidle"
+					m_Filepath = "models/remilia/remiliaidle.fbx"
+					m_nStartframe = 0
+					m_nEndframe = 24
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = true
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_IDLE"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "remiliawalk"
+					m_Filepath = "models/remilia/remiliawalk.fbx"
+					m_nStartframe = 0
+					m_nEndframe = 32
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = true
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_RUN"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = 
+					[
+						{
+							m_nFrame = 0
+							m_bExtractTX = true
+							m_bExtractTY = true
+							m_bExtractTZ = false
+							m_bExtractRX = false
+							m_bExtractRY = false
+							m_bExtractRZ = false
+							m_bDiscardTX = false
+							m_bDiscardTY = false
+							m_bDiscardTZ = false
+							m_bDiscardRX = false
+							m_bDiscardRY = false
+							m_bDiscardRZ = false
+						},
+					]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "remiliaskill4"
+					m_Filepath = "models/remilia/remiliaskill4.fbx"
+					m_nStartframe = 0
+					m_nEndframe = 24
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = true
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_CAST_ABILITY_4"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = 
+					[
+						{
+							m_Event = ""
+							m_nFrame = 0
+							m_DataString = ""
+						},
+					]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "remiliaskill3"
+					m_Filepath = "models/remilia/remiliaskill3.fbx"
+					m_nStartframe = 0
+					m_nEndframe = 60
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_CAST_ABILITY_3"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "remiliaskill1"
+					m_Filepath = "models/remilia/remiliaskill1.fbx"
+					m_nStartframe = 0
+					m_nEndframe = 45
+					m_flFps = 90.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_CAST_ABILITY_1"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "remiliaattack1"
+					m_Filepath = "models/remilia/remiliattack1.fbx"
+					m_nStartframe = 0
+					m_nEndframe = 35
+					m_flFps = 40.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_ATTACK"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = 
+					[
+						{
+							m_nFrame = 0
+							m_bExtractTX = true
+							m_bExtractTY = true
+							m_bExtractTZ = false
+							m_bExtractRX = false
+							m_bExtractRY = false
+							m_bExtractRZ = false
+							m_bDiscardTX = false
+							m_bDiscardTY = false
+							m_bDiscardTZ = false
+							m_bDiscardRX = false
+							m_bDiscardRY = false
+							m_bDiscardRZ = false
+						},
+					]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "remiliaattack2"
+					m_Filepath = "models/remilia/remiliaattack2.fbx"
+					m_nStartframe = 0
+					m_nEndframe = 35
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_ATTACK2"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = 
+					[
+						{
+							m_nFrame = 0
+							m_bExtractTX = true
+							m_bExtractTY = true
+							m_bExtractTZ = false
+							m_bExtractRX = false
+							m_bExtractRY = false
+							m_bExtractRZ = false
+							m_bDiscardTX = false
+							m_bDiscardTY = false
+							m_bDiscardTZ = false
+							m_bDiscardRX = false
+							m_bDiscardRY = false
+							m_bDiscardRZ = false
+						},
+					]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "remiliadie"
+					m_Filepath = "models/remilia/remiliadie.fbx"
+					m_nStartframe = 0
+					m_nEndframe = 60
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_DIE"
+							m_nWeight = 1
+						},
+						{
+							m_Name = "ACT_DOTA_DEATH_BY_SNIPER"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = 
+					[
+						{
+							m_nFrame = 0
+							m_bExtractTX = true
+							m_bExtractTY = true
+							m_bExtractTZ = false
+							m_bExtractRX = false
+							m_bExtractRY = false
+							m_bExtractRZ = false
+							m_bDiscardTX = false
+							m_bDiscardTY = false
+							m_bDiscardTZ = false
+							m_bDiscardRX = false
+							m_bDiscardRY = false
+							m_bDiscardRZ = false
+						},
+					]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "remiliaskill2_1"
+					m_Filepath = "models/remilia/remiliaskill2_1.fbx"
+					m_nStartframe = 0
+					m_nEndframe = 30
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_CAST_ABILITY_2"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "remiliaskill2_2"
+					m_Filepath = "models/remilia/remiliaskill2_2.fbx"
+					m_nStartframe = 0
+					m_nEndframe = 60
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_CAST_ABILITY_2_END"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "remilia rip 1"
+					m_Filepath = "models/remilia/remilia rip 1.fbx"
+					m_nStartframe = 0
+					m_nEndframe = 60
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_SPAWN"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "remilia rip 2"
+					m_Filepath = "models/remilia/remilia rip 2.fbx"
+					m_nStartframe = 0
+					m_nEndframe = 60
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 3600
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_CAPTURE"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "remiliaskill4 1"
+					m_Filepath = "models/remilia/remiliaskill4 1.fbx"
+					m_nStartframe = 0
+					m_nEndframe = 24
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_TELEPORT_COOP_WAIT"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "remiliaskill4 2"
+					m_Filepath = "models/remilia/remiliaskill4 2.fbx"
+					m_nStartframe = 0
+					m_nEndframe = 24
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_TELEPORT_COOP_START"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "remiliaskill3 1"
+					m_Filepath = "models/remilia/remiliaskill3 1.fbx"
+					m_nStartframe = 0
+					m_nEndframe = 60
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_FLAIL"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = [  ]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+			]
+			m_sScripts = [  ]
+			m_folderNames = [  ]
+			m_sCompileScripts = [  ]
+			m_pActivityWhiteList = 
+			{
+				m_pObject = null
+			}
+		}
+	}
+	m_pMaterialGroupList = 
+	{
+		m_pObject = null
+	}
+	m_pMeshGroupList = 
+	{
+		m_pObject = null
+	}
+	m_pLodGroupList = 
+	{
+		m_pObject = null
+	}
+	m_pPropBreakableList = 
+	{
+		m_pObject = null
+	}
+	m_pPropDataList = 
+	{
+		m_pObject = null
+	}
+	m_pConstraintLists = [  ]
+	m_collision = ""
+	m_softbody = ""
+	m_sMDLFilename = ""
+	m_sOffsetHitboxSets = [  ]
+	m_vHitboxSetOffset = [ 0.0, 0.0, 0.0 ]
+	m_scriptFiles = [  ]
+	m_pMaterialRemapList = null
+	m_flFbxScale = 1.0
+	m_flQCScale = 1.0
+	m_vOrigin = [ 0.0, 0.0, 0.0 ]
+	m_bEmbedAnimsInAnimGroup = false
+	m_pPsfList = null
+	m_keyValueText = ""
+	m_bStaticProp = false
+	m_bEnableClothProcessing = true
+	m_flClothEnableThreshold = 0.05
+	m_nMaxClothVertsPerMesh = 2048
+	m_bBuildClothBoneHierarchy = false
+	m_nNavType = "AUTH_NAV_MESH"
+	m_bMakeUniqueVMeshes = true
+	m_bMakeImplicitBindPoseSequence = false
+	m_bAdjustSkeletonFromBoneFlags = false
+	m_bHiddenAssetFlag = false
+	m_pAnimGroups = [  ]
+}

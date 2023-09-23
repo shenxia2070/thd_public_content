@@ -1,0 +1,28 @@
+<root>
+    <styles>
+        <include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="file://{resources}/styles/custom_game/info.css" />
+        <include src="file://{resources}/styles/custom_game/dots_test.css" />
+        
+    </styles>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/bot_omg.js" />
+        <include src="file://{resources}/scripts/custom_game/dots_test.js" />
+    </scripts>
+
+    <Panel hittest="false">
+        <!-- BOT_HUD是一个大板 -->
+        <Panel id="BOT_HUD" class = "BOT_HUD_box">
+            <Panel id="Button_box_1" class="Button_box">
+                <Button id="Button_box_1" class="UI_Button" onactivate="OnButton_box_1()" />
+                    <Label class ="UI_Label" text="自选模式" />
+                </Button>
+            </Panel>
+            <Panel id="Button_box_2" class="Button_box">
+                <Button id="Button_box_2" class="UI_Button" >
+                    <Label class ="UI_Label" text="随机模式" onactivate="OnButton_box_2()" />
+                </Button>
+            </Panel>
+        </Panel>
+    </Panel>
+</root>

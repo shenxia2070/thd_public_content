@@ -1,0 +1,86 @@
+<root>
+    <styles>
+        <include src="file://{resources}/styles/custom_game/dots_omg.css" />
+    </styles>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/dots_omg.js" />
+        <include src="file://{resources}/scripts/custom_game/key_bind.js" />
+    </scripts>
+
+    <Panel hittest="false">
+        <Panel id="key_bind_text_panel" class="text_panel">
+            <Label id="key_bind_text_label" class="key_bind_text_label" text="复制下列代码输入控制台" />
+            <TextEntry id="key_bind_TextEntry_1" class = "key_bind_TextEntry" maxchars="50" placeholder="" />
+            <Button id="key_bind_text_button" onactivate = "CloseTextPanel()">
+                <Label class="OMG_button_text" text="关闭" />
+            </Button>
+            <Label class="key_bind_text_label" text="如果改键错乱就在控制台输入   unbindall   然后重启游戏" />
+        </Panel>
+        <Panel id = "key_bind_box_id" class="key_bind_box" >
+            <Button class="key_bind_button" onactivate="OnKeyBindButtonPressed()">
+                <Label text="改键" />
+            </Button>
+            <Panel id = "key_bind_box_normal" class="key_unit_box">
+                <Panel id = "key_Label_box_nor" class="key_Label_box" onactivate = "normal_quickcast()">
+                    <Label id="key_bind_label_1" class = "key_bind_label quickcast_false" text="点击切换" />
+                </Panel>
+                <Panel id = "key_Label_box_execute_nor" class="key_Label_box" onactivate = "nor_execute()">
+                    <Label id="key_bind_label_execute_1" class = "key_bind_label quickcast_false" text="普通施法" />
+                </Panel>
+                <Panel id = "key_TextEntry_box_nor" class="key_TextEntry_box">
+                    <!-- <TextEntry id="Entry_Ability" class = "key_TextEntry_box_child" maxchars="1" placeholder="_" 
+                    ontextentrychange = "EntryChange()" /> -->
+                    <TextEntry id="Entry_Ability_quick" class = "key_TextEntry_box_child" maxchars="1" placeholder="_"
+                    ontextentrychange = "normal_quickcast()"/>
+                    <TextEntry id="Entry_Ability" class = "key_TextEntry_box_child" maxchars="1" placeholder="_" 
+                    ontextentrychange = "EntryAbilityOnactivate()" />
+                </Panel>
+                <Panel class="key_Label_box">
+                    <Label class = "key_bind_label" text="小技能" />
+                </Panel>
+            </Panel>
+            <Panel id = "key_bind_box_ultmate" class="key_unit_box">
+                <Panel id = "key_Label_box_ult" class="key_Label_box" onactivate = "ultmate_quickcast()">
+                    <Label id="key_bind_label_2" class = "key_bind_label quickcast_false" text="快速施法" />
+                </Panel>
+                <Panel id = "key_Label_box_execute_ult" class="key_Label_box" onactivate = "ult_execute()">
+                    <Label id="key_bind_label_execute_2" class = "key_bind_label quickcast_false" text="普通施法" />
+                </Panel>
+                <Panel id = "key_TextEntry_box_ult" class="key_TextEntry_box">
+                    <!-- <TextEntry id="Entry_ultAbility" class = "key_TextEntry_box_child" maxchars="1" placeholder="_" 
+                    ontextentrychange = "EntryChange()"/> -->
+                    <TextEntry id="Entry_ultAbility_quick" class = "key_TextEntry_box_child" maxchars="1" placeholder="_"
+                    ontextentrychange = "ultmate_quickcast()"/>
+                    <TextEntry id="Entry_ultAbility" class = "key_TextEntry_box_child" maxchars="1" placeholder="_" 
+                    ontextentrychange = "EntryUltAbilityOnactivate()"/>
+                </Panel>
+                <Panel class="key_Label_box">
+                    <Label class = "key_bind_label" text="大招" />
+                </Panel>
+            </Panel>
+        </Panel>
+
+        <Panel id="MyUI_OMG" class = "background" hittest="false">
+            <Panel id="div_1" class="checkbox">
+                <Panel id="abilities_1" class="abilities_box">
+                </Panel>
+                <Panel id="ult_abilities_1" class="ult_abilities_box">
+                </Panel>
+                <Panel id="OMG_button_box_1" class="OMG_button_box">
+                    <Button id="OMG_button_1" class="OMG_button" onactivate = "On_OMG_button_Enter_Pressed()">
+                        <Label class="OMG_button_text" text="确定" />
+                    </Button>
+                    <Button id="OMG_button_2" class="OMG_button" onactivate = "On_OMG_button_Cancel_Pressed()" >
+                        <Label class="OMG_button_text" text="取消" />
+                    </Button>
+                </Panel>
+            </Panel>
+        </Panel>
+
+        <!-- <Panel id="OMG_CSX" class="background">
+            <Button id="OMG_button_1" class="OMG_button">
+                <Label class="OMG_button_text" text="确定" />
+            </Button>
+        </Panel> -->
+    </Panel>
+</root>

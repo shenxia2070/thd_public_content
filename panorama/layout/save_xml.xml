@@ -1,0 +1,71 @@
+<root>
+    <styles>
+        <include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="file://{resources}/styles/custom_game/info.css" />
+        <include src="file://{resources}/styles/custom_game/dots_test.css" />
+        
+    </styles>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/Dots_test.js" />
+    </scripts>
+
+    <Panel hittest="false">
+        <!-- MyUI_OMG是一个大板 -->
+        <Panel id="MyUI_OMG" class = "all_box" hittest="false">
+
+            
+            <!-- Player_box是玩家单独的版，给ID想对应的玩家单独点击和操作 -->
+            <Panel class="Player_box"> 
+                <!-- 第1行显示玩家的头像与ID -->
+                <Panel class="my_player_data">
+                    <!-- <Label text="Player_box显示玩家的头像与ID" /> -->
+                    <DOTAAvatarImage steamid="local" class = "ability"/>
+                    <DOTAUserName steamid="local" />
+                </Panel>
+                <!-- 第2行显示预选择的英雄和技能 -->
+                <Panel class="show_box">
+                    <!-- 里面分为左右两个box，一个放英雄头像，一个放技能和名称 -->
+                    <Panel  class="hero_img_box">
+                        <Label text="hero_img_box，放英雄头像，" />
+                    </Panel>
+                    <Panel  class="ability_info">
+                        <!-- info里再分为上下两个box，上层放英雄名字，下层放两个技能 -->
+                        <Panel  class="hero_name">
+                            <Label text="上层放英雄名字" />
+                        </Panel>
+                        <Panel  class="show_ability_box">
+                            <Label text="下层放两个技能" />
+                            
+                        </Panel>
+                    </Panel>
+                </Panel>
+                <!-- 第3行Panel显示英雄和技能 -->
+                <Panel class="select_box">
+
+                    <!-- div_1显示6个英雄 -->
+                    <Panel class="div_1">
+                        <Label text="显示6个英雄" />
+                    </Panel>
+                    <!-- div_2显示8个普通技能 -->
+                    <Panel class="div_2">
+                        <Label text="显示8个普通技能" />
+                    </Panel>
+                    <!-- div_3显示8个终极技能 -->
+                    <Panel class="div_3">
+                        <Label text="显示8个终极技能" />
+                    </Panel>
+
+                </Panel>
+                <!-- 第4行显示交换英雄按钮 -->
+                <Panel class="swap_button">
+                    <Label text="显示交换英雄按钮" />
+                </Panel>
+                <!-- 第5行显示对方玩家的头像与ID -->
+                <Panel class="enemy_player_data">
+                </Panel>
+            </Panel>
+        </Panel> 
+
+
+    </Panel>
+</root>

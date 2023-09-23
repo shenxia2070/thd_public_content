@@ -1,0 +1,17 @@
+tp1------回城
+death1------死亡
+fan attack1-------2技能火男面
+attack6-----1技能妖狐面
+kokoroattack1--------攻击1
+kokoroattack2--------攻击2
+kokoroidle-------待机
+kokorokick-------三技能1段踢人
+kokororun-------移动
+kokorodarkslash--------普通大招
+kokoroominislash--------无敌斩
+kokoroomnistart--------无敌斩释放前摇
+kokorodisabled-------被眩晕
+kokoroflail---------被拉被睡被吹风
+kickblink--------3技能踢完后2段瞬移
+powerup------天生属性强化
+puredamagecurse----------天生凭依 变真伤

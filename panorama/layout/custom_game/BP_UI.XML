@@ -1,0 +1,21 @@
+<root>
+    <styles>
+        <include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="file://{resources}/styles/custom_game/info.css" />
+        <include src="file://{resources}/styles/custom_game/dots_test.css" />
+        
+    </styles>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/bot_omg.js" />
+        <include src="file://{resources}/scripts/custom_game/dots_test.js" />
+        <include src="file://{resources}/scripts/custom_game/dots_omg_bp.js" />
+        <include src="file://{resources}/scripts/custom_game/key_bind.js" />
+    </scripts>
+
+    <Panel hittest="false">
+        <!-- BOT_HUD是一个大板 -->
+        <!-- <Panel id="BP_HUD" class = "BP_HUD_box">  -->
+            <!-- 首先创建5个player_box，然后生成英雄和技能 -->
+        <!-- </Panel> -->
+    </Panel>
+</root>

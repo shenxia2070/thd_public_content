@@ -1,0 +1,7 @@
+Layer0
+{
+	shader "ui.vfx"
+
+	//---- Color ----
+	Texture "materials/vgui/hud/minimap_hero_sheet.png"
+}

@@ -1,0 +1,71 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc32:version{c5dcef98-b629-46ab-88e3-a17c005c935e} -->
+{
+	rootNode = 
+	{
+		_class = "RootNode"
+		children = 
+		[
+			{
+				_class = "HitboxSetList"
+				children = 
+				[
+					{
+						_class = "HitboxSet"
+						name = "default"
+						children = 
+						[
+							{
+								_class = "Hitbox"
+								parent_bone = "0_joint_Master"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -7.384172, 0.046139, -6.924703 ]
+								hitbox_maxs = [ 6.671095, 35.768215, 6.924698 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "1_joint_Head"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -17.109552, -5.943943, -18.107811 ]
+								hitbox_maxs = [ 16.883318, 3.796595, 17.401436 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "0_joint_Master"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -7.384172, 0.046139, -6.924703 ]
+								hitbox_maxs = [ 6.671095, 35.768215, 6.924698 ]
+							},
+						]
+					},
+				]
+			},
+			{
+				_class = "RenderMeshList"
+				children = 
+				[
+					{
+						_class = "RenderMeshFile"
+						name = "mushroom"
+						filename = "models/mushroom/mushroom.fbx"
+						import_scale = 1.0
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+				]
+			},
+		]
+		model_archetype = ""
+		primary_associated_entity = ""
+		anim_graph_name = ""
+		importer_notes = "Imported from VMDL\n==Warnings==\nChanged incompatible hitbox parent bone name '0.joint_Master' to '0_joint_Master'\nChanged incompatible hitbox parent bone name '1.joint_Head' to '1_joint_Head'\nChanged incompatible hitbox parent bone name '0.joint_Master' to '0_joint_Master'\n"
+	}
+}

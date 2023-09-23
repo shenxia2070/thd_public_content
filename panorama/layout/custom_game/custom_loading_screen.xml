@@ -1,0 +1,14 @@
+<root>
+        <styles>
+                <include src="file://{resources}/styles/custom_game/custom_loading_screen.css"/>
+        </styles>
+        <Panel>
+                <Image id="back" class="background" src="file://{images}/custom_game/touhouloading.jpg"/>
+                <Image id="chilun1" class="clock1" src="file://{images}/custom_game/menu_gear.png"/>
+                <Image id="logo" class="logo" src="file://{images}/custom_game/logo.png"/>
+                <Image id="pray" class="pray" src="file://{images}/custom_game/praying.png"/>
+        </Panel>
+        <!-- <Image src="file://{images}/heroes/npc_dota_hero_phantom_assassin.png"/>
+        <Image src="file://{images}/heroes/selection/npc_dota_hero_phantom_assassin.png"/>
+        <Image src="file://{images}/heroes/icons/npc_dota_hero_phantom_assassin.png"/> -->
+</root>

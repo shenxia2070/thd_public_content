@@ -1,0 +1,42 @@
+<root>
+	<script>
+
+	</script>
+
+	<scripts>
+		<!-- 资源重载 -->
+		<include src="file://{resources}/scripts/custom_game/tempportrait.js"/>
+		<!-- 多队伍UI控制 -->
+		<include src="file://{resources}/scripts/custom_game/use_multi_team.js"/>
+		<include src="file://{resources}/scripts/custom_game/thd_event_core.js"/>
+		<include src="file://{resources}/scripts/custom_game/dire_score.js"/>
+	</scripts>
+
+	<Panel>
+
+		<!-- 用于对图像强制进行一次编译(不编译会导致资源重载失败) -->
+
+		<!-- <CustomUIElement type="GameSetup" layoutfile="file://{resources}/layout/custom_game/fake_loader.xml" /> -->
+
+		<!-- 完成后请重新注释掉上面这句 -->
+
+		<!-- 可能缺少了部分新人物,我这边没有图像源文件,需要手动加一下
+			(在panorama\scripts\custom_game\fake_loader.xml和
+			panorama\scripts\custom_game\tempportrait.js)
+		-->
+
+
+		<!-- 捐赠箱(好像都404了...) -->
+		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/donation.xml" />
+
+		<!-- 以下是多队伍残留,由于麻烦没删(怕删了会有bug)-->
+		<!-- 目前只会在5_thdots_melee才启用 -->
+		<CustomUIElement type="HudTopBar" layoutfile="file://{resources}/layout/custom_game/thd_multiteam_top_scoreboard.xml" />
+		<CustomUIElement type="GameSetup" layoutfile="file://{resources}/layout/custom_game/thd_team_select.xml" />
+		<CustomUIElement type="FlyoutScoreboard" layoutfile="file://{resources}/layout/custom_game/thd_multiteam_flyout_scoreboard.xml" />
+		<CustomUIElement type="HeroSelection" layoutfile="file://{resources}/layout/custom_game/thd_multiteam_hero_select_overlay.xml" />
+		<CustomUIElement type="EndScreen" layoutfile="file://{resources}/layout/custom_game/thd_multiteam_end_screen.xml" />
+
+		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/thd_hud_chat_wheel.xml" />
+	</Panel>
+</root>
