@@ -78,6 +78,9 @@ var imagefile = {
 	'npc_dota_hero_undying': 'panorama/images/heroes/thd2_npc_dota_hero_undying.png',
 	'npc_dota_hero_bristleback': 'panorama/images/heroes/thd2_npc_dota_hero_bristleback.png',
 	'npc_dota_hero_dawnbreaker': 'panorama/images/heroes/thd2_npc_dota_hero_dawnbreaker.png',
+	'npc_dota_hero_death_prophet': 'panorama/images/heroes/thd2_npc_dota_hero_death_prophet.png',
+	'npc_dota_hero_tusk': 'panorama/images/heroes/thd2_npc_dota_hero_tusk.png',
+	'npc_dota_hero_dark_willow': 'panorama/images/heroes/thd2_npc_dota_hero_dark_willow.png',
 }
 
 /////////////////////////////////////////////////////////////

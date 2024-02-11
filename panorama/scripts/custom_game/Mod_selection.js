@@ -21,7 +21,7 @@ function Mod_selection(data) {
     var _Mod_Panel = $.CreatePanel("Panel", _Mod_Box, "Mod_Panel")
     _Mod_Panel.AddClass("Change_box") 
     _Mod_Panel.style.width = "200px"
-    _Mod_Panel.style.height = "130px"
+    _Mod_Panel.style.height = "200px"
     _Mod_Panel.style.marginTop = "5%"
     _Mod_Panel.style.marginLeft = "5%"
     //普通模式
@@ -58,6 +58,20 @@ function Mod_selection(data) {
             _omg_label.text = "OMG模式√"
             _omg_label.style.color = "#FF0000"
             GameEvents.SendCustomGameEventToServer("Change_Game_Mod", {mod: "omg"});
+        }
+    })
+    // 关闭按钮
+    let _close_button = $.CreatePanel("Button", _Mod_Panel, "Close_Button")
+    _close_button.AddClass("Select_box")
+    _close_button.style.margin= "10px"
+    let _close_label = $.CreatePanel("Label", _close_button, "Mod_Label")
+    _close_label.AddClass("Mod_Label")
+    _close_label.text = "关闭"
+    _close_label.style.color = "#FFFFFF"
+    _close_button.SetPanelEvent("onactivate", function() {
+        $.Msg("close_button")
+        if (Game.GetLocalPlayerID() == 0) {
+            Close_Game_Mod()
         }
     })
     // 数据初始化

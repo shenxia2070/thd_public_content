@@ -80,6 +80,9 @@
 		<Image src="file://{images}/heroes/thd2_npc_dota_hero_undying.png"/>
 		<Image src="file://{images}/heroes/thd2_npc_dota_hero_bristleback.png"/>
 		<Image src="file://{images}/heroes/thd2_npc_dota_hero_dawnbreaker.png"/>
+		<Image src="file://{images}/heroes/thd2_npc_dota_hero_death_prophet.png"/>
+		<Image src="file://{images}/heroes/thd2_npc_dota_hero_tusk.png"/>
+		<Image src="file://{images}/heroes/thd2_npc_dota_hero_dark_willow.png"/>
 
 
 
@@ -161,6 +164,9 @@
 		<Image src="file://{images}/heroes/icons/thd2_npc_dota_hero_undying.png"/>
 		<Image src="file://{images}/heroes/icons/thd2_npc_dota_hero_bristleback.png"/>
 		<Image src="file://{images}/heroes/icons/thd2_npc_dota_hero_dawnbreaker.png"/>
+		<Image src="file://{images}/heroes/icons/thd2_npc_dota_hero_death_prophet.png"/>
+		<Image src="file://{images}/heroes/icons/thd2_npc_dota_hero_tusk.png"/>
+		<Image src="file://{images}/heroes/icons/thd2_npc_dota_hero_dark_willow.png"/>
 
 
 		<!--选择页-->
@@ -241,6 +247,9 @@
 		<Image src="file://{images}/heroes/selection/thd2_npc_dota_hero_undying.png"/>
 		<Image src="file://{images}/heroes/selection/thd2_npc_dota_hero_bristleback.png"/>
 		<Image src="file://{images}/heroes/selection/thd2_npc_dota_hero_dawnbreaker.png"/>
+		<Image src="file://{images}/heroes/selection/thd2_npc_dota_hero_death_prophet.png"/>
+		<Image src="file://{images}/heroes/selection/thd2_npc_dota_hero_tusk.png"/>
+		<Image src="file://{images}/heroes/selection/thd2_npc_dota_hero_dark_willow.png"/>
 
 		<!-- 以上的用于手动重载,*必须*使用不同于dota2的文件名,否则无效 -->
 
@@ -324,6 +333,9 @@
 		<Image src="file://{images}/heroes/npc_dota_hero_undying.png"/>
 		<Image src="file://{images}/heroes/npc_dota_hero_bristleback.png"/>
 		<Image src="file://{images}/heroes/npc_dota_hero_dawnbreaker.png"/>
+		<Image src="file://{images}/heroes/npc_dota_hero_death_prophet.png"/>
+		<Image src="file://{images}/heroes/npc_dota_hero_tusk.png"/>
+		<Image src="file://{images}/heroes/npc_dota_hero_dark_willow.png"/>
 
 
 
@@ -405,6 +417,9 @@
 		<Image src="file://{images}/heroes/icons/npc_dota_hero_undying.png"/>
 		<Image src="file://{images}/heroes/icons/npc_dota_hero_bristleback.png"/>
 		<Image src="file://{images}/heroes/icons/npc_dota_hero_dawnbreaker.png"/>
+		<Image src="file://{images}/heroes/icons/npc_dota_hero_death_prophet.png"/>
+		<Image src="file://{images}/heroes/icons/npc_dota_hero_tusk.png"/>
+		<Image src="file://{images}/heroes/icons/npc_dota_hero_dark_willow.png"/>
 
 
 
@@ -485,6 +500,9 @@
 		<Image src="file://{images}/heroes/selection/npc_dota_hero_undying.png"/>
 		<Image src="file://{images}/heroes/selection/npc_dota_hero_bristleback.png"/>
 		<Image src="file://{images}/heroes/selection/npc_dota_hero_dawnbreaker.png"/>
+		<Image src="file://{images}/heroes/selection/npc_dota_hero_death_prophet.png"/>
+		<Image src="file://{images}/heroes/selection/npc_dota_hero_tusk.png"/>
+		<Image src="file://{images}/heroes/selection/npc_dota_hero_dark_willow.png"/>
 
 
 
