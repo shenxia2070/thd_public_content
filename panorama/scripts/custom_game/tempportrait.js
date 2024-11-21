@@ -86,23 +86,23 @@ var imagefile = {
 /////////////////////////////////////////////////////////////
 // Loops
 function LoopSwapInGameIcons() {
-	if (!Game.GameStateIsBefore(DOTA_GameState.DOTA_GAMERULES_STATE_PRE_GAME)) {
+	if (!Game.GameStateIsBefore( DOTA_GameState.DOTA_GAMERULES_STATE_PRE_GAME )) {
 		SwapInGameIcons();
 	}
-	$.Schedule(5, LoopSwapInGameIcons);
+	$.Schedule( 5, LoopSwapInGameIcons );
 }
 function LoopSwapPreGameIcons() {
-	if (Game.GameStateIsBefore(DOTA_GameState.DOTA_GAMERULES_STATE_TEAM_SHOWCASE)) {
+	if (Game.GameStateIsBefore( DOTA_GameState.DOTA_GAMERULES_STATE_TEAM_SHOWCASE )) {
 		SwapPreGameIcons();
-		$.Schedule(0.01, LoopSwapPreGameIcons);
+		$.Schedule( 0.01, LoopSwapPreGameIcons );
 	}
 }
 function LoopSwapSpectatorIcons() {
 	// if (!Players.IsSpectator( Players.GetLocalPlayer())) return;
-	if (!Game.GameStateIsBefore(DOTA_GameState.DOTA_GAMERULES_STATE_PRE_GAME)) {
+	if (!Game.GameStateIsBefore( DOTA_GameState.DOTA_GAMERULES_STATE_PRE_GAME )) {
 		SwapSpectatorIcons();
 	}
-	$.Schedule(0.1, LoopSwapSpectatorIcons);
+	$.Schedule( 0.1, LoopSwapSpectatorIcons );
 }
 
 // TopMostPanel cached here
@@ -112,7 +112,7 @@ var topmostpanel;
 // Loops during game to fix hero icons on TopBar and Scoreboard
 function SwapInGameIcons() {
 	SwapTopBarIcons();
-	SwapScoreboardIcons();
+	SwapScoreboardIcons();	
 }
 
 var radianttopbar;
@@ -121,23 +121,23 @@ function SwapTopBarIcons() {
 	// get topmostpanel
 	if (!topmostpanel) {
 		topmostpanel = $.GetContextPanel();
-		while (topmostpanel.GetParent() != null) {
+		while( topmostpanel.GetParent()!=null ) {
 			topmostpanel = topmostpanel.GetParent();
 		}
 	}
 
 	// get topbar panel
-	if (!radianttopbar) radianttopbar = topmostpanel.FindChildTraverse('TopBarRadiantPlayersContainer');
-	if (!diretopbar) diretopbar = topmostpanel.FindChildTraverse('TopBarDirePlayersContainer');
+	if (!radianttopbar) radianttopbar = topmostpanel.FindChildTraverse( 'TopBarRadiantPlayersContainer' );
+	if (!diretopbar) diretopbar = topmostpanel.FindChildTraverse( 'TopBarDirePlayersContainer' );
 
 	// Get HeroImages
 	var heroimages = [];
-	heroimages = FindPanels(radianttopbar, 'DOTAHeroImage', heroimages, 0);
-	heroimages = FindPanels(diretopbar, 'DOTAHeroImage', heroimages, 0);
+	heroimages = FindPanels( radianttopbar, 'DOTAHeroImage', heroimages, 0 );
+	heroimages = FindPanels( diretopbar, 'DOTAHeroImage', heroimages, 0 );
 
 	// Replace HeroImages
-	for (var i = 0; i < heroimages.length; i++) {
-		ReplaceIcon(heroimages[i]);
+	for (var i=0; i<heroimages.length; i++) {
+		ReplaceIcon( heroimages[i] );
 	}
 }
 
@@ -147,23 +147,23 @@ function SwapScoreboardIcons() {
 	// get topmostpanel
 	if (!topmostpanel) {
 		topmostpanel = $.GetContextPanel();
-		while (topmostpanel.GetParent() != null) {
+		while( topmostpanel.GetParent()!=null ) {
 			topmostpanel = topmostpanel.GetParent();
 		}
 	}
 
 	// get scoreboard panel
-	if (!radiantscoreboard) radiantscoreboard = topmostpanel.FindChildTraverse('RadiantTeamContainer');
-	if (!direscoreboard) direscoreboard = topmostpanel.FindChildTraverse('DireTeamContainer');
+	if (!radiantscoreboard) radiantscoreboard = topmostpanel.FindChildTraverse( 'RadiantTeamContainer' );
+	if (!direscoreboard) direscoreboard = topmostpanel.FindChildTraverse( 'DireTeamContainer' );
 
 	// Get HeroImages
 	var heroimages = [];
-	heroimages = FindPanels(radiantscoreboard, 'DOTAHeroImage', heroimages, 0);
-	heroimages = FindPanels(direscoreboard, 'DOTAHeroImage', heroimages, 0);
+	heroimages = FindPanels( radiantscoreboard, 'DOTAHeroImage', heroimages, 0 );
+	heroimages = FindPanels( direscoreboard, 'DOTAHeroImage', heroimages, 0 );
 
 	// Replace HeroImages
-	for (var i = 0; i < heroimages.length; i++) {
-		ReplaceIcon(heroimages[i]);
+	for (var i=0; i<heroimages.length; i++) {
+		ReplaceIcon( heroimages[i] );
 	}
 }
 
@@ -175,23 +175,23 @@ function SwapPreGameIcons() {
 	// get topmostpanel
 	if (!topmostpanel) {
 		topmostpanel = $.GetContextPanel();
-		while (topmostpanel.GetParent() != null) {
+		while( topmostpanel.GetParent()!=null ) {
 			topmostpanel = topmostpanel.GetParent();
 		}
 	}
 
 	// get topbar panel
-	if (!radiantpregame) radiantpregame = topmostpanel.FindChildTraverse('RadiantTeamPlayers');
-	if (!direpregame) direpregame = topmostpanel.FindChildTraverse('DireTeamPlayers');
+	if (!radiantpregame) radiantpregame = topmostpanel.FindChildTraverse( 'RadiantTeamPlayers' );
+	if (!direpregame) direpregame = topmostpanel.FindChildTraverse( 'DireTeamPlayers' );
 
 	// Get HeroImages
 	var heroimages = [];
-	heroimages = FindPanels(radiantpregame, 'DOTAHeroImage', heroimages, 0);
-	heroimages = FindPanels(direpregame, 'DOTAHeroImage', heroimages, 0);
+	heroimages = FindPanels( radiantpregame, 'DOTAHeroImage', heroimages, 0 );
+	heroimages = FindPanels( direpregame, 'DOTAHeroImage', heroimages, 0 );
 
 	// Replace HeroImages
-	for (var i = 0; i < heroimages.length; i++) {
-		ReplaceIcon(heroimages[i]);
+	for (var i=0; i<heroimages.length; i++) {
+		ReplaceIcon( heroimages[i] );
 	}
 }
 
@@ -202,60 +202,60 @@ function SwapSpectatorIcons() {
 	// get topmostpanel
 	if (!topmostpanel) {
 		topmostpanel = $.GetContextPanel();
-		while (topmostpanel.GetParent() != null) {
+		while( topmostpanel.GetParent()!=null ) {
 			topmostpanel = topmostpanel.GetParent();
 		}
 	}
 
 	// get spectator panel
 	if (!playerrows) {
-		playerrows = topmostpanel.FindChildTraverse('spectator_game_stats');
+		playerrows = topmostpanel.FindChildTraverse( 'spectator_game_stats' );
 		if (!playerrows) return;
-		playerrows = playerrows.FindChildTraverse('PlayerRows');
+		playerrows = playerrows.FindChildTraverse( 'PlayerRows' );
 		if (!playerrows) return;
 	}
 
 	// Get HeroImages
 	var heroimages = [];
-	heroimages = FindPanels(playerrows, 'DOTAHeroImage', heroimages, 0);
+	heroimages = FindPanels( playerrows, 'DOTAHeroImage', heroimages, 0 );
 
 	// Replace HeroImages
-	for (var i = 0; i < heroimages.length; i++) {
-		ReplaceIcon(heroimages[i]);
+	for (var i=0; i<heroimages.length; i++) {
+		ReplaceIcon( heroimages[i] );
 	}
 }
 
 /////////////////////////////////////
 // Collects all child of 'parent' with type 'name'
-function FindPanels(parent, name, ret, level) {
+function FindPanels( parent, name, ret, level ) {
 	// if parent can't have children, return
 	if (!parent.Children) return ret;
 	var children = parent.Children();
-	if (children.length < 1) return ret;
+	if (children.length<1) return ret;
 
 	// traverse panel's children
-	for (var i = 0; i < children.length; i++) {
+	for( var i=0; i<children.length; i++ ) {
 		// only for matching
-		if (children[i].paneltype == name) {
-			ret.push(children[i]);
+		if (children[i].paneltype==name) {
+			ret.push( children[i] );
 		}
 
 		// recursive traversal
-		ret = FindPanels(children[i], name, ret, level + 1);
+		ret = FindPanels( children[i], name, ret, level + 1 );
 	}
 
 	return ret;
 }
 
 // Replaces 'HeroImage' panel to a custom image
-function ReplaceIcon(heroimage) {
+function ReplaceIcon( heroimage ) {
 	// get HeroImage's name and style
 	var heroname = 'npc_dota_hero_' + heroimage.heroname;
 	var style = heroimage.heroimagestyle;
 
 	// add new overlay panel if not exist
-	var overlay = heroimage.FindChild('HeroImageOverlay');
-	if (overlay == null) {
+	var overlay = heroimage.FindChild( 'HeroImageOverlay' );
+	if ( overlay==null ) {
 		overlay = $.CreatePanel('Panel', heroimage, 'HeroImageOverlay');
 		overlay.style.width = '100%';
 		overlay.style.height = '100%';
@@ -264,10 +264,10 @@ function ReplaceIcon(heroimage) {
 	}
 
 	// check hero name to reduce computation
-	if (heroname != overlay.heroname && style == 'landscape') {
+	if (heroname!=overlay.heroname && style=='landscape') {
 		overlay.heroname = heroname;
 
-		if (imagefile[heroname]) {
+		if ( imagefile[heroname] ) {
 			// change hero image if available
 			overlay.style.backgroundImage = 'url("s2r://panorama/images/heroes/thd2_' + heroname + '.png")';
 			//overlay.style.backgroundImage = 'url("s2r://' + imagefile[heroname] + '")';
@@ -288,21 +288,21 @@ function InitSwapChatIcons() {
 	// Get all player names and their hero names, store in 'playernames'
 	var players = Game.GetAllPlayerIDs();
 	playernames = {};
-	for (var i in players) {
+	for( var i in players ) {
 		var p = players[i];
-		var name = Players.GetPlayerName(p);
-		var hero = Players.GetPlayerSelectedHero(p);
+		var name = Players.GetPlayerName( p );
+		var hero = Players.GetPlayerSelectedHero( p );
 		playernames[name] = hero;
 	}
 }
 
 // Loops during game to replace chat hero icons
 function LoopSwapChatIcons() {
-	if (!Game.GameStateIsBefore(DOTA_GameState.DOTA_GAMERULES_STATE_PRE_GAME)) {
+	if (!Game.GameStateIsBefore( DOTA_GameState.DOTA_GAMERULES_STATE_PRE_GAME )) {
 		InitSwapChatIcons();
 		SwapChatIcons();
 	}
-	$.Schedule(0.1, LoopSwapChatIcons);
+	$.Schedule( 0.1, LoopSwapChatIcons );
 }
 
 // Replace Chat Hero Icons
@@ -310,33 +310,33 @@ function SwapChatIcons() {
 	// get topmostpanel
 	if (!topmostpanel) {
 		topmostpanel = $.GetContextPanel();
-		while (topmostpanel.GetParent() != null) {
+		while( topmostpanel.GetParent()!=null ) {
 			topmostpanel = topmostpanel.GetParent();
 		}
 	}
 
 	// get chat container
-	if (!chat) chat = topmostpanel.FindChildTraverse('ChatLinesPanel');
+	if (!chat) chat = topmostpanel.FindChildTraverse( 'ChatLinesPanel' );
 
 	// find all Images (not HeroImages, chat are quite different)
 	var images = [];
-	images = FindPanels(chat, 'Image', images, 0);
+	images = FindPanels( chat, 'Image', images, 0 );
 
-	for (var i in images) {
+	for( var i in images ) {
 		var image = images[i];
 
 		// only heroicon images
-		if (!image.BHasClass('HeroIcon')) continue;
+		if (!image.BHasClass || !image.BHasClass( 'HeroIcon' )) continue;
 
 
 		// if image already has been changed by this, pass
-		if (image.FindChild('HeroImageOverlay')) continue;
+		if (image.FindChild( 'HeroImageOverlay' )) continue;
 
 		// find player name who sent the chat
 		var text = image.GetParent().text.split(':')[0];
 		var player;
-		for (var j in playernames) {
-			if (text.indexOf(j) != -1) {
+		for( var j in playernames ) {
+			if ( text.indexOf( j ) != -1 ) {
 				player = j;
 				break;
 			}
@@ -346,7 +346,7 @@ function SwapChatIcons() {
 		var heroname = playernames[player];
 
 		// add new overlay panel
-		var overlay = image.FindChild('HeroImageOverlay');
+		var overlay = image.FindChild( 'HeroImageOverlay' );
 		if (!overlay) {
 			overlay = $.CreatePanel('Panel', image, 'HeroImageOverlay');
 			overlay.style.width = '100%';
@@ -354,7 +354,7 @@ function SwapChatIcons() {
 			overlay.style.backgroundSize = '100% 100%';
 		}
 
-		if (imagefile[heroname]) {
+		if ( imagefile[heroname] ) {
 			// change hero image if available
 			overlay.style.backgroundImage = 'url("s2r://panorama/images/heroes/thd2_' + heroname + '.png")'
 			//overlay.style.backgroundImage = 'url("s2r://' + imagefile[heroname] + '")';
@@ -368,14 +368,14 @@ function SwapChatIcons() {
 
 //---------------------------------------------
 // Init
-; (function () {
-
-
-	$.Msg("Hello from tempportrait, World!");
+;(function() {
+	
+	
+	$.Msg( "Hello from tempportrait, World!" );
 
 	// run when pregame starts
-	GameEvents.Subscribe('game_rules_state_change', function () {
-		if (Game.GameStateIsBefore(DOTA_GameState.DOTA_GAMERULES_STATE_PRE_GAME)) return;
+	GameEvents.Subscribe( 'game_rules_state_change', function() {
+		if (Game.GameStateIsBefore( DOTA_GameState.DOTA_GAMERULES_STATE_PRE_GAME )) return;
 		SwapInGameIcons();
 		SwapSpectatorIcons();
 		SwapChatIcons();

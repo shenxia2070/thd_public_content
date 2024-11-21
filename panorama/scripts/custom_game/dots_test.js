@@ -64,16 +64,8 @@ function aaa_test (data){
     // GameUI.SetDefaultUIEnabled( DotaDefaultUIElement_t.DOTA_DEFAULT_UI_ELEMENT_COUNT, false );
     $.Msg(data)
     const dotaHud = $.GetContextPanel().GetParent().GetParent().GetParent().GetParent()
-    const aim_panel =  dotaHud.FindChildTraverse("HeroPickScreenContents")
-    const aim_panel_2 =  dotaHud.FindChildTraverse("FriendsAndFoes")
-    const aim_panel_3 =  dotaHud.FindChildTraverse("PreMinimapContainer")
-    aim_panel.visible = false
-    aim_panel_2.visible = false
-    aim_panel_3.visible = false
-    // $.Msg(data[1])
-    // $.Msg(data[2])
-    // $.Msg(data[3])
-    Player_box(data)
+    const aim_panel =  dotaHud.FindChildTraverse("HeroImageOverlay")
+    $.Msg(aim_panel)
     
     
 }

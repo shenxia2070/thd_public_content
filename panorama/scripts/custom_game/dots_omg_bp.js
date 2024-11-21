@@ -40,21 +40,16 @@ function OMG_player_connect_full(data) {
 
 function OMG_c(data) {
     $.Msg("Occccccccccccccccccccc");
-    var dotaHud = $.GetContextPanel().GetParent().GetParent().GetParent().GetParent()
-    var dotaHud_child = dotaHud.FindChildrenWithClassTraverse("TopBarPlayerSlot")
-    // $.Msg(dotaHud_child);
-    for (let index = 0; index < dotaHud_child.length; index++) {
-        var element = dotaHud_child[index];
-        // $.Msg(element.id);
-        if (element.id[0] == "R") {
-            $.Msg(element.id[13] == 0);
-            
-        }else if (element.id[0] == "D") {
-            $.Msg(element.id[10]);
-            
-        }
-        
-    }
+    $.Msg(all_hero_data)
+    $.Msg(hakurei_ban_data)
+    $.Msg(moriya_ban_data)
+    $.Msg(All_list)
+    $.Msg(hakurei_team)
+    $.Msg(moriya_team)
+    $.Msg(hakurei_box_data)
+    $.Msg(moriya_box_data)
+    $.Msg(BP_state)
+    Show_BP_display()
 }
 
 function OMG_CSX(data) {
@@ -417,7 +412,7 @@ function Create_BP_UI(data) {
 
         if (First_init) {
             //只执行一次
-            $.Msg("只执行一次")
+            // $.Msg("只执行一次")
             if (data[2]["Hakurei_id"][index] != null) {
                 hakurei_team[index] = data[2]["Hakurei_id"][index]
                 hakurei_box_data[index] = data[2]["Hakurei_id"][index]
@@ -430,8 +425,8 @@ function Create_BP_UI(data) {
             }else{
                 moriya_team[index] = -1
             }
-            $.Msg(`博丽  ${index}号名字是 ：${Players.GetPlayerName(hakurei_team[index])}`);
-            $.Msg(`守矢  ${index}号名字是 ：${Players.GetPlayerName(moriya_team[index])}`);
+            $.Msg(`博丽  ${index}号ID是${hakurei_team[index]}, 名字是 ：${Players.GetPlayerName(hakurei_team[index])}`);
+            $.Msg(`守矢  ${index}号ID是${moriya_team[index]} ,名字是 ：${Players.GetPlayerName(moriya_team[index])}`);
         }
         
         // 为玩家创建一个版面，然后这个版面只能自己看到，通过别的玩家事件修改面板
@@ -470,13 +465,20 @@ function Player_box(parent,data,index,team) {
     }else if (screen_width == 3440 && screen_height == 1440) {
         margin_left = 100
     }
-    $.Msg(`玩家${Players.GetPlayerName(Game.GetLocalPlayerID())}的分辨率是 ：${screen_width}*${screen_height},margin_left是${margin_left}`);  
+    // $.Msg(`玩家${Players.GetPlayerName(Game.GetLocalPlayerID())}的分辨率是 ：${screen_width}*${screen_height},margin_left是${margin_left}`);  
     Player_box.style.marginLeft = margin_left + "px" // 根据屏幕分辨率设置间距
     Player_box.style.marginRight = margin_left + "px" // 根据屏幕分辨率设置间距
 
     Create_Player_box(Player_box,data,index,team)
 }
 
+/**
+ * 创建Player_box,Player_box是竖版,里面有小盒子,分别在小盒子里放相应的东西
+ * @param {Panel} parent Player_box的父级
+ * @param {Array} data 传入的数据,小技能List = data[1],大招list = data[3]
+ * @param {Number} index 传入的序号
+ * @param {Number} team 传入的队伍
+ */
 function Create_Player_box(parent,data,index,team){
     // $.Msg(parent)
 
@@ -506,7 +508,7 @@ function Create_Player_box(parent,data,index,team){
     Create_show_box(show_box,index)//初始化show_box
     Create_select_box(select_box,data,index)//初始化select_box
     Create_enemy_show_box(enemy_show_box,index)//初始化enemy_show_box
-    // Create_swap_button(swap_button,data)//给Button绑定交换函数
+    // Create_swap_button(swap_button,data,index)//给Button绑定交换函数
 
     // my_player_data版初始化,显示玩家的头像与ID,先判断玩家的队伍，根据index号box，显示数组内的玩家
     function Create_player_data(parent,my_player_data,enemy_player_data,index) {
@@ -1250,13 +1252,21 @@ function other_flash(data) {
 //显示玩家id的函数，每次交换头像都会调用，传入参数为box序号和玩家id
 
 
-// swap_button交换英雄按钮
-function Create_swap_button(button) {
-    const Label = $.CreatePanel("Label", button , "button_Label")
-    Label.text = "交换英雄"
-    
-    button.SetPanelEvent("onactivate", function () {
+/**
+ * swap_button交换英雄按钮
+ * @param {Panel} swap_button - Button的Panel
+ * @param {Array} data - 传入的数据
+ * @param {Number} index - 传入的序号
+ */
+function Create_swap_button(swap_button,data,index) {
+    const Label = $.CreatePanel("Label", swap_button , "button_Label")
+    Label.text = " " //Button的Label
+    if (hakurei_team[index] == Game.GetLocalPlayerID() || moriya_team[index] == Game.GetLocalPlayerID()) {
+        swap_button.visible = false
+    }
+    swap_button.SetPanelEvent("onactivate", function () {
         //点击以后首先确认按钮id的状态，如果正在交换中，则return，如果未交换，则弹出是否交换按钮
-
+        $.Msg("  id   ")
+        $.Msg(hakurei_team[index] == Game.GetLocalPlayerID())
     })
 }
