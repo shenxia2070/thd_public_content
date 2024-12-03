@@ -1,8 +1,4 @@
 <root>
-	<script>
-
-	</script>
-
 	<scripts>
 		<!-- 资源重载 -->
 		<include src="file://{resources}/scripts/custom_game/tempportrait.js"/>
@@ -20,10 +16,7 @@
 
 		<!-- 完成后请重新注释掉上面这句 -->
 
-		<!-- 可能缺少了部分新人物,我这边没有图像源文件,需要手动加一下
-			(在panorama\scripts\custom_game\fake_loader.xml和
-			panorama\scripts\custom_game\tempportrait.js)
-		-->
+		<!-- 可能缺少了部分新人物,我这边没有图像源文件,需要手动加一下 (在panorama\scripts\custom_game\fake_loader.xml和panorama\scripts\custom_game\tempportrait.js) -->
 
 
 		<!-- 捐赠箱(好像都404了...) -->
@@ -33,10 +26,12 @@
 		<!-- 目前只会在5_thdots_melee才启用 -->
 		<CustomUIElement type="HudTopBar" layoutfile="file://{resources}/layout/custom_game/thd_multiteam_top_scoreboard.xml" />
 		<CustomUIElement type="GameSetup" layoutfile="file://{resources}/layout/custom_game/thd_team_select.xml" />
+
 		<CustomUIElement type="FlyoutScoreboard" layoutfile="file://{resources}/layout/custom_game/thd_multiteam_flyout_scoreboard.xml" />
 		<CustomUIElement type="HeroSelection" layoutfile="file://{resources}/layout/custom_game/thd_multiteam_hero_select_overlay.xml" />
+		
 		<CustomUIElement type="EndScreen" layoutfile="file://{resources}/layout/custom_game/thd_multiteam_end_screen.xml" />
-
 		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/thd_hud_chat_wheel.xml" />
+		<CustomUIElement type="HeroSelection" layoutfile="file://{resources}/layout/custom_game/omg_bp/layout.xml" />
 	</Panel>
 </root>

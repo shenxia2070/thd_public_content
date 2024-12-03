@@ -259,6 +259,8 @@
     flow-children: right;
     opacity: 1;
     /* background-color: gray; */
+    
+    font-family: defaultFont;
 }
 .BP_HUD_box_red {
     /* width: 1080px; */
@@ -272,6 +274,7 @@
 }
 
 /* 点击别人的技能闪一下 */
+
 @keyframes 'image-flash' 
 {
   0% {
