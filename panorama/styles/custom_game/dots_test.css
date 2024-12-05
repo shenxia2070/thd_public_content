@@ -36,13 +36,14 @@
     /* margin: 0 40px 0 40px; */
 }
 .Player_box_element {
-    margin-top: 10px;
+    margin-top: 5px;
+    font-size: 18px;
 	horizontal-align: center;
 }
 /* my_player_data是显示玩家的头像与ID */
 .my_player_data {
     width: 100%;
-    height: 50px;
+    height: 30px;
     margin-top: 5px;
     /* background-color: red; */
     horizontal-align: center;
@@ -55,7 +56,7 @@
 }
 .enemy_player_data{
     width: 100%;
-    height: 50px;
+    height: 30px;
     margin-top: 5px;
     /* background-color: red; */
     horizontal-align: center;
@@ -186,8 +187,8 @@
 .swap_button {
     width: fit-children;
     height: fit-children;
-    margin: 5px;
-    padding: 5px;
+    margin: 2px;
+    padding: 2px;
     color: #ff6d03;
     font-size: 15px;
     background-color: #00454d;
