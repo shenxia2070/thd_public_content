@@ -938,9 +938,10 @@ module.exports = ReactPropTypesSecret;
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "useGameEvent": () => (/* binding */ useGameEvent)
 /* harmony export */ });
-/* unused harmony exports createPortal, render, useNetTableKey, useNetTableValues, useRegisterForUnhandledEvent */
+/* unused harmony exports createPortal, useNetTableKey, useNetTableValues, useRegisterForUnhandledEvent */
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "../../../node_modules/react/index.js");
 /* harmony import */ var panorama_polyfill_x_lib_console__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! panorama-polyfill-x/lib/console */ "../../../node_modules/panorama-polyfill-x/lib/console.js");
 /* harmony import */ var panorama_polyfill_x_lib_timers__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! panorama-polyfill-x/lib/timers */ "../../../node_modules/panorama-polyfill-x/lib/timers.js");
@@ -22414,7 +22415,6 @@ const OMGBP = () => {
     const LocalPlayerInfo = Game.GetLocalPlayerInfo();
     const [bp_list_all, set_bp_list_all] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(undefined);
     const [State, setState] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(1); //1表示ban人时间，2表示选人时间,3表示展示时间
-    const [jiaId, setjiaId] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]);
     const null_show_box = { hero_name: ``, abi_name: ``, ult_name: `` };
     const [BpListResultAll, setBpListResultAll] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)({
         hakurei: {},
@@ -22425,16 +22425,7 @@ const OMGBP = () => {
         hakurei: [null_show_box, null_show_box, null_show_box, null_show_box, null_show_box],
         moriya: [null_show_box, null_show_box, null_show_box, null_show_box, null_show_box],
     });
-    // console.log('OMGBP 11111111111111');
-    // useEffect(() => {
-    //     GameEvents.Subscribe("React_test", Click);
-    // }, []);
     (0,react_panorama_x__WEBPACK_IMPORTED_MODULE_2__.useGameEvent)('React_test', data => {
-        console.log('React_test235674921 ');
-        // @ts-ignore
-        console.log(data.bp_list_result);
-        // @ts-ignore
-        setjiaId(data.jiaId);
         // @ts-ignore
         set_bp_list_all(data.bp_list_all);
         // @ts-ignore
@@ -22463,8 +22454,13 @@ const OMGBP = () => {
         else if (data.data == 3) {
             // @ts-ignore
             GameModeLabel.text = "决策时间";
+            invis_strategy_panel();
         }
     }, []);
+    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(() => {
+        console.log('State 变化');
+        console.log(State);
+    }, [State]);
     (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(() => {
         console.log('useEffect, 执行一次11');
         set_bp_list_all(undefined);
@@ -22472,35 +22468,11 @@ const OMGBP = () => {
         // console.log(Game.GetLocalPlayerInfo().player_team_id == DOTATeam_t.DOTA_TEAM_GOODGUYS);
         GameEvents.SendCustomGameEventToServer('React_BP_Init', { data: 'test1' });
     }, []);
-    // useEffect(() => {
-    //     // console.log('bp_list_all变化');
-    //     // console.log(bp_list_all);
-    //     // console.log('jiaId变化');
-    //     // console.log(jiaId);
-    //     // console.log('jiaId变化');
-    //     // console.log(jiaId);
-    //     // if (bp_list_all !== undefined) {
-    //     //     console.log(Object.keys(bp_list_all[1]['abi_list']));
-    //     //     console.log(Object.keys(bp_list_all[1]['abi_list']).length);
-    //     // }
-    // }, [bp_list_all, jiaId]);
     (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(() => {
         console.log('BpListResult变化');
-        console.log(BpListResultAll.hakurei[1]);
-        // if (bp_list_all !== undefined) {
-        //     console.log(Object.keys(bp_list_all[1]['abi_list']));
-        //     console.log(Object.keys(bp_list_all[1]['abi_list']).length);
-        // }
+        console.log(BpListResultAll.hakurei);
     }, [BpListResultAll]);
-    // useEffect(() => {
-    //     console.log('showBoxs变化');
-    //     console.log(showBoxs);
-    //     // if (showBoxs !== undefined) {
-    //     //     console.log(Object.keys(showBoxs[1]['abi_list']).length);
-    //     // }
-    //     // GameEvents.SendCustomGameEventToServer('ChangeResult', {data:null});
-    // }, [showBoxs]);
-    function ClickList(Player_box_index, key_string, index, PlayerID, panel) {
+    const ClickList = (0,react__WEBPACK_IMPORTED_MODULE_1__.useCallback)((Player_box_index, key_string, index, PlayerID, panel) => {
         console.log(`${Player_box_index}点击了${key_string}的${index}`);
         // 首先判断id, 是否是自己的盒子
         const LocalPlayerID = Game.GetLocalPlayerID();
@@ -22521,8 +22493,7 @@ const OMGBP = () => {
         }
         if (LocalPlayerID != PlayerID || State == 3) {
             // 若不是自己的盒子, 则不发送,State == 3是展示 ,直接闪烁
-            panel.RemoveClass('flash');
-            panel.AddClass('flash');
+            PanelFlash(panel);
             return;
         }
         else {
@@ -22538,18 +22509,48 @@ const OMGBP = () => {
             // }
             var PlayerData = BpListResultAll[team_tag][Player_box_index][BP_tag];
             PlayerData[key_string] = index;
+            console.log(`这是${BP_tag}的${key_string}的${index}`);
             console.log(PlayerData);
             GameEvents.SendCustomGameEventToServer('ChangeResult', { data: { PlayerData: PlayerData, team: team } });
         }
+    }, [BpListResultAll, State]);
+    const SendSwapButton = (0,react__WEBPACK_IMPORTED_MODULE_1__.useCallback)((Player_box_index, LocalPlayerBoxIndex, team_tag) => {
+        console.log(`${LocalPlayerBoxIndex}号盒子,ID为点击了${Player_box_index}号盒子的交换按钮`);
+        let ChangeReceive = BpListResultAll[team_tag][Player_box_index].ChangeReceiveList;
+        // console.log(ChangeReceive.length);
+        let length = ChangeReceive.length;
+        let NewChangeReceive = [];
+        if (length == undefined) {
+            length = 0;
+            NewChangeReceive = [LocalPlayerBoxIndex];
+        }
+        else {
+            for (let i = 0; i < length; i++) {
+                NewChangeReceive.push(ChangeReceive[i + 1]);
+            }
+        }
+        console.log(NewChangeReceive);
+        const team = Game.GetLocalPlayerInfo().player_team_id;
+        GameEvents.SendCustomGameEventToServer('ChangeReceive', { data: { Player_box_index: Player_box_index, NewChangeReceive: NewChangeReceive, team: team } });
+    }, [BpListResultAll]);
+    if (Game.GetMapInfo().map_name == `maps/dota.vpk`) {
+        return null;
     }
-    return (0,react__WEBPACK_IMPORTED_MODULE_1__.useMemo)(() => ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, { children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Panel, { className: "BP_HUD_box", children: new Array(team_player_number).fill(0).map((item, index) => {
-                return (bp_list_all &&
-                    BpListResultAll && ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Player_box, { Player_box_index: index + 1, bp_list_all: bp_list_all, State: State, showBoxs: showBoxs, setShowBoxs: setShowBoxs, jiaId: jiaId, BpListResultAll: BpListResultAll }, index + 1)));
-            }) }) })), [bp_list_all, State, showBoxs, jiaId, BpListResultAll]);
-    function Player_box({ Player_box_index, bp_list_all, State, showBoxs, setShowBoxs, jiaId, BpListResultAll, }) {
-        // console.log('Player_box' + Player_box_index);
+    if (LocalPlayerInfo.player_id != -1 && LocalPlayerInfo.player_id != 23 && Game.GetMapInfo().map_name != `maps/dota.vpk`) {
+        invis_aim_panel();
+        return (0,react__WEBPACK_IMPORTED_MODULE_1__.useMemo)(() => ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, { children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Panel, { className: "BP_HUD_box", children: new Array(5).fill(0).map((item, index) => {
+                    return (bp_list_all &&
+                        BpListResultAll && ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Player_box, { Player_box_index: index + 1, bp_list_all: bp_list_all, State: State, showBoxs: showBoxs, setShowBoxs: setShowBoxs, BpListResultAll: BpListResultAll }, index + 1)));
+                }) }) })), [bp_list_all, State, showBoxs, BpListResultAll]);
+    }
+    else {
+        //观战
+        return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, { children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Panel, { style: { width: '100%', height: '500px', backgroundColor: '#252525', marginTop: '20%' }, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { style: { width: '100%', height: '50px', verticalAlign: 'center', textAlign: 'center', fontSize: '80px', color: '#fff' }, text: '观战模式' }) }) });
+    }
+    function Player_box({ Player_box_index, bp_list_all, State, showBoxs, setShowBoxs, BpListResultAll, }) {
         // @ts-ignore
         var PlayerID;
+        var EnemyID;
         const LocalPlayerInfo = Game.GetLocalPlayerInfo();
         const LocalPlayerID = LocalPlayerInfo.player_id;
         const team_tag = Game.GetLocalPlayerInfo().player_team_id == DOTATeam_t.DOTA_TEAM_GOODGUYS ? 'hakurei' : 'moriya';
@@ -22562,18 +22563,45 @@ const OMGBP = () => {
         else if (State == 2) {
             BP_tag = 'PickList';
         }
+        else if (State == 3) {
+            BP_tag = 'PickList';
+        }
         if (BpListResultAll[team_tag][Player_box_index] != undefined) {
             // console.log(BpListResultAll[team_tag][Player_box_index].PlayerID);
             PlayerID = BpListResultAll[team_tag][Player_box_index].PlayerID;
+            EnemyID = BpListResultAll[enemy_team_tag][Player_box_index].PlayerID;
         }
         else {
             return null;
         }
-        var PlayerID_string = jiaId[PlayerID];
-        if (PlayerID == LocalPlayerID) {
-            PlayerID_string = LocalPlayerInfo.player_name;
+        let PlayerSteamID = '';
+        let EnemyPlayerSteamID = '';
+        let PlayerID_string = '';
+        let EnemyID_string = '';
+        if (Game.GetPlayerInfo(PlayerID) != undefined) {
+            PlayerID_string = Game.GetPlayerInfo(PlayerID).player_name;
+            PlayerSteamID = Game.GetPlayerInfo(PlayerID).player_steamid;
         }
-        var EnemyID_string = jiaId[BpListResultAll[enemy_team_tag][Player_box_index].PlayerID];
+        if (Game.GetPlayerInfo(EnemyID) != undefined) {
+            EnemyID_string = Game.GetPlayerInfo(EnemyID).player_name;
+            EnemyPlayerSteamID = Game.GetPlayerInfo(EnemyID).player_steamid;
+        }
+        if (PlayerID == 23) {
+            PlayerID_string = `测试ID${PlayerID}`;
+        }
+        if (EnemyID == 23) {
+            EnemyID_string = `测试ID${EnemyID}`;
+        }
+        let LocalPlayerBoxIndex;
+        for (let i = 1; i < 6; i++) {
+            // console.log(`${i}号盒子`);
+            // console.log(BpListResultAll[team_tag][i]);
+            if (BpListResultAll[team_tag][i] != undefined) {
+                if (BpListResultAll[team_tag][i].PlayerID == LocalPlayerID) {
+                    LocalPlayerBoxIndex = i;
+                }
+            }
+        }
         let hero_list;
         let abi_list;
         let ult_list;
@@ -22595,55 +22623,65 @@ const OMGBP = () => {
             return null;
         }
         // console.log('测试=================');
-        let my_hero_name = hero_list[BpListResultAll[team_tag][Player_box_index].BanList.hero];
-        let my_abi_name = abi_list[BpListResultAll[team_tag][Player_box_index].BanList.abi];
-        let my_ult_name = ult_list[BpListResultAll[team_tag][Player_box_index].BanList.ult];
-        let enemy_hero_name = hero_list[BpListResultAll[enemy_team_tag][Player_box_index].BanList.hero];
-        let enemy_abi_name = abi_list[BpListResultAll[enemy_team_tag][Player_box_index].BanList.abi];
-        let enemy_ult_name = ult_list[BpListResultAll[enemy_team_tag][Player_box_index].BanList.ult];
+        let my_hero_name = hero_list[BpListResultAll[team_tag][Player_box_index][BP_tag].hero];
+        let my_abi_name = abi_list[BpListResultAll[team_tag][Player_box_index][BP_tag].abi];
+        let my_ult_name = ult_list[BpListResultAll[team_tag][Player_box_index][BP_tag].ult];
+        let enemy_hero_name = hero_list[BpListResultAll[enemy_team_tag][Player_box_index][BP_tag].hero];
+        let enemy_abi_name = abi_list[BpListResultAll[enemy_team_tag][Player_box_index][BP_tag].abi];
+        let enemy_ult_name = ult_list[BpListResultAll[enemy_team_tag][Player_box_index][BP_tag].ult];
         if (State == 2) {
-            my_hero_name = hero_list[BpListResultAll[team_tag][Player_box_index].PickList.hero];
-            my_abi_name = abi_list[BpListResultAll[team_tag][Player_box_index].PickList.abi];
-            my_ult_name = ult_list[BpListResultAll[team_tag][Player_box_index].PickList.ult];
+            my_hero_name = hero_list[BpListResultAll[team_tag][Player_box_index][BP_tag].hero];
+            my_abi_name = abi_list[BpListResultAll[team_tag][Player_box_index][BP_tag].abi];
+            my_ult_name = ult_list[BpListResultAll[team_tag][Player_box_index][BP_tag].ult];
         }
-        const my_ban_hero_number = BpListResultAll[team_tag][Player_box_index].BanList.hero;
-        const my_ban_abi_number = BpListResultAll[team_tag][Player_box_index].BanList.abi;
-        const my_ban_ult_number = BpListResultAll[team_tag][Player_box_index].BanList.ult;
-        const enemy_ban_hero_number = BpListResultAll[enemy_team_tag][Player_box_index].BanList.hero;
-        const enemy_ban_abi_number = BpListResultAll[enemy_team_tag][Player_box_index].BanList.abi;
-        const enemy_ban_ult_number = BpListResultAll[enemy_team_tag][Player_box_index].BanList.ult;
-        const my_pick_hero_number = BpListResultAll[team_tag][Player_box_index].PickList.hero;
-        const my_pick_abi_number = BpListResultAll[team_tag][Player_box_index].PickList.abi;
-        const my_pick_ult_number = BpListResultAll[team_tag][Player_box_index].PickList.ult;
-        const enemy_pick_hero_number = BpListResultAll[enemy_team_tag][Player_box_index].PickList.hero;
-        const enemy_pick_abi_number = BpListResultAll[enemy_team_tag][Player_box_index].PickList.abi;
-        const enemy_pick_ult_number = BpListResultAll[enemy_team_tag][Player_box_index].PickList.ult;
-        console.log(BpListResultAll.hakurei[Player_box_index].ChangeReceiveList);
+        const my_ban_hero_number = BpListResultAll[team_tag][Player_box_index][BP_tag].hero;
+        const my_ban_abi_number = BpListResultAll[team_tag][Player_box_index][BP_tag].abi;
+        const my_ban_ult_number = BpListResultAll[team_tag][Player_box_index][BP_tag].ult;
+        const enemy_ban_hero_number = BpListResultAll[enemy_team_tag][Player_box_index][BP_tag].hero;
+        const enemy_ban_abi_number = BpListResultAll[enemy_team_tag][Player_box_index][BP_tag].abi;
+        const enemy_ban_ult_number = BpListResultAll[enemy_team_tag][Player_box_index][BP_tag].ult;
+        const my_pick_hero_number = BpListResultAll[team_tag][Player_box_index][BP_tag].hero;
+        const my_pick_abi_number = BpListResultAll[team_tag][Player_box_index][BP_tag].abi;
+        const my_pick_ult_number = BpListResultAll[team_tag][Player_box_index][BP_tag].ult;
+        const enemy_pick_hero_number = BpListResultAll[enemy_team_tag][Player_box_index][BP_tag].hero;
+        const enemy_pick_abi_number = BpListResultAll[enemy_team_tag][Player_box_index][BP_tag].abi;
+        const enemy_pick_ult_number = BpListResultAll[enemy_team_tag][Player_box_index][BP_tag].ult;
+        // console.log('Player_box' + Player_box_index + 'ChangeReceiveList :');
+        const ChangeReceiveList = Object.values(BpListResultAll.hakurei[Player_box_index].ChangeReceiveList);
+        // console.log(ChangeReceiveList.length);
+        for (let i = 0; i < ChangeReceiveList.length; i++) {
+            // console.log(`${Player_box_index}的ChangeReceiveList[${i}] : ${ChangeReceiveList[i]}`);
+        }
         const { margin_left, margin_right } = GetMargin(Player_box_index);
-        return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, { children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Panel, { className: "Player_box", style: { marginLeft: margin_left, marginRight: margin_right }, children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Panel, { className: "my_player_data", style: { marginTop: State == 3 ? '20%' : '2px' }, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Panel, { style: { width: '100%', height: '50px' }, children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(DOTAAvatarImage, { style: { width: '30px', height: '100%', marginLeft: '25%' }, steamid: 'local' }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { className: "Player_box_element", style: { color: '#C0C0C0' }, text: PlayerID_string })] }) }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Panel, { className: "show_box", children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Panel, { className: "hero_img_box", children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(DOTAHeroMovie, { className: "hero_image_portrait", heroname: my_hero_name }) }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Panel, { className: "ability_info", children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Panel, { className: "hero_name", children: my_hero_name && ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { className: "sub_label", text: $.Localize(`#${my_hero_name}`), style: { color: '#C0C0C0', fontSize: '15px' } })) }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Panel, { className: "show_ability_box", children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Panel, { className: "ability", children: my_abi_name && ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(DOTAAbilityImage, { className: "ability", showtooltip: true, abilityname: my_abi_name, style: { width: '100%', height: '100%' } })) }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Panel, { className: "ability", children: my_ult_name && ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(DOTAAbilityImage, { className: "ability", showtooltip: true, abilityname: my_ult_name, style: { width: '100%', height: '100%' } })) })] })] })] }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Panel, { className: "select_box div_1", style: { visibility: State == 3 ? 'collapse' : 'visible' }, children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { className: "sub_label", style: { color: '#C0C0C0' }, text: '少女' }), new Array(6).fill(0).map((item, index) => {
+        return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, { children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Panel, { className: "Player_box", style: { marginLeft: margin_left, marginRight: margin_right }, children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Panel, { className: "my_player_data", style: { marginTop: State == 3 ? '20%' : '2px' }, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Panel, { style: { width: '100%', height: '50px' }, children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(DOTAAvatarImage, { style: { width: '30px', height: '100%', marginLeft: '25%' }, steamid: PlayerSteamID }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { className: "Player_box_element", style: { color: '#C0C0C0' }, text: PlayerID_string })] }) }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Panel, { className: "show_box", children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Panel, { className: "hero_img_box", onactivate: panel => PanelFlash(panel), children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(DOTAHeroMovie, { className: "hero_image_portrait", heroname: my_hero_name }) }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Panel, { className: "ability_info", children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Panel, { className: "hero_name", children: my_hero_name && ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { className: "sub_label", text: $.Localize(`#${my_hero_name}`), style: { color: '#C0C0C0', fontSize: '15px' } })) }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Panel, { className: "show_ability_box", children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Panel, { className: "ability", children: my_abi_name && ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(DOTAAbilityImage, { className: "ability", showtooltip: true, abilityname: my_abi_name, style: { width: '100%', height: '100%' }, onactivate: (panel) => { PanelFlash(panel); } })) }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Panel, { className: "ability", children: my_ult_name && ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(DOTAAbilityImage, { className: "ability", showtooltip: true, abilityname: my_ult_name, style: { width: '100%', height: '100%' }, onactivate: (panel) => { PanelFlash(panel); } })) })] })] })] }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Panel, { className: "select_box div_1", style: { visibility: State == 3 ? 'collapse' : 'visible' }, children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { className: "sub_label", style: { color: '#C0C0C0' }, text: '少女' }), new Array(6).fill(0).map((item, index) => {
                                 return (hero_list[index + 1] && ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Image, { className: `hero_image ${enemy_ban_hero_number == index + 1 ? 'banned' : ''} ${(State == 1 && my_ban_hero_number == index + 1) ? 'banned' : ''} ${(State == 2 && my_pick_hero_number == index + 1) ? "select_ability" : ''}`, src: `s2r://panorama/images/heroes/thd2_${hero_list[index + 1]}_png.vtex`, onactivate: panel => ClickList(Player_box_index, key_hero, index + 1, PlayerID, panel) }, index + 1)));
                             })] }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Panel, { className: "select_box div_2", style: { visibility: State == 3 ? 'collapse' : 'visible' }, children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { className: "sub_label", style: { color: '#C0C0C0' }, text: '普通技能' }), new Array(8).fill(0).map((item, index) => {
                                 return (abi_list[index + 1] && ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(DOTAAbilityImage, { className: `ability ${enemy_ban_abi_number == index + 1 ? 'banned' : ''} ${(State == 1 && my_ban_abi_number == index + 1) ? 'banned' : ''} ${(State == 2 && my_pick_abi_number == index + 1) ? "select_ability" : ''}`, showtooltip: true, abilityname: abi_list[index + 1], onactivate: panel => ClickList(Player_box_index, key_abi, index + 1, PlayerID, panel) }, index + 1)));
                             })] }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Panel, { className: "select_box div_3", style: { visibility: State == 3 ? 'collapse' : 'visible' }, children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { className: "sub_label", style: { color: '#C0C0C0' }, text: '终极技能' }), new Array(8).fill(0).map((item, index) => {
                                 return (ult_list[index + 1] && ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(DOTAAbilityImage, { className: `ability ${enemy_ban_ult_number == index + 1 ? 'banned' : ''} ${(State == 1 && my_ban_ult_number == index + 1) ? 'banned' : ''} ${(State == 2 && my_pick_ult_number == index + 1) ? "select_ability" : ''}`, showtooltip: true, abilityname: ult_list[index + 1], onactivate: panel => ClickList(Player_box_index, key_ult, index + 1, PlayerID, panel) }, index + 1)));
-                            })] }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Panel, { className: "enemy_player_data", style: { marginTop: State == 3 ? '5%' : '5px' }, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Panel, { style: { width: '100%', height: '50px' }, children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(DOTAAvatarImage, { style: { width: '30px', height: '100%', marginLeft: '25%' }, steamid: 'local' }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { className: "Player_box_element", style: { color: '#C0C0C0' }, text: PlayerID_string })] }) }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Panel, { className: "show_box", style: { visibility: State == 3 ? 'visible' : 'collapse' }, children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Panel, { className: "hero_img_box", children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(DOTAHeroMovie, { className: "hero_image_portrait", heroname: enemy_hero_name }) }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Panel, { className: "ability_info", children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Panel, { className: "hero_name", children: enemy_hero_name && ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { className: "sub_label", text: $.Localize(`#${enemy_hero_name}`), style: { color: '#C0C0C0', fontSize: '15px' } })) }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Panel, { className: "show_ability_box", children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Panel, { className: "ability", children: enemy_abi_name && ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(DOTAAbilityImage, { className: "ability", showtooltip: true, abilityname: enemy_abi_name, style: { width: '100%', height: '100%' } })) }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Panel, { className: "ability", children: enemy_ult_name && ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(DOTAAbilityImage, { className: "ability", showtooltip: true, abilityname: enemy_ult_name, style: { width: '100%', height: '100%' } })) })] })] })] }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Panel, { className: 'swap_button', style: { visibility: PlayerID == LocalPlayerID ? 'collapse' : 'visible' }, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(TextButton, { text: '交换少女', style: { color: '#C0C0C0' }, onactivate: () => { console.log('换人'); } }) }), new Array(5).fill(0).map((item, index) => {
+                            })] }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Panel, { className: "enemy_player_data", style: { marginTop: State == 3 ? '5%' : '5px' }, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Panel, { style: { width: '100%', height: '50px' }, children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(DOTAAvatarImage, { style: { width: '30px', height: '100%', marginLeft: '25%' }, steamid: EnemyPlayerSteamID }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { className: "Player_box_element", style: { color: '#C0C0C0' }, text: EnemyID_string })] }) }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Panel, { className: "show_box", style: { visibility: State == 3 ? 'visible' : 'collapse' }, children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Panel, { className: "hero_img_box", onactivate: panel => PanelFlash(panel), children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(DOTAHeroMovie, { className: "hero_image_portrait", heroname: enemy_hero_name }) }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Panel, { className: "ability_info", children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Panel, { className: "hero_name", children: enemy_hero_name && ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { className: "sub_label", text: $.Localize(`#${enemy_hero_name}`), style: { color: '#C0C0C0', fontSize: '15px' } })) }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Panel, { className: "show_ability_box", children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Panel, { className: "ability", children: enemy_abi_name && ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(DOTAAbilityImage, { className: "ability", showtooltip: true, abilityname: enemy_abi_name, style: { width: '100%', height: '100%' }, onactivate: panel => PanelFlash(panel) })) }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Panel, { className: "ability", children: enemy_ult_name && ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(DOTAAbilityImage, { className: "ability", showtooltip: true, abilityname: enemy_ult_name, style: { width: '100%', height: '100%' }, onactivate: panel => PanelFlash(panel) })) })] })] })] }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Panel, { className: 'swap_button', style: { visibility: (PlayerID == LocalPlayerID || State == 3) ? 'collapse' : 'visible' }, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(TextButton, { text: '交换位置', style: { color: '#C0C0C0' }, onactivate: () => SendSwapButton(Player_box_index, LocalPlayerBoxIndex, team_tag) }) }), new Array(5).fill(0).map((item, index) => {
                         let visibility = 'collapse';
+                        for (let i = 0; i < ChangeReceiveList.length; i++) {
+                            if (ChangeReceiveList[i] == index + 1) {
+                                console.log(`${Player_box_index}号盒子收到了${index + 1}盒子的交换`);
+                                visibility = 'visible';
+                            }
+                        }
+                        if (PlayerID != LocalPlayerID) {
+                            visibility = 'collapse';
+                        }
                         if (State == 3) {
                             visibility = 'collapse';
                         }
-                        else if (PlayerID != LocalPlayerID) {
-                            visibility = 'collapse';
-                        }
-                        else {
-                            visibility = 'visible';
-                        }
                         return (
                         //@ts-ignore
-                        (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Panel, { className: '', style: { width: '100%', height: '25px', flowChildren: 'right', visibility: visibility }, children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { className: "Player_box_element", style: { color: '#C0C0C0', marginLeft: '20%' }, text: `${jiaId[index]}请求与你交换` }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Panel, { className: 'swap_button', children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(TextButton, { text: '同意交换', style: { color: '#C0C0C0', marginRight: '1px' }, onactivate: () => ClickSwapButton(Player_box_index, index + 1, PlayerID) }) })] }));
+                        (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Panel, { className: '', style: { width: '100%', height: '30px', flowChildren: 'left', visibility: visibility }, children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Panel, { className: 'swap_button', style: { marginRight: '5%' }, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(TextButton, { text: '同意交换', style: { color: '#C0C0C0' }, onactivate: () => AgreeSwapButton(Player_box_index, index + 1) }) }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { className: "Player_box_element", style: { color: '#C0C0C0', marginRight: '20%' }, text: `${BpListResultAll.hakurei[index + 1].PlayerID}发起交换` })] }, index + 1));
                     })] }) }));
     }
-    function ClickSwapButton(Player_box_index, index, PlayerID) {
-        console.log('点击了交换按钮');
+    function AgreeSwapButton(Player_box_index, index) {
+        console.log(`${Player_box_index}号盒子,同意了${index}号盒子发送的交换`);
+        const team = Game.GetLocalPlayerInfo().player_team_id;
+        GameEvents.SendCustomGameEventToServer('AgreeReceive', { data: { Player_box_index: Player_box_index, index: index, team: team } });
     }
     function GetMargin(Player_box_index) {
         //屏幕
@@ -22676,7 +22714,38 @@ const OMGBP = () => {
         }
         return { margin_left, margin_right };
     }
+    function invis_aim_panel() {
+        $.Msg("invis_aim_panel()");
+        // @ts-ignore
+        const dotaHud = $.GetContextPanel().GetParent().GetParent().GetParent().GetParent();
+        // @ts-ignore
+        dotaHud.FindChildTraverse("HeroPickScreenContents").visible = false;
+        // @ts-ignore
+        dotaHud.FindChildTraverse("FriendsAndFoes").visible = false;
+        // @ts-ignore
+        dotaHud.FindChildTraverse("PreMinimapContainer").visible = false;
+        // @ts-ignore
+        dotaHud.FindChildTraverse("ContextMenuManager").visible = false; //隐藏右键菜单，禁止交换英雄
+    }
+    function invis_strategy_panel() {
+        $.Msg("invis_strategy_panel()");
+        // @ts-ignore
+        const dotaHud = $.GetContextPanel().GetParent().GetParent().GetParent().GetParent();
+        // @ts-ignore
+        const StrategyScreen = dotaHud.FindChildTraverse("StrategyScreen").visible = false;
+        // @ts-ignore
+        dotaHud.FindChildTraverse("RadiantTeamPlayers").visible = false;
+        // @ts-ignore
+        dotaHud.FindChildTraverse("DireTeamPlayers").visible = false;
+    }
+    function PanelFlash(panel) {
+        if (panel) {
+            panel.RemoveClass('flash');
+            panel.AddClass('flash');
+        }
+    }
 };
+(0,react_panorama_x__WEBPACK_IMPORTED_MODULE_2__.render)((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(OMGBP, {}), $.GetContextPanel());
 
 })();
 

@@ -20,7 +20,7 @@
 
 
 		<!-- 捐赠箱(好像都404了...) -->
-		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/donation.xml" />
+		<!-- <CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/donation.xml" /> -->
 
 		<!-- 以下是多队伍残留,由于麻烦没删(怕删了会有bug)-->
 		<!-- 目前只会在5_thdots_melee才启用 -->

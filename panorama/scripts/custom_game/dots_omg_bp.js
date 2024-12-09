@@ -328,6 +328,7 @@ function Show_BP_display() {
          }
          //  新操作，隐藏选人界面，显示双方选人面板
         show_enemy_UI(all_hero_data)
+         console.log(`load_data is ${load_data}`);
          
          GameEvents.SendCustomGameEventToServer("_Player_set_hero", {load_data});
         //  dotaHud.FindChildTraverse("BP_HUD").visible = false
