@@ -1,4 +1,6 @@
 $.Msg("Mod_selection.js")
+$.Msg("thd_multiteam_end_screen.js");
+$.Msg($("#WinLabelContainer"));
 
 GameEvents.Subscribe("Mod_selection", Mod_selection); //为所有玩家建立模式面板
 GameEvents.Subscribe("BOT_Mod_selection", BOT_Mod_selection); //为所有玩家建立BOT面板

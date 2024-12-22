@@ -1,5 +1,7 @@
 "use strict";
-
+const dotaHud = $.GetContextPanel().GetParent().GetParent().GetParent().GetParent();
+$.Msg("thd_multiteam_end_screen.js11");
+$.Msg(dotaHud.FindChildTraverse('WinLabelContainer').visible = false);
 (function()
 {
 	if ( Game.GetMapInfo().map_display_name === "5_thdots_melee" ) {
@@ -7,6 +9,7 @@
 	} else {
 		return;
 	}
+	
 	
 	if ( ScoreboardUpdater_InitializeScoreboard === null ) { $.Msg( "WARNING: This file requires shared_scoreboard_updater.js to be included." ); }
 
