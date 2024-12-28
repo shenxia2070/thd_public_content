@@ -30,7 +30,7 @@
 		<CustomUIElement type="FlyoutScoreboard" layoutfile="file://{resources}/layout/custom_game/thd_multiteam_flyout_scoreboard.xml" />
 		<CustomUIElement type="HeroSelection" layoutfile="file://{resources}/layout/custom_game/thd_multiteam_hero_select_overlay.xml" />
 		
-		<CustomUIElement type="EndScreen" layoutfile="file://{resources}/layout/custom_game/thd_multiteam_end_screen.xml" />
+		<!-- <CustomUIElement type="EndScreen" layoutfile="file://{resources}/layout/custom_game/thd_multiteam_end_screen.xml" /> -->
 		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/thd_hud_chat_wheel.xml" />
 		<CustomUIElement type="HeroSelection" layoutfile="file://{resources}/layout/custom_game/omg_bp/layout.xml" />
 		<CustomUIElement type="PregameStrategy" layoutfile="file://{resources}/layout/custom_game/omg_bp/layout.xml" />

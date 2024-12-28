@@ -22407,7 +22407,12 @@ var __webpack_exports__ = {};
 
 const EndScreen = () => {
     console.log("EndScreen!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-    return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Panel, { style: { width: '100%', height: '100%', backgroundColor: 'rgba(0, 0, 0, 0.5)' } }));
+    // @ts-ignore
+    const dotaHud = $.GetContextPanel().GetParent().GetParent().GetParent().GetParent();
+    // @ts-ignore
+    dotaHud.FindChildTraverse('GameEndContainer').visible = false;
+    GameUI.SetDefaultUIEnabled(DotaDefaultUIElement_t.DOTA_DEFAULT_UI_ENDGAME, true);
+    return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Panel, { style: { width: '100%', height: '100%', backgroundColor: '#252525' }, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(TextButton, { style: { width: '100px', height: '50px', color: '#C0C0C0' }, className: "end_btn", text: "\u8FD4\u56DE\u4E3B\u754C\u9762" }) }));
 };
 // if (Game.GetMapInfo().map_name == `maps/1_thdots_map.vpk`) render(<EndScreen />, $.GetContextPanel());
 (0,react_panorama_x__WEBPACK_IMPORTED_MODULE_1__.render)((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(EndScreen, {}), $.GetContextPanel());

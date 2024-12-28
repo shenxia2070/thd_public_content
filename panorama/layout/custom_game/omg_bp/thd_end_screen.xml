@@ -7,6 +7,5 @@
         <include src="file://{resources}/layout/custom_game/omg_bp/thd_end_screen.js"></include>
     </scripts>
     <Panel class="root" hittest="false">
-		<Label class="LegendPanel ScoreCol_Deaths" text="测试!!!!"></Label>
 	</Panel>
 </root>

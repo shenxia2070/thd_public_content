@@ -380,7 +380,6 @@ function invis_aim_panel() {
     dotaHud.FindChildTraverse("HeroPickScreenContents").visible = false
     dotaHud.FindChildTraverse("FriendsAndFoes").visible = false
     dotaHud.FindChildTraverse("PreMinimapContainer").visible = false
-    dotaHud.FindChildTraverse("ContextMenuManager").visible = false //隐藏右键菜单，禁止交换英雄
 }
 
 function Create_BP_UI(data) {
