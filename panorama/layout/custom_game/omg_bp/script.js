@@ -22745,6 +22745,9 @@ const OMGBP = () => {
         // @ts-ignore
         const State = (_a = (0,react_panorama_x__WEBPACK_IMPORTED_MODULE_2__.useNetTableValues)('react_table')) === null || _a === void 0 ? void 0 : _a.react_table_state[1];
         const text = prosMyHeroName == undefined ? '' : $.Localize(`#${myHeroName}`);
+        CustomNetTables.SubscribeNetTableListener('react_table', () => {
+            console.log(`检测到react_table发生变化`);
+        });
         if (myHeroName != prosMyHeroName) {
             setmyHeroName(prosMyHeroName);
             // settext(text);

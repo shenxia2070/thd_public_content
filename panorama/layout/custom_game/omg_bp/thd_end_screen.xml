@@ -2,6 +2,7 @@
     <styles>
         <include src="file://{resources}/layout/custom_game/omg_bp/styles.css"></include>
  		<include src="s2r://panorama/styles/dotastyles.vcss_c"></include>
+        <include src="file://{resources}/styles/custom_game/dots_test.css"></include>
     </styles>
     <scripts>
         <include src="file://{resources}/layout/custom_game/omg_bp/thd_end_screen.js"></include>
