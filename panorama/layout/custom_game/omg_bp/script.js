@@ -22495,7 +22495,7 @@ const OMGBP = () => {
         console.log('执行debouncedHandler');
         console.log(CustomNetTables.GetTableValue('react_table', 'bp_list_result'));
         // @ts-ignore
-        setBpListResultAll(CustomNetTables.GetTableValue('react_table', 'bp_list_result'));
+        // setBpListResultAll(CustomNetTables.GetTableValue('react_table', 'bp_list_result'));
     }, 3 // 0.05秒
     );
     const clickList = (Player_box_index, key_string, index, panel) => {
@@ -22676,13 +22676,12 @@ const OMGBP = () => {
         const ChangeReceiveList = Object.values(BpListResultAll[team_tag][Player_box_index].ChangeReceiveList);
         const { margin_left, margin_right } = getMargin(Player_box_index);
         return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, { children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Panel, { className: "Player_box", style: { marginLeft: margin_left, marginRight: margin_right }, children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(PlayerData, { Player_box_index: Player_box_index, prosPlayerSteamID: PlayerSteamID, PlayerID: PlayerID }, `MyPlayerData_${Player_box_index}`), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(MyShowBox, { Player_box_index: Player_box_index, prosMyHeroName: my_hero_name, prosMyAbiName: my_abi_name, prosMyUltName: my_ult_name }, `MyShowBox_${Player_box_index}`), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(SelectBoxHero, { Player_box_index: Player_box_index, PlayerID: PlayerID, propsMyBanHeroNumber: my_ban_hero_number, propsMyPickHeroNumber: my_pick_hero_number, propsEnemyBanHeroNumber: enemy_ban_hero_number }, `SelectBoxHero_${Player_box_index}`), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(SelectBoxAbi, { Player_box_index: Player_box_index, PlayerID: PlayerID, propsMyBanNumber: my_ban_abi_number, propsMyPicNumber: my_pick_abi_number, propsEnemyBanNumber: enemy_ban_abi_number, key_type: key_abi }, `MySelectBoxAbi_${Player_box_index}`), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(SelectBoxAbi, { Player_box_index: Player_box_index, PlayerID: PlayerID, propsMyBanNumber: my_ban_ult_number, propsMyPicNumber: my_pick_ult_number, propsEnemyBanNumber: enemy_ban_ult_number, key_type: key_ult }, `EnemySelectBoxAbi_${Player_box_index}`), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(PlayerData, { Player_box_index: Player_box_index, prosPlayerSteamID: EnemyPlayerSteamID, PlayerID: EnemyID }, `EnemyPlayerData_${Player_box_index}`), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(EnemyShowBox, { Player_box_index: Player_box_index, prosEnemyHeroName: enemy_hero_name, prosEnemyAbiName: enemy_abi_name, prosEnemyUltName: enemy_ult_name }, `EnemyShowBox_${Player_box_index}`), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Panel, { className: "swap_button", style: { visibility: PlayerID == LocalPlayerID || State == 3 ? 'collapse' : 'visible' }, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(TextButton, { text: '交换位置', style: { color: '#C0C0C0' }, onactivate: () => sendSwapButton(Player_box_index, LocalPlayerBoxIndex) }) }), new Array(5).fill(0).map((item, index) => {
-                        return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(AgreeSwapPanel, { Player_box_index: Player_box_index, index: index + 1, LocalPlayerBoxIndex: LocalPlayerBoxIndex }, `AgreeSwapPanel_${Player_box_index}_${index + 1}`));
+                        return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(AgreeSwapPanel, { Player_box_index: Player_box_index, index: index + 1, LocalPlayerBoxIndex: LocalPlayerBoxIndex, BpListResultAll: BpListResultAll }, `AgreeSwapPanel_${Player_box_index}_${index + 1}`));
                     })] }) }));
     }
-    function AgreeSwapPanel({ Player_box_index, index, LocalPlayerBoxIndex }) {
+    function AgreeSwapPanel({ Player_box_index, index, LocalPlayerBoxIndex, BpListResultAll }) {
         var _a;
         const [LocalChangeReceiveList, setLocalChangeReceiveList] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]);
-        const BpListResultAll = CustomNetTables.GetTableValue('react_table', 'bp_list_result');
         //@ts-ignore
         const State = (_a = (0,react_panorama_x__WEBPACK_IMPORTED_MODULE_2__.useNetTableValues)('react_table')) === null || _a === void 0 ? void 0 : _a.react_table_state[1];
         const team = Game.GetLocalPlayerInfo().player_team_id;
@@ -22716,14 +22715,17 @@ const OMGBP = () => {
             info_name = info.player_name;
         }
         return (0,react__WEBPACK_IMPORTED_MODULE_1__.useMemo)(() => {
+            // console.log(`${Player_box_index}的${index}号盒子的AgreeSwapPanel渲染,visibility是${visibility},buttonVisibility是${buttonVisibility}`);
             return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Panel, { className: "", style: { width: '100%', height: '30px', flowChildren: 'left', visibility: visibility }, children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Panel, { style: { marginRight: '5%', width: '70px', height: '30px', flowChildren: 'right' }, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(TextButton, { className: 'swap_button', text: '同意交换', style: { color: '#C0C0C0', visibility: buttonVisibility }, onactivate: () => agreeSwapButton(Player_box_index, index) }) }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { className: "Player_box_element", style: { color: '#C0C0C0', marginRight: '20%' }, text: `${info_name}发起交换` })] }, `AgreeSwapButton_${Player_box_index}_${index}`));
         }, [LocalChangeReceiveList]);
     }
     function PlayerData({ Player_box_index, prosPlayerSteamID, PlayerID }) {
-        var _a;
+        var _a, _b;
         const [PlayerSteamID, setPlayerSteamID] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)('');
         // console.log(`prosPlayerSteamID是${prosPlayerSteamID}`);
-        const BpListResultAll = (_a = (0,react_panorama_x__WEBPACK_IMPORTED_MODULE_2__.useNetTableValues)('react_table')) === null || _a === void 0 ? void 0 : _a.bp_list_result;
+        //@ts-ignore
+        const State = (_a = (0,react_panorama_x__WEBPACK_IMPORTED_MODULE_2__.useNetTableValues)('react_table')) === null || _a === void 0 ? void 0 : _a.react_table_state[1];
+        const BpListResultAll = (_b = (0,react_panorama_x__WEBPACK_IMPORTED_MODULE_2__.useNetTableValues)('react_table')) === null || _b === void 0 ? void 0 : _b.bp_list_result;
         const string = Game.GetPlayerInfo(PlayerID) ? Game.GetPlayerInfo(PlayerID).player_name : '未知玩家';
         // console.log(`id是${id},string是${string}`);
         if (PlayerSteamID != prosPlayerSteamID) {
@@ -22745,9 +22747,8 @@ const OMGBP = () => {
         // @ts-ignore
         const State = (_a = (0,react_panorama_x__WEBPACK_IMPORTED_MODULE_2__.useNetTableValues)('react_table')) === null || _a === void 0 ? void 0 : _a.react_table_state[1];
         const text = prosMyHeroName == undefined ? '' : $.Localize(`#${myHeroName}`);
-        CustomNetTables.SubscribeNetTableListener('react_table', () => {
-            console.log(`检测到react_table发生变化`);
-        });
+        // CustomNetTables.SubscribeNetTableListener('react_table', () => {console.log(`检测到react_table发生变化`);
+        // });
         if (myHeroName != prosMyHeroName) {
             setmyHeroName(prosMyHeroName);
             // settext(text);

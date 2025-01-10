@@ -22407,15 +22407,15 @@ var __webpack_exports__ = {};
 
 
 const EndScreen = () => {
-    console.log('EndScreen!!!!!!!!!!!!!!!!!!!!!!!!!!!');
+    console.log('EndScreen!!!!!!!!!!!!!!!!!!!!!!!!!!');
+    const [endTable, setEndTable] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(CustomNetTables.GetTableValue('end_table', 'keys'));
+    const [isOpen, setIsOpen] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
     // @ts-ignore
     const dotaHud = $.GetContextPanel().GetParent().GetParent().GetParent().GetParent();
     // @ts-ignore
     dotaHud.FindChildTraverse('GameEndContainer').visible = false;
-    const [isOpen, setIsOpen] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
     GameUI.SetDefaultUIEnabled(DotaDefaultUIElement_t.DOTA_DEFAULT_UI_ENDGAME, true);
-    const [endTable, setEndTable] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(CustomNetTables.GetTableValue('end_table', 'keys'));
-    console.log(endTable);
+    // console.log(endTable.chenghao);
     const now = new Date();
     const year = now.getFullYear();
     const month = String(now.getMonth() + 1).padStart(2, '0');
@@ -22429,9 +22429,9 @@ const EndScreen = () => {
             console.log(`CustomNetTables.SubscribeNetTableListener`);
             setEndTable(CustomNetTables.GetTableValue('end_table', 'keys'));
         });
-        // 按Tab呼出商店
+        // 按Tab呼出面板
         (function () {
-            // $.Msg('按Tab呼出商店');
+            // $.Msg('按Tab呼出面板');
             var key = 'Tab';
             const command = 'WheelButton' + Math.floor(Math.random() * 99999999);
             Game.CreateCustomKeyBind(key, command);
@@ -22456,8 +22456,8 @@ const EndScreen = () => {
         hakureiKills = endTable.hakureiKills;
         moriyaKills = endTable.moriyaKills;
     }
-    if (endTable != undefined) {
-        return (0,react__WEBPACK_IMPORTED_MODULE_1__.useMemo)(() => {
+    return (0,react__WEBPACK_IMPORTED_MODULE_1__.useMemo)(() => {
+        if (endTable != undefined) {
             return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Panel, { id: "thd_end_screen", style: {
                     width: '100%',
                     height: '100%',
@@ -22481,14 +22481,14 @@ const EndScreen = () => {
                                     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(TeamDatasTitle, {}), new Array(5).fill(0).map((item, index) => {
                                         return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(TeamData, { TeamNumber: DOTATeam_t.DOTA_TEAM_BADGUYS, index: index }, `hakurei_${index}`);
                                     }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Panel, { style: { width: '100%', height: '14px' } })] })] }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(TextButton, { className: "ButtonBevel", style: { width: '180px', height: '64px', marginTop: '2%', horizontalAlign: 'center', fontSize: '40px' }, text: '结束', onactivate: () => Game.FinishGame() })] }));
-        }, [endTable]);
-    }
-    else {
-        console.log('endTable == undefined');
-        return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {});
-    }
+        }
+        else {
+            console.log('endTable == undefined');
+            return (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {});
+        }
+    }, [endTable]);
     function TeamDatasTitle() {
-        return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Panel, { style: { width: 'fit-children', height: 'fit-children', flowChildren: 'right' }, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Panel, { style: { width: 'fit-children', height: 'fit-children', flowChildren: 'down' }, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Panel, { style: { width: 'fit-children', height: '48px', flowChildren: 'right' }, children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { style: { color: '#94E3E3', fontSize: '20px', verticalAlign: 'center', marginLeft: '30px' }, text: `RANK` }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { style: { color: '#94E3E3', fontSize: '20px', verticalAlign: 'center', marginLeft: '110px' }, text: `本场称号` }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { style: { color: '#94E3E3', fontSize: '20px', verticalAlign: 'center', marginLeft: '90px' }, text: `等级` }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { style: { color: '#94E3E3', fontSize: '20px', verticalAlign: 'center', marginLeft: '80px' }, text: `组合` }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { style: { color: '#94E3E3', fontSize: '20px', verticalAlign: 'center', marginLeft: '200px' }, text: `K/D/A` }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { style: { color: '#94E3E3', fontSize: '20px', verticalAlign: 'center', marginLeft: '110px' }, text: `财产` }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { style: { color: '#94E3E3', fontSize: '20px', verticalAlign: 'center', marginLeft: '250px' }, text: `物品` }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { style: { color: '#94E3E3', fontSize: '20px', verticalAlign: 'center', marginLeft: '230px' }, text: `中立物品` }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { style: { color: '#94E3E3', fontSize: '20px', verticalAlign: 'center', marginLeft: '60px' }, text: `输出` }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { style: { color: '#94E3E3', fontSize: '20px', verticalAlign: 'center', marginLeft: '100px' }, text: `承受` }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { style: { color: '#94E3E3', fontSize: '20px', verticalAlign: 'center', marginLeft: '100px' }, text: `治疗` })] }) }) }));
+        return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Panel, { style: { width: 'fit-children', height: 'fit-children', flowChildren: 'right' }, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Panel, { style: { width: 'fit-children', height: 'fit-children', flowChildren: 'down' }, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Panel, { style: { width: 'fit-children', height: '48px', flowChildren: 'right' }, children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { style: { color: '#94E3E3', fontSize: '20px', verticalAlign: 'center', marginLeft: '30px' }, text: `RANK` }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { style: { color: '#94E3E3', fontSize: '20px', verticalAlign: 'center', marginLeft: '70px' }, text: `本场称号` }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { style: { color: '#94E3E3', fontSize: '20px', verticalAlign: 'center', marginLeft: '70px' }, text: `等级` }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { style: { color: '#94E3E3', fontSize: '20px', verticalAlign: 'center', marginLeft: '80px' }, text: `组合` }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { style: { color: '#94E3E3', fontSize: '20px', verticalAlign: 'center', marginLeft: '180px' }, text: `K/D/A` }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { style: { color: '#94E3E3', fontSize: '20px', verticalAlign: 'center', marginLeft: '70px' }, text: `财产` }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { style: { color: '#94E3E3', fontSize: '20px', verticalAlign: 'center', marginLeft: '250px' }, text: `物品` }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { style: { color: '#94E3E3', fontSize: '20px', verticalAlign: 'center', marginLeft: '200px' }, text: `中立物品` }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { style: { color: '#94E3E3', fontSize: '20px', verticalAlign: 'center', marginLeft: '40px' }, text: `输出` }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { style: { color: '#94E3E3', fontSize: '20px', verticalAlign: 'center', marginLeft: '60px' }, text: `承受` }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { style: { color: '#94E3E3', fontSize: '20px', verticalAlign: 'center', marginLeft: '60px' }, text: `治疗` }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { style: { color: '#94E3E3', fontSize: '20px', verticalAlign: 'center', marginLeft: '60px' }, text: `GPM` }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { style: { color: '#94E3E3', fontSize: '20px', verticalAlign: 'center', marginLeft: '60px' }, text: `XPM` })] }) }) }));
     }
     function TeamData({ TeamNumber, index }) {
         const endTable = CustomNetTables.GetTableValue('end_table', 'keys');
@@ -22500,6 +22500,7 @@ const EndScreen = () => {
             }
         })
             .filter(player => player != undefined);
+        let PlayerID = LocalTeam[index] == undefined ? '' : LocalTeam[index].PlayerID;
         let heroName = LocalTeam[index] == undefined ? '' : LocalTeam[index].hero;
         let abiName = LocalTeam[index] == undefined ? '' : LocalTeam[index].normalSkill;
         let ultName = LocalTeam[index] == undefined ? '' : LocalTeam[index].ultimateSkill;
@@ -22511,10 +22512,17 @@ const EndScreen = () => {
         let doneDamage = LocalTeam[index] == undefined ? '' : LocalTeam[index].doneDamage;
         let takeDamage = LocalTeam[index] == undefined ? '' : LocalTeam[index].takeDamage;
         let heal = LocalTeam[index] == undefined ? '' : LocalTeam[index].heal;
-        return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Panel, { style: { width: 'fit-children', height: 'fit-children', flowChildren: 'right' }, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Panel, { style: { width: 'fit-children', height: '64px', flowChildren: 'right' }, children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { className: `EndData`, style: { width: '100px', marginLeft: '35px' }, text: score }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Panel, { style: { width: '200px', height: '48px', flowChildren: 'right' } }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { className: `EndData`, style: { width: '50px', color: '#94E3E3', marginLeft: '35px' }, text: `${LocalTeam[index] == undefined ? '' : LocalTeam[index].lvl}` }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Image, { src: `s2r://panorama/images/heroes/thd2_${heroName}_png.vtex`, className: "hero_image", style: { verticalAlign: 'center', marginLeft: '10px' } }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(DOTAAbilityImage, { style: { verticalAlign: 'center', marginLeft: '5px' }, abilityname: abiName, showtooltip: true }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(DOTAAbilityImage, { style: { verticalAlign: 'center', marginLeft: '5px' }, abilityname: ultName, showtooltip: true }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { className: `EndData`, style: { width: '100px', marginLeft: '70px' }, text: `${KDA}` }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { className: `EndData`, style: { width: '100px', marginLeft: '50px' }, text: `${gold}` }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Panel, { style: { width: 'fit-children', height: '100%', flowChildren: 'right', marginLeft: '10px' }, children: [new Array(6).fill(0).map((item, index) => {
+        let gpm = LocalTeam[index] == undefined ? '' : LocalTeam[index].gpm;
+        let xpm = LocalTeam[index] == undefined ? '' : LocalTeam[index].xpm;
+        return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Panel, { style: { width: 'fit-children', height: 'fit-children', flowChildren: 'right' }, children: (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Panel, { style: { width: 'fit-children', height: '64px', flowChildren: 'right' }, children: [(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { className: `EndData`, style: { width: '100px', marginLeft: '35px' }, text: score }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Panel, { style: { width: '180px', height: '48px', flowChildren: 'right-wrap' }, children: PlayerID !== '' &&
+                            Object.keys(endTable.chenghao).map((item) => {
+                                if (endTable.chenghao[item] == PlayerID) {
+                                    return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Image, { style: { verticalAlign: 'center', horizontalAlign: 'left' }, src: `file://{resources}/images/hud/end/title_${item}.png` }, `endtitle${item}`));
+                                }
+                            }) }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { className: `EndData`, style: { width: '50px', color: '#94E3E3', marginLeft: '0px' }, text: `${LocalTeam[index] == undefined ? '' : LocalTeam[index].lvl}` }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Image, { src: `s2r://panorama/images/heroes/thd2_${heroName}_png.vtex`, className: "hero_image", style: { verticalAlign: 'center', marginLeft: '0px' } }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(DOTAAbilityImage, { style: { width: '64px', height: '64px', verticalAlign: 'center', marginLeft: '5px' }, abilityname: abiName, showtooltip: true }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(DOTAAbilityImage, { style: { width: '64px', height: '64px', verticalAlign: 'center', marginLeft: '5px' }, abilityname: ultName, showtooltip: true }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { className: `EndData`, style: { width: '100px', marginLeft: '50px' }, text: `${KDA}` }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { className: `EndData`, style: { width: '100px', marginLeft: '30px' }, text: `${gold}` }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Panel, { style: { width: 'fit-children', height: '100%', flowChildren: 'right', marginLeft: '0px' }, children: [new Array(6).fill(0).map((item, index) => {
                                 const itemname = items[index + 1];
                                 return ((0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(DOTAItemImage, { itemname: itemname, style: { width: '64px', height: '47px', marginLeft: '5px', verticalAlign: 'center' } }, `item_${index}`));
-                            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(DOTAItemImage, { itemname: neutralItem, style: { width: '64px', height: '47px', verticalAlign: 'center', marginLeft: '55px' } })] }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { className: `EndData`, style: { width: '100px', marginLeft: '55px' }, text: `${doneDamage}` }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { className: `EndData`, style: { width: '100px', marginLeft: '40px' }, text: `${takeDamage}` }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { className: `EndData`, style: { width: '120px', marginLeft: '40px' }, text: `${heal}` })] }) }));
+                            }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(DOTAItemImage, { itemname: neutralItem, style: { width: '64px', height: '47px', verticalAlign: 'center', marginLeft: '15px' } })] }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { className: `EndData`, style: { width: '100px', marginLeft: '35px', verticalAlign: 'center', horizontalAlign: 'center' }, text: `${doneDamage}` }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { className: `EndData`, style: { width: '100px', marginLeft: '0px', verticalAlign: 'center', horizontalAlign: 'center' }, text: `${takeDamage}` }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { className: `EndData`, style: { width: '100px', marginLeft: '10px', verticalAlign: 'center', horizontalAlign: 'center' }, text: `${heal}` }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { className: `EndData`, style: { width: '100px', marginLeft: '0px', verticalAlign: 'center', horizontalAlign: 'center' }, text: `${gpm}` }), (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Label, { className: `EndData`, style: { width: '90px', marginLeft: '0px', verticalAlign: 'center', horizontalAlign: 'center' }, text: `${xpm}` })] }) }));
     }
     function TeamBox({ team, teamKills }) {
         let teamName = team == DOTATeam_t.DOTA_TEAM_GOODGUYS ? '博丽' : '守矢';
