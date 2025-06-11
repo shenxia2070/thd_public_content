@@ -25,7 +25,7 @@ function On_OMG_button_Enter_Pressed(event) {
     GameEvents.SendCustomGameEventToServer("omg_change_ability", select_abi_name);
     //隐藏选技能栏
     $("#div_1").visible = false;
-    
+
     //显示改键栏
     $("#key_bind_box_id").visible = true
 }
@@ -35,18 +35,18 @@ function On_OMG_button_Cancel_Pressed(event) {
     $.Msg("On_OMG_button_Cancel_Pressed(event)");
     // $("#div_1").visible = false;
     hero_before_index = Players.GetLocalPlayerPortraitUnit();
-    hero_before_spawn =   Entities.GetUnitName(hero_before_index)
+    hero_before_spawn = Entities.GetUnitName(hero_before_index)
     $.Msg("hero_before_spawn")
     $.Msg(hero_before_spawn)
     $.Msg("hero_before_index")
     $.Msg(hero_before_index)
-    
-    GameEvents.SendCustomGameEventToServer("test_mod_js", {hero_before_index});
+
+    GameEvents.SendCustomGameEventToServer("test_mod_js", { hero_before_index });
 
     var gameModePanel = $("#key_bind_box_id")
     // gameModePanel.BLoadLayout( "file://{resources}/layout/custom_game/game_mode.xml", false, false );
     // var game_panel = gameModePanel.FindChildTraverse("#SlantedContainerPanel");
-    
+
 }
 
 //传递参数为选择的技能box，返回选择的那一个技能,若没选则随机返回一个技能
@@ -57,7 +57,7 @@ function return_seclect_abi(abi_list) {
     for (let i = 0; i < 8; i++) {
         const element = abi_list.GetChild(i);
         // if (element.BHasClass("checkbox")) {
-        if (element.checked == true ) {
+        if (element.checked == true) {
             if (abi_list == $("#abilities_1")) {
                 $.Msg(lua_data[1][i]);
                 abi_name = lua_data[1][i]
@@ -107,14 +107,14 @@ function OMG_load_ablity(data) {
     $("#key_bind_box_id").visible = false
     //隐藏输入栏
     //显示按钮
-    $("#key_Label_box_nor").visible = true 
+    $("#key_Label_box_nor").visible = true
     $("#key_Label_box_execute_nor").visible = false
-    $("#key_Label_box_ult").visible = true 
+    $("#key_Label_box_ult").visible = true
     $("#key_Label_box_execute_ult").visible = false
     $("#Entry_Ability_quick").visible = false
     $("#Entry_ultAbility_quick").visible = false
     $("#key_bind_text_panel").visible = false //隐藏提示栏
-    
+
 
     //动态创建
     for (let i = 0; i < 8; i++) {
@@ -185,14 +185,14 @@ function normal_quickcast(params) {
         normal_panel.RemoveClass("quickcast_false")
         normal_panel.AddClass("quickcast_true")
         normal_abi_isQuick = true
-    }else if (normal_panel.BHasClass("quickcast_true")) {
+    } else if (normal_panel.BHasClass("quickcast_true")) {
         normal_panel.RemoveClass("quickcast_true")
         normal_panel.AddClass("quickcast_false")
         normal_abi_isQuick = false
     }
     $.Msg(normal_abi_isQuick)
     //传递给Lua，赋值在hero.omd_add_ability下  （无需传递，有BUG，SendToConsole()不生效
-    GameEvents.SendCustomGameEventToServer("quickcast", {normal_abi_isQuick:normal_abi_isQuick})
+    GameEvents.SendCustomGameEventToServer("quickcast", { normal_abi_isQuick: normal_abi_isQuick })
 }
 function ultmate_quickcast(params) {
     $.Msg("ultmate_quickcast")
@@ -206,14 +206,14 @@ function ultmate_quickcast(params) {
         ultmate_panel.RemoveClass("quickcast_false")
         ultmate_panel.AddClass("quickcast_true")
         ultmate_abi_isQuick = true
-    }else if (ultmate_panel.BHasClass("quickcast_true")) {
+    } else if (ultmate_panel.BHasClass("quickcast_true")) {
         ultmate_panel.RemoveClass("quickcast_true")
         ultmate_panel.AddClass("quickcast_false")
         ultmate_abi_isQuick = false
     }
     $.Msg(ultmate_abi_isQuick)
     //传递给Lua，赋值在hero.omd_add_ability下  （无需传递，有BUG，SendToConsole()不生效
-    GameEvents.SendCustomGameEventToServer("quickcast", {ultmate_abi_isQuick:ultmate_abi_isQuick})
+    GameEvents.SendCustomGameEventToServer("quickcast", { ultmate_abi_isQuick: ultmate_abi_isQuick })
 }
 
 //点击普通施法，然后隐藏小技能快速施法栏和快速改键栏，同时显示普通改键栏
@@ -262,76 +262,80 @@ function EntryAbilityOnactivate() {
     // GameEvents.SendCustomGameEventToServer("BindNormalAbility", {key,abi_index,string_name});
     //下面是固定代码，绑定的函数必须不同名，所以要加上时间作为str。
     const command = "WheelButton" + Math.floor(Math.random() * 99999999);
-    const AbilityIndex = Entities.GetAbility( Players.GetPlayerHeroEntityIndex( Players.GetLocalPlayer() ), abi_index)
+    const AbilityIndex = Entities.GetAbility(Players.GetPlayerHeroEntityIndex(Players.GetLocalPlayer()), abi_index)
     // "+" 是按下的操作， "-" 是弹起的操作
-    const abilityBehavior = Abilities.GetBehavior( AbilityIndex )
+    const abilityBehavior = Abilities.GetBehavior(AbilityIndex)
     $.Msg(abilityBehavior & DOTA_ABILITY_BEHAVIOR.DOTA_ABILITY_BEHAVIOR_TOGGLE);
     $.Msg("abilityBehavior & DOTA_ABILITY_BEHAVIOR.DOTA_ABILITY_BEHAVIOR_TOGGLE");
-    Game.CreateCustomKeyBind(key,"+" + command);
+    Game.CreateCustomKeyBind(key, "+" + command);
     Game.AddCommand(
         "+" + command,
         () => {
             // do something 这个是按下的响应
             // $.Msg("+CreateCustomKeyBind");
             // bind_key_cast_ability(abi_index) 
+            // 类似冰晶爆轰这种 多个技能swap 这样可以快捷施法替换后的技能
+            const AbilityIndex = Entities.GetAbility(Players.GetPlayerHeroEntityIndex(Players.GetLocalPlayer()), abi_index)
             if (!normal_abi_isQuick || abilityBehavior & DOTA_ABILITY_BEHAVIOR.DOTA_ABILITY_BEHAVIOR_TOGGLE) {
                 bind_key_cast_nor_ability(abi_index)  //旧版本
-            }else{
-                OnExecuteAbilityButtonPressed(AbilityIndex) 
+            } else {
+                OnExecuteAbilityButtonPressed(AbilityIndex)
             }
         },
         ``,
         // 这个是必须的，否则保存js代码重载的时候会有 
         // FCVAR_LINKED_CONCOMMAND 的黄字报错
         1 << 32
-        );
-        Game.AddCommand(
-            "-" + command,
-            () => {
+    );
+    Game.AddCommand(
+        "-" + command,
+        () => {
             $.Msg("-CreateCustomKeyBind");
             // do something 这个是弹起的响应
         },
         ``,
         1 << 32
-        );
+    );
+}
+//改建 （大招）
+function EntryUltAbilityOnactivate() {
+    var key = $("#Entry_ultAbility").text;
+    if (key == " ") {
+        $("#Entry_ultAbility").maxchars = "2"
+        $("#Entry_ultAbility").text = "空格"
+        $.Msg("space");
+        key = "space"
     }
-    //改建 （大招）
-    function EntryUltAbilityOnactivate() {
-        var key = $("#Entry_ultAbility").text;
-        if (key == " ") {
-            $("#Entry_ultAbility").maxchars = "2"
-            $("#Entry_ultAbility").text = "空格"
-            $.Msg("space");
-            key = "space"
-        }
-        const command = "WheelButton" + Math.floor(Math.random() * 99999999);
-        const AbilityIndex = Entities.GetAbility( Players.GetPlayerHeroEntityIndex( Players.GetLocalPlayer() ), ultabi_index)
-        const abilityBehavior = Abilities.GetBehavior( AbilityIndex )
-        $.Msg(abilityBehavior & DOTA_ABILITY_BEHAVIOR.DOTA_ABILITY_BEHAVIOR_TOGGLE);
-        $.Msg("abilityBehavior & DOTA_ABILITY_BEHAVIOR.DOTA_ABILITY_BEHAVIOR_TOGGLE");
-        Game.CreateCustomKeyBind(key,"+" + command);
-        Game.AddCommand(
-            "+" + command,
-            () => {
-                // do something 这个是按下的响应
-                // bind_key_cast_ability(ultabi_index) 
-                if (!ultmate_abi_isQuick || abilityBehavior & DOTA_ABILITY_BEHAVIOR.DOTA_ABILITY_BEHAVIOR_TOGGLE) {
-                    bind_key_cast_ult_ability(ultabi_index)  //旧版本
-                }else{
-                    OnExecuteAbilityButtonPressed(AbilityIndex) 
-                }
+    const command = "WheelButton" + Math.floor(Math.random() * 99999999);
+    const AbilityIndex = Entities.GetAbility(Players.GetPlayerHeroEntityIndex(Players.GetLocalPlayer()), ultabi_index)
+    const abilityBehavior = Abilities.GetBehavior(AbilityIndex)
+    $.Msg(abilityBehavior & DOTA_ABILITY_BEHAVIOR.DOTA_ABILITY_BEHAVIOR_TOGGLE);
+    $.Msg("abilityBehavior & DOTA_ABILITY_BEHAVIOR.DOTA_ABILITY_BEHAVIOR_TOGGLE");
+    Game.CreateCustomKeyBind(key, "+" + command);
+    Game.AddCommand(
+        "+" + command,
+        () => {
+            // do something 这个是按下的响应
+            // bind_key_cast_ability(ultabi_index) 
+            // 类似冰晶爆轰这种 多个技能swap 这样可以快捷施法替换后的技能
+            const AbilityIndex = Entities.GetAbility(Players.GetPlayerHeroEntityIndex(Players.GetLocalPlayer()), ultabi_index)
+            if (!ultmate_abi_isQuick || abilityBehavior & DOTA_ABILITY_BEHAVIOR.DOTA_ABILITY_BEHAVIOR_TOGGLE) {
+                bind_key_cast_ult_ability(ultabi_index)  //旧版本
+            } else {
+                OnExecuteAbilityButtonPressed(AbilityIndex)
+            }
         },
         ``,
         // 这个是必须的，否则保存js代码重载的时候会有 
         // FCVAR_LINKED_CONCOMMAND 的黄字报错
         1 << 32
-        );
-        Game.AddCommand(
-            "-" + command,
-            () => {
-                $.Msg("-CreateCustomKeyBind");
-                // do something 这个是弹起的响应
-            },
+    );
+    Game.AddCommand(
+        "-" + command,
+        () => {
+            $.Msg("-CreateCustomKeyBind");
+            // do something 这个是弹起的响应
+        },
         ``,
         1 << 32
     );
@@ -344,10 +348,10 @@ function bind_key_cast_ability(ability_index) {
     // $.Msg(queryUnit)
     // $.Msg(ability_index)
     let cast_ability = Entities.GetAbility(queryUnit, ability_index);
-    if (!Entities.IsControllableByPlayer(queryUnit, Players.GetLocalPlayer())) { return ;}
+    if (!Entities.IsControllableByPlayer(queryUnit, Players.GetLocalPlayer())) { return; }
     //ExecuteAbility是激活技能的API，相当于鼠标左键点击一下技能
     if ($("#key_bind_label_1").BHasClass("quickcast_false")) {
-        Abilities.ExecuteAbility(cast_ability, queryUnit, false); 
+        Abilities.ExecuteAbility(cast_ability, queryUnit, false);
     }
 }
 
@@ -358,9 +362,9 @@ function bind_key_cast_nor_ability(ability_index) {
     // $.Msg(queryUnit)
     $.Msg(ability_index)
     let cast_ability = Entities.GetAbility(queryUnit, ability_index);
-    if (!Entities.IsControllableByPlayer(queryUnit, Players.GetLocalPlayer())) { return ;}
+    if (!Entities.IsControllableByPlayer(queryUnit, Players.GetLocalPlayer())) { return; }
     //ExecuteAbility是激活技能的API，相当于鼠标左键点击一下技能
-    Abilities.ExecuteAbility(cast_ability, queryUnit, false); 
+    Abilities.ExecuteAbility(cast_ability, queryUnit, false);
 }
 // 绑定的大招释放
 function bind_key_cast_ult_ability(ability_index) {
@@ -369,9 +373,9 @@ function bind_key_cast_ult_ability(ability_index) {
     // $.Msg(queryUnit)
     $.Msg(ability_index)
     let cast_ability = Entities.GetAbility(queryUnit, ability_index);
-    if (!Entities.IsControllableByPlayer(queryUnit, Players.GetLocalPlayer())) { return ;}
+    if (!Entities.IsControllableByPlayer(queryUnit, Players.GetLocalPlayer())) { return; }
     //ExecuteAbility是激活技能的API，相当于鼠标左键点击一下技能
-    Abilities.ExecuteAbility(cast_ability, queryUnit, false); 
+    Abilities.ExecuteAbility(cast_ability, queryUnit, false);
 }
 
 //获取lua添加两个技能后的技能index位置，0就是第1个技能
@@ -391,7 +395,7 @@ function OnKeyBindButtonPressed(event) {
     var key_bind_hud = $("#key_bind_box_id")
     var key_bind_normal = $("#key_bind_box_normal")
     var key_bind_ultmate = $("#key_bind_box_ultmate")
-    var visible_flag =  key_bind_normal.visible
+    var visible_flag = key_bind_normal.visible
     key_bind_normal.visible = !visible_flag
     key_bind_ultmate.visible = !visible_flag
 }
@@ -412,9 +416,9 @@ function OMG_key_bind_hud_reset(params) {
     $("#Entry_ultAbility_quick").visible = false
     $("#key_bind_text_panel").visible = false //隐藏提示栏
     //显示按钮
-    $("#key_Label_box_nor").visible = true 
+    $("#key_Label_box_nor").visible = true
     $("#key_Label_box_execute_nor").visible = false
-    $("#key_Label_box_ult").visible = true 
+    $("#key_Label_box_ult").visible = true
     $("#key_Label_box_execute_ult").visible = false
     //切换快速施法按钮颜色 
     $("#key_bind_label_1").RemoveClass("quickcast_false")
@@ -422,7 +426,7 @@ function OMG_key_bind_hud_reset(params) {
     $("#key_bind_label_2").RemoveClass("quickcast_false")
     $("#key_bind_label_2").AddClass("quickcast_true")
 
-    
+
 }
 
 //绑定按键的快速施法模式
@@ -437,8 +441,8 @@ function omg_bind_key_q(params) {
     $.Msg(`bind x dota_ability_quickcast${params[1]}1`)
     Game.ServerCmd('unbind x')
     Game.ServerCmd('unbind x')
-    Game.ServerCmd('bind ' + x + ' dota_ability_quickcast'+ normal_abi + '1')
-    Game.ServerCmd('bind ' + f + ' dota_ability_quickcast'+ ultmate_abi + '1')
+    Game.ServerCmd('bind ' + x + ' dota_ability_quickcast' + normal_abi + '1')
+    Game.ServerCmd('bind ' + f + ' dota_ability_quickcast' + ultmate_abi + '1')
 }
 
 
@@ -529,11 +533,11 @@ function OMG_Show_Add_Abilities(params) {
     for (let index = 1; index <= params[2]; index++) {
         $.Msg(params[1][index])
         const player_id = params[1][index];
-        var hero = params[1][index -1 ].hero_name
-        var hero_id = params[1][index -1 ].hero_id
+        var hero = params[1][index - 1].hero_name
+        var hero_id = params[1][index - 1].hero_id
         var hero_name = hero.substring(14)
-        var nor_abi_name = params[1][index -1 ].nor_abi_name
-        var ult_abi_name = params[1][index -1 ].ult_abi_name
+        var nor_abi_name = params[1][index - 1].nor_abi_name
+        var ult_abi_name = params[1][index - 1].ult_abi_name
         var dotaHud = $.GetContextPanel().GetParent().GetParent().GetParent().GetParent()
         var dotaHud_child = dotaHud.FindChildrenWithClassTraverse("TopBarPlayerSlot")
         for (let index = 0; index < dotaHud_child.length; index++) {
@@ -542,7 +546,7 @@ function OMG_Show_Add_Abilities(params) {
             if (element.id[0] == "R") {
                 //是博丽
                 element_id = element.id[13]
-            }else if (element.id[0] == "D") {
+            } else if (element.id[0] == "D") {
                 //是守矢
                 element_id = element.id[10]
             }
@@ -550,9 +554,9 @@ function OMG_Show_Add_Abilities(params) {
                 var Hero_image = element.FindChildrenWithClassTraverse("TopBarHeroImage")
                 var hero_image_panel = Hero_image[1]
                 $.Msg(hero_image_panel.heroname)
-                if (hero_name == hero_image_panel.heroname ) {
+                if (hero_name == hero_image_panel.heroname) {
                     var nor_abi = $.CreatePanel("DOTAAbilityImage", hero_image_panel, "", {
-                        "class":"",
+                        "class": "",
                         html: "true",
                         selectionpos: "auto",
                         hittest: "true",
@@ -565,7 +569,7 @@ function OMG_Show_Add_Abilities(params) {
                     nor_abi.style.marginLeft = "5px"
                     nor_abi.style.border = "1px solid #ffffff"
                     var ult_abi = $.CreatePanel("DOTAAbilityImage", hero_image_panel, "", {
-                        "class":"",
+                        "class": "",
                         html: "true",
                         selectionpos: "auto",
                         hittest: "true",
