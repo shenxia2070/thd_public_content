@@ -253,12 +253,27 @@ function EntryAbilityOnactivate() {
     // $.Msg(Players.GetPlayerHeroEntityIndex(Players.GetLocalPlayer()));
     // $.Msg(Players.GetLocalPlayer());
     var key = $("#Entry_Ability").text;
-    $.Msg(key);
     if (key == " ") {
         $("#Entry_Ability").text = "空"
         $.Msg("space");
         key = "space"
     }
+
+    // 这部分会在技能顶上显示快捷键
+    const abilities = $.GetContextPanel().GetParent().GetParent().GetParent().GetParent().FindChildTraverse('abilities')
+    const curr = abilities.GetChildCount() - 2
+    const panel = abilities.FindChildTraverse(`Ability${curr}`)
+    const ht = panel.FindChildTraverse('Hotkey')
+    const htl = panel.FindChildTraverse('HotkeyText')
+    if (key == undefined) {
+        ht.style.visibility = 'collapse'
+        htl.style.visibility = 'collapse'
+        return
+    }
+    ht.style.visibility = 'visible'
+    htl.style.visibility = 'visible'
+    htl.text = key
+
     // GameEvents.SendCustomGameEventToServer("BindNormalAbility", {key,abi_index,string_name});
     //下面是固定代码，绑定的函数必须不同名，所以要加上时间作为str。
     const command = "WheelButton" + Math.floor(Math.random() * 99999999);
@@ -306,6 +321,22 @@ function EntryUltAbilityOnactivate() {
         $.Msg("space");
         key = "space"
     }
+
+    // 这部分会在技能顶上显示快捷键
+    const abilities = $.GetContextPanel().GetParent().GetParent().GetParent().GetParent().FindChildTraverse('abilities')
+    const curr = abilities.GetChildCount() - 1
+    const panel = abilities.FindChildTraverse(`Ability${curr}`)
+    const ht = panel.FindChildTraverse('Hotkey')
+    const htl = panel.FindChildTraverse('HotkeyText')
+    if (key == undefined) {
+        ht.style.visibility = 'collapse'
+        htl.style.visibility = 'collapse'
+        return
+    }
+    ht.style.visibility = 'visible'
+    htl.style.visibility = 'visible'
+    htl.text = key
+
     const command = "WheelButton" + Math.floor(Math.random() * 99999999);
     const AbilityIndex = Entities.GetAbility(Players.GetPlayerHeroEntityIndex(Players.GetLocalPlayer()), ultabi_index)
     const abilityBehavior = Abilities.GetBehavior(AbilityIndex)
