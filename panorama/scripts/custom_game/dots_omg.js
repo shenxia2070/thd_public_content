@@ -272,7 +272,7 @@ function EntryAbilityOnactivate() {
     }
     ht.style.visibility = 'visible'
     htl.style.visibility = 'visible'
-    htl.text = key
+    htl.text = key.toUpperCase()
 
     // GameEvents.SendCustomGameEventToServer("BindNormalAbility", {key,abi_index,string_name});
     //下面是固定代码，绑定的函数必须不同名，所以要加上时间作为str。
@@ -335,7 +335,7 @@ function EntryUltAbilityOnactivate() {
     }
     ht.style.visibility = 'visible'
     htl.style.visibility = 'visible'
-    htl.text = key
+    htl.text = key.toUpperCase()
 
     const command = "WheelButton" + Math.floor(Math.random() * 99999999);
     const AbilityIndex = Entities.GetAbility(Players.GetPlayerHeroEntityIndex(Players.GetLocalPlayer()), ultabi_index)
