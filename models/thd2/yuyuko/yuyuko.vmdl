@@ -1,0 +1,553 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc41:version{12fc9d44-453a-4ae4-b4d9-7e2ac0bbd4e0} -->
+{
+	rootNode = 
+	{
+		_class = "RootNode"
+		children = 
+		[
+			{
+				_class = "MaterialGroupList"
+				children = 
+				[
+					{
+						_class = "DefaultMaterialGroup"
+						remaps = 
+						[
+							{
+								from = "yuyuko.vmat"
+								to = "materials/models/thd2/yuyuko.vmat"
+							},
+						]
+						use_global_default = false
+						global_default_material = ""
+					},
+				]
+			},
+			{
+				_class = "AttachmentList"
+				children = 
+				[
+					{
+						_class = "Attachment"
+						name = "attach_attack1"
+						parent_bone = "Bone17"
+						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+				]
+			},
+			{
+				_class = "HitboxSetList"
+				children = 
+				[
+					{
+						_class = "HitboxSet"
+						name = "default"
+						children = 
+						[
+							{
+								_class = "Hitbox"
+								parent_bone = "Bone17"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -100.0, -100.0, -100.0 ]
+								hitbox_maxs = [ 100.0, 100.0, 100.0 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "Bone07"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -7.705196, -6.070984, -10.660522 ]
+								hitbox_maxs = [ -0.486446, 5.132138, 7.339493 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "Bone08"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -33.35236, -21.04874, -37.785034 ]
+								hitbox_maxs = [ 6.116405, 16.920002, 15.464981 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "Bone13"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.454199, -11.4746, -29.410522 ]
+								hitbox_maxs = [ 17.827059, 13.275393, 7.339493 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "Bone21"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -39.042076, -32.205578, -17.078995 ]
+								hitbox_maxs = [ 37.832939, 41.481915, 55.671005 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "Bone01"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -9.052574, -49.40728, -42.634365 ]
+								hitbox_maxs = [ 6.205242, 12.514587, 6.021904 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "Bone04"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -7.181904, -38.678619, -42.634365 ]
+								hitbox_maxs = [ 8.029039, 12.555744, 6.021904 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "Bone09"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -9.225151, -5.744817, -13.362785 ]
+								hitbox_maxs = [ 1.837349, 5.095025, 1.63723 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "Bone14"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -7.142993, -20.948465, -37.784882 ]
+								hitbox_maxs = [ 32.513264, 17.020273, -0.284866 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "Bone18"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -23.552099, -5.088432, -35.840988 ]
+								hitbox_maxs = [ 23.510412, 18.724064, -5.840988 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "Bone02"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -10.87994, -23.308332, -10.408764 ]
+								hitbox_maxs = [ 9.159126, 9.785406, 1.620539 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "Bone05"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -10.150497, -23.264355, -10.408823 ]
+								hitbox_maxs = [ 9.935446, 9.829384, 1.62048 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "Bone10"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -35.731506, -66.83371, -37.104927 ]
+								hitbox_maxs = [ 15.081005, 57.291267, 13.895103 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "Bone15"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -10.167904, -66.77018, -43.73764 ]
+								hitbox_maxs = [ 39.144608, 56.97979, 9.13739 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "Bone19"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -42.937531, 13.687466, 140.250061 ]
+								hitbox_maxs = [ 42.374992, 49.874966, 182.250061 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "Bone20"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -11.648099, -22.280792, -28.681503 ]
+								hitbox_maxs = [ 5.883159, 21.68795, -11.431503 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "Bone22"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -3.166658, -23.40513, -28.259995 ]
+								hitbox_maxs = [ 14.458342, 22.813608, -11.759995 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "outskirt_r"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -36.073952, -32.285782, -60.004066 ]
+								hitbox_maxs = [ 13.097927, 45.526703, -0.566551 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "outskirt_f"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -20.022884, -29.844141, -58.568119 ]
+								hitbox_maxs = [ 50.102131, 9.952723, 0.306908 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "outskirt_l"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.28125, -28.730129, -58.986332 ]
+								hitbox_maxs = [ 35.156258, 29.394863, -0.111305 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "outskirt_b"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -57.114437, -6.498898, -60.502079 ]
+								hitbox_maxs = [ 57.260586, 40.376099, -1.064552 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "skirt_l"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -12.656157, -35.755959, -66.115974 ]
+								hitbox_maxs = [ 33.159782, 36.431534, -0.115952 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "skirt_r"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -33.686794, -35.755951, -65.720421 ]
+								hitbox_maxs = [ 12.184802, 36.431534, 0.279602 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "skirt_b"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -45.864426, -5.007478, -66.048019 ]
+								hitbox_maxs = [ 45.823105, 33.383141, -0.047989 ]
+							},
+						]
+					},
+				]
+			},
+			{
+				_class = "RenderMeshList"
+				children = 
+				[
+					{
+						_class = "RenderMeshFile"
+						name = "yuyuko"
+						filename = "models/thd2/yuyuko/yuyuko.smd"
+						import_scale = 1.0
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+				]
+			},
+			{
+				_class = "AnimationList"
+				children = 
+				[
+					{
+						_class = "Folder"
+						name = "yuyuko"
+						children = 
+						[
+							{
+								_class = "AnimFile"
+								name = "yuyuko_Attack"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										extract_initial_offset = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								is_default_idle_anim = false
+								activity_name = "ACT_DOTA_ATTACK"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								delete_from_compiled_model = false
+								source_filename = "models/thd2/yuyuko/yuyuko_Attack.SMD"
+								import_bone_scales = false
+								start_frame = 0
+								end_frame = 55
+								framerate = 30.0
+								reverse = false
+								additional_anim_files = [  ]
+							},
+							{
+								_class = "AnimFile"
+								name = "yuyuko_Spell"
+								is_default_idle_anim = false
+								activity_name = "ACT_DOTA_CAST_ABILITY_4"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								delete_from_compiled_model = false
+								source_filename = "models/thd2/yuyuko/yuyuko_Spell.SMD"
+								import_bone_scales = false
+								start_frame = 0
+								end_frame = 170
+								framerate = 30.0
+								reverse = false
+								additional_anim_files = [  ]
+							},
+							{
+								_class = "AnimFile"
+								name = "yuyuko_spell_slam"
+								is_default_idle_anim = false
+								activity_name = "ACT_DOTA_CHANNEL_ABILITY_4"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								delete_from_compiled_model = false
+								source_filename = "models/thd2/yuyuko/yuyuko_spell_slam.SMD"
+								import_bone_scales = false
+								start_frame = 0
+								end_frame = 120
+								framerate = 30.0
+								reverse = false
+								additional_anim_files = [  ]
+							},
+							{
+								_class = "AnimFile"
+								name = "yuyuko_Stand"
+								is_default_idle_anim = false
+								activity_name = "ACT_DOTA_IDLE"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								delete_from_compiled_model = false
+								source_filename = "models/thd2/yuyuko/yuyuko_Stand.SMD"
+								import_bone_scales = false
+								start_frame = 0
+								end_frame = 30
+								framerate = 30.0
+								reverse = false
+								additional_anim_files = [  ]
+							},
+							{
+								_class = "AnimFile"
+								name = "yuyuko_Walk"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										extract_initial_offset = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								is_default_idle_anim = false
+								activity_name = "ACT_DOTA_RUN"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = true
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								delete_from_compiled_model = false
+								source_filename = "models/thd2/yuyuko/yuyuko_Walk.SMD"
+								import_bone_scales = false
+								start_frame = 0
+								end_frame = 35
+								framerate = 30.0
+								reverse = false
+								additional_anim_files = [  ]
+							},
+							{
+								_class = "AnimFile"
+								name = "yuyuko_spell_02"
+								is_default_idle_anim = false
+								activity_name = "ACT_DOTA_CAST_ABILITY_2"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								delete_from_compiled_model = false
+								source_filename = "models/thd2/yuyuko/yuyuko_spell_02.SMD"
+								import_bone_scales = false
+								start_frame = 0
+								end_frame = 55
+								framerate = 30.0
+								reverse = false
+								additional_anim_files = [  ]
+							},
+							{
+								_class = "AnimFile"
+								name = "yuyuko_spell_03"
+								is_default_idle_anim = false
+								activity_name = "ACT_DOTA_CAST_ABILITY_1"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								delete_from_compiled_model = false
+								source_filename = "models/thd2/yuyuko/yuyuko_spell_03.SMD"
+								import_bone_scales = false
+								start_frame = 0
+								end_frame = 55
+								framerate = 30.0
+								reverse = false
+								additional_anim_files = [  ]
+							},
+							{
+								_class = "AnimFile"
+								name = "yuyuko_Death"
+								children = 
+								[
+									{
+										_class = "ExtractMotion"
+										extract_tx = true
+										extract_ty = true
+										extract_tz = false
+										extract_rz = false
+										linear = false
+										quadratic = false
+										extract_initial_offset = false
+										root_bone_name = ""
+										motion_type = "Single"
+									},
+								]
+								is_default_idle_anim = false
+								activity_name = "ACT_DOTA_DIE"
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								animgraph_additive = false
+								delete_from_compiled_model = false
+								source_filename = "models/thd2/yuyuko/yuyuko_Death.SMD"
+								import_bone_scales = false
+								start_frame = 0
+								end_frame = 1
+								framerate = 30.0
+								reverse = false
+								additional_anim_files = [  ]
+							},
+						]
+					},
+				]
+				default_root_bone_name = ""
+			},
+		]
+		model_archetype = ""
+		primary_associated_entity = ""
+		anim_graph_name = ""
+		importer_notes = "Imported from VMDL"
+		document_sub_type = "ModelDocSubType_None"
+	}
+}
