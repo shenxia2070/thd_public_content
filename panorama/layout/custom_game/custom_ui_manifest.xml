@@ -6,6 +6,8 @@
 		<include src="file://{resources}/scripts/custom_game/use_multi_team.js"/>
 		<include src="file://{resources}/scripts/custom_game/thd_event_core.js"/>
 		<include src="file://{resources}/scripts/custom_game/dire_score.js"/>
+		<!-- A杖魔晶显示 -->
+		<include src="file://{resources}/scripts/custom_game/aghs.js"/>
 	</scripts>
 
 	<Panel>
