@@ -1,0 +1,11 @@
+<!-- xml reconstructed by Source 2 Viewer 15.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/layout/custom_game/omg_bp/styles.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/dots_test.vcss_c" />
+	</styles>
+	<scripts>
+		<include src="s2r://panorama/layout/custom_game/omg_bp/script.vjs_c" />
+	</scripts>
+	<Panel class="root" hittest="false" />
+</root>
