@@ -1,0 +1,718 @@
+<!-- schema text {7e125a45-3d83-4043-b292-9e24f8ef27b4} generic {198980d8-3a93-4919-b4c6-dd1fb07a3a4b} -->
+CVModel CVModel_0
+{
+	CVmeshList m_meshList = CVmeshList
+	{
+		CVmesh[] m_meshList = 
+		[
+			CVmesh
+			{
+				string m_meshName = "soldiers_near_green_2"
+				string m_meshFile = "models/thd2/soldiers_near_green/soldiers_near_green_1.smd"
+				string m_materialSearchPath = ""
+				bool m_bSkinParentedObjects = true
+				bool m_bExpensiveTangents = false
+				bool m_bExpensiveVertices = false
+				CVmorphInfo* m_pMorphInfo = NULL
+			}
+		]
+	}
+	CVphysicsMeshList m_physicsMeshList = CVphysicsMeshList
+	{
+		CVphysicsMesh[] m_meshList = 
+		[
+			
+		]
+	}
+	CVmodelInfo* m_pModelInfo = NULL
+	CVhitBoxSetListReference[] m_pHitBoxSetLists = 
+	[
+		CVhitBoxSetListReference
+		{
+			CVhitBoxSetList* m_pObject = &CVhitBoxSetList_0
+			string m_sFileName = ""
+		}
+	]
+	CVattachmentListReference[] m_pAttachmentLists = 
+	[
+		
+	]
+	CVanimGroupReference[] m_pAnimGroups = 
+	[
+		CVanimGroupReference
+		{
+			CVanimGroup* m_pObject = &CVanimGroup_0
+			string m_sFileName = ""
+		}
+	]
+	CVNodeMaterialGroupListReference m_pMaterialGroupList = CVNodeMaterialGroupListReference
+	{
+		NodeMaterialGroupList_t* m_pObject = NULL
+		string m_sFileName = ""
+	}
+	CVMeshGroupListReference m_pMeshGroupList = CVMeshGroupListReference
+	{
+		MeshGroupList_t* m_pObject = NULL
+		string m_sFileName = ""
+	}
+	CVLODGroupListReference m_pLodGroupList = CVLODGroupListReference
+	{
+		LODGroupList_t* m_pObject = NULL
+		string m_sFileName = ""
+	}
+	CVpropBreakableListReference m_pPropBreakableList = CVpropBreakableListReference
+	{
+		CVpropBreakableList* m_pObject = NULL
+		string m_sFileName = ""
+	}
+	CVpropDataListReference m_pPropDataList = CVpropDataListReference
+	{
+		CVpropDataList* m_pObject = NULL
+		string m_sFileName = ""
+	}
+	CVConstraintListReference[] m_pConstraintLists = 
+	[
+		
+	]
+	string m_collision = ""
+	string m_sMDLFilename = ""
+	string[] m_scriptFiles = 
+	[
+		
+	]
+	CVMaterialRemapList* m_pMaterialRemapList = &CVMaterialRemapList_0
+	float m_flFbxScale = 1.000000
+}
+
+CVhitBoxSetList CVhitBoxSetList_0
+{
+	CVhitBoxSet[] m_HitBoxSets = 
+	[
+		CVhitBoxSet
+		{
+			string m_name = "default"
+			CVhitBox[] m_HitBoxes = 
+			[
+				CVhitBox
+				{
+					string m_name = "bone21"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bone21"
+					float(3) m_vMinBounds = ( -50.000000, -50.000000, -100.000000 )
+					float(3) m_vMaxBounds = ( 50.000000, 50.000000, 100.000000 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bone02"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bone02"
+					float(3) m_vMinBounds = ( -9.431288, -8.002505, -1.748344 )
+					float(3) m_vMaxBounds = ( 8.603535, 7.844914, 24.262001 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bone20"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bone20"
+					float(3) m_vMinBounds = ( -12.061329, -22.443806, -21.895996 )
+					float(3) m_vMaxBounds = ( 11.233582, 10.969745, 1.114105 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bone07"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bone07"
+					float(3) m_vMinBounds = ( -15.445198, -4.195509, -15.547417 )
+					float(3) m_vMaxBounds = ( 0.264392, 6.964617, 4.352081 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bone16"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bone16"
+					float(3) m_vMinBounds = ( -6.611215, -22.319645, -13.238003 )
+					float(3) m_vMaxBounds = ( 14.587501, 20.784313, -10.162346 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bone05"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bone05"
+					float(3) m_vMinBounds = ( -14.788894, -22.319645, -13.238003 )
+					float(3) m_vMaxBounds = ( 6.428651, 20.784313, -10.162346 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bone14"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bone14"
+					float(3) m_vMinBounds = ( -17.060192, -1.473408, -11.966129 )
+					float(3) m_vMaxBounds = ( 16.905361, 18.346991, 11.904022 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bone01"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bone01"
+					float(3) m_vMinBounds = ( -0.101761, -4.379761, -15.258385 )
+					float(3) m_vMaxBounds = ( 15.630224, 6.780365, 4.641113 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bone04"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bone04"
+					float(3) m_vMinBounds = ( -24.831015, -16.556252, -28.261681 )
+					float(3) m_vMaxBounds = ( 2.788099, 8.219276, 2.196968 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bone17"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bone17"
+					float(3) m_vMinBounds = ( -9.739628, -38.720627, -30.899944 )
+					float(3) m_vMaxBounds = ( 20.222687, 31.256304, 0.351547 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bone22"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bone22"
+					float(3) m_vMinBounds = ( -20.139091, -38.511467, -30.899944 )
+					float(3) m_vMaxBounds = ( 9.669334, 31.465464, 0.351547 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bone12"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bone12"
+					float(3) m_vMinBounds = ( -17.071625, -0.132381, -11.588276 )
+					float(3) m_vMaxBounds = ( 16.893929, 28.531113, 15.093124 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bone03"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bone03"
+					float(3) m_vMinBounds = ( -36.073746, -23.800583, -9.074600 )
+					float(3) m_vMaxBounds = ( 36.065384, 32.061462, 45.059898 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bone08"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bone08"
+					float(3) m_vMinBounds = ( -3.134779, -16.499619, -28.490532 )
+					float(3) m_vMaxBounds = ( 24.484512, 8.275908, 1.968117 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bone06"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bone06"
+					float(3) m_vMinBounds = ( -7.513777, -5.608144, -11.711472 )
+					float(3) m_vMaxBounds = ( 1.653925, 3.208369, 0.891777 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bone19"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bone19"
+					float(3) m_vMinBounds = ( -6.186619, -16.722578, -8.113441 )
+					float(3) m_vMaxBounds = ( 6.287442, 6.453331, 0.038606 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bone18"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bone18"
+					float(3) m_vMinBounds = ( -6.140951, -16.722578, -8.291092 )
+					float(3) m_vMaxBounds = ( 6.351925, 6.453333, -0.139045 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bone15"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bone15"
+					float(3) m_vMinBounds = ( -9.654947, -2.149685, -8.433468 )
+					float(3) m_vMaxBounds = ( 9.018602, 24.634415, 9.005936 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bone09"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bone09"
+					float(3) m_vMinBounds = ( -36.122261, -26.398211, 8.739929 )
+					float(3) m_vMaxBounds = ( 36.016869, -22.940401, 12.898438 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bone11"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bone11"
+					float(3) m_vMinBounds = ( -1.971478, -5.365720, -11.446335 )
+					float(3) m_vMaxBounds = ( 7.198605, 3.452126, 1.156914 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bone13"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bone13"
+					float(3) m_vMinBounds = ( -33.269882, -152.140198, -76.275688 )
+					float(3) m_vMaxBounds = ( 11.366258, 56.778198, 19.372787 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				}
+			]
+		}
+	]
+}
+
+CVanimGroup CVanimGroup_0
+{
+	string m_Name = ""
+	CVReferenceSkeletonReference m_pReferenceSkeleton = CVReferenceSkeletonReference
+	{
+		CVReferenceSkeleton* m_pObject = NULL
+		string m_sFileName = ""
+	}
+	CVBoneFlagListReference m_pBoneFlagList = CVBoneFlagListReference
+	{
+		CVBoneFlagList* m_pObject = NULL
+		string m_sFileName = ""
+	}
+	CVseqGroupReference m_pSeqGroup = CVseqGroupReference
+	{
+		CVseqGroup* m_pObject = NULL
+		string m_sFileName = ""
+	}
+	CVanimGroupReference[] m_pAnimGroups = 
+	[
+		
+	]
+	CVanim[] m_Vanim = 
+	[
+		CVanim
+		{
+			string m_Animationname = "Soldiers_near_green_1_Attack_1"
+			string m_Filepath = "models/thd2/soldiers_near_green/soldiers_near_green_1_attack_1.smd"
+			int m_nStartframe = 0
+			int m_nEndframe = 35
+			float m_flFps = 30.000000
+			CAnimationLoop m_Loop = CAnimationLoop
+			{
+				bool m_bLoop = false
+				bool m_bSmoothLoop = false
+				int m_nSmoothLoopStart = 0
+				int m_nSmoothLoopEnd = 0
+				CVAnimCmdStartLoop m_StartLoop = CVAnimCmdStartLoop
+				{
+					bool m_bEnabled = false
+					int m_nLoopRestart = 0
+				}
+			}
+			bool m_bHidden = false
+			CActivity[] m_Activities = 
+			[
+				CActivity
+				{
+					string m_Name = "ACT_DOTA_ATTACK"
+					int m_nWeight = 1
+				}
+			]
+			CAnimationEvent[] m_AnimationEvents = 
+			[
+				
+			]
+			CMotionFrame[] m_MotionFrames = 
+			[
+				CMotionFrame
+				{
+					int m_nFrame = 0
+					bool m_bExtractTX = true
+					bool m_bExtractTY = true
+					bool m_bExtractTZ = false
+					bool m_bExtractRX = false
+					bool m_bExtractRY = false
+					bool m_bExtractRZ = false
+					bool m_bDiscardTX = false
+					bool m_bDiscardTY = false
+					bool m_bDiscardTZ = false
+					bool m_bDiscardRX = false
+					bool m_bDiscardRY = false
+					bool m_bDiscardRZ = false
+				}
+			]
+			CIKrule*[] m_pIkRules = 
+			[
+				
+			]
+			CAdjustAnimation m_adjustAnimation = CAdjustAnimation
+			{
+				float(3) m_translation = ( 0.000000, 0.000000, 0.000000 )
+				float(3) m_rotation = ( 0.000000, 0.000000, 0.000000 )
+			}
+			string[] m_Keywords = 
+			[
+				
+			]
+			CVAnimResourceSequenceParams m_sequenceParams = CVAnimResourceSequenceParams
+			{
+				float m_flFadeInTime = 0.200000
+				float m_flFadeOutTime = 0.200000
+			}
+		},
+		CVanim
+		{
+			string m_Animationname = "Soldiers_near_green_1_Attack_2"
+			string m_Filepath = "models/thd2/soldiers_near_green/soldiers_near_green_1_attack_2.smd"
+			int m_nStartframe = 0
+			int m_nEndframe = 30
+			float m_flFps = 30.000000
+			CAnimationLoop m_Loop = CAnimationLoop
+			{
+				bool m_bLoop = false
+				bool m_bSmoothLoop = false
+				int m_nSmoothLoopStart = 0
+				int m_nSmoothLoopEnd = 0
+				CVAnimCmdStartLoop m_StartLoop = CVAnimCmdStartLoop
+				{
+					bool m_bEnabled = false
+					int m_nLoopRestart = 0
+				}
+			}
+			bool m_bHidden = false
+			CActivity[] m_Activities = 
+			[
+				CActivity
+				{
+					string m_Name = "ACT_DOTA_ATTACK2"
+					int m_nWeight = 1
+				}
+			]
+			CAnimationEvent[] m_AnimationEvents = 
+			[
+				
+			]
+			CMotionFrame[] m_MotionFrames = 
+			[
+				CMotionFrame
+				{
+					int m_nFrame = 0
+					bool m_bExtractTX = true
+					bool m_bExtractTY = true
+					bool m_bExtractTZ = false
+					bool m_bExtractRX = false
+					bool m_bExtractRY = false
+					bool m_bExtractRZ = false
+					bool m_bDiscardTX = false
+					bool m_bDiscardTY = false
+					bool m_bDiscardTZ = false
+					bool m_bDiscardRX = false
+					bool m_bDiscardRY = false
+					bool m_bDiscardRZ = false
+				}
+			]
+			CIKrule*[] m_pIkRules = 
+			[
+				
+			]
+			CAdjustAnimation m_adjustAnimation = CAdjustAnimation
+			{
+				float(3) m_translation = ( 0.000000, 0.000000, 0.000000 )
+				float(3) m_rotation = ( 0.000000, 0.000000, 0.000000 )
+			}
+			string[] m_Keywords = 
+			[
+				
+			]
+			CVAnimResourceSequenceParams m_sequenceParams = CVAnimResourceSequenceParams
+			{
+				float m_flFadeInTime = 0.200000
+				float m_flFadeOutTime = 0.200000
+			}
+		},
+		CVanim
+		{
+			string m_Animationname = "Soldiers_near_green_1_Death"
+			string m_Filepath = "models/thd2/soldiers_near_green/soldiers_near_green_1_death.smd"
+			int m_nStartframe = 0
+			int m_nEndframe = 30
+			float m_flFps = 30.000000
+			CAnimationLoop m_Loop = CAnimationLoop
+			{
+				bool m_bLoop = false
+				bool m_bSmoothLoop = false
+				int m_nSmoothLoopStart = 0
+				int m_nSmoothLoopEnd = 0
+				CVAnimCmdStartLoop m_StartLoop = CVAnimCmdStartLoop
+				{
+					bool m_bEnabled = false
+					int m_nLoopRestart = 0
+				}
+			}
+			bool m_bHidden = false
+			CActivity[] m_Activities = 
+			[
+				CActivity
+				{
+					string m_Name = "ACT_DOTA_DIE"
+					int m_nWeight = 1
+				}
+			]
+			CAnimationEvent[] m_AnimationEvents = 
+			[
+				
+			]
+			CMotionFrame[] m_MotionFrames = 
+			[
+				CMotionFrame
+				{
+					int m_nFrame = 0
+					bool m_bExtractTX = true
+					bool m_bExtractTY = true
+					bool m_bExtractTZ = false
+					bool m_bExtractRX = false
+					bool m_bExtractRY = false
+					bool m_bExtractRZ = false
+					bool m_bDiscardTX = false
+					bool m_bDiscardTY = false
+					bool m_bDiscardTZ = false
+					bool m_bDiscardRX = false
+					bool m_bDiscardRY = false
+					bool m_bDiscardRZ = false
+				}
+			]
+			CIKrule*[] m_pIkRules = 
+			[
+				
+			]
+			CAdjustAnimation m_adjustAnimation = CAdjustAnimation
+			{
+				float(3) m_translation = ( 0.000000, 0.000000, 0.000000 )
+				float(3) m_rotation = ( 0.000000, 0.000000, 0.000000 )
+			}
+			string[] m_Keywords = 
+			[
+				
+			]
+			CVAnimResourceSequenceParams m_sequenceParams = CVAnimResourceSequenceParams
+			{
+				float m_flFadeInTime = 0.200000
+				float m_flFadeOutTime = 0.200000
+			}
+		},
+		CVanim
+		{
+			string m_Animationname = "Soldiers_near_green_1_Stand"
+			string m_Filepath = "models/thd2/soldiers_near_green/soldiers_near_green_1_stand.smd"
+			int m_nStartframe = 0
+			int m_nEndframe = 30
+			float m_flFps = 30.000000
+			CAnimationLoop m_Loop = CAnimationLoop
+			{
+				bool m_bLoop = false
+				bool m_bSmoothLoop = false
+				int m_nSmoothLoopStart = 0
+				int m_nSmoothLoopEnd = 0
+				CVAnimCmdStartLoop m_StartLoop = CVAnimCmdStartLoop
+				{
+					bool m_bEnabled = false
+					int m_nLoopRestart = 0
+				}
+			}
+			bool m_bHidden = false
+			CActivity[] m_Activities = 
+			[
+				CActivity
+				{
+					string m_Name = "ACT_DOTA_IDLE"
+					int m_nWeight = 1
+				}
+			]
+			CAnimationEvent[] m_AnimationEvents = 
+			[
+				
+			]
+			CMotionFrame[] m_MotionFrames = 
+			[
+				CMotionFrame
+				{
+					int m_nFrame = 0
+					bool m_bExtractTX = true
+					bool m_bExtractTY = true
+					bool m_bExtractTZ = false
+					bool m_bExtractRX = false
+					bool m_bExtractRY = false
+					bool m_bExtractRZ = false
+					bool m_bDiscardTX = false
+					bool m_bDiscardTY = false
+					bool m_bDiscardTZ = false
+					bool m_bDiscardRX = false
+					bool m_bDiscardRY = false
+					bool m_bDiscardRZ = false
+				}
+			]
+			CIKrule*[] m_pIkRules = 
+			[
+				
+			]
+			CAdjustAnimation m_adjustAnimation = CAdjustAnimation
+			{
+				float(3) m_translation = ( 0.000000, 0.000000, 0.000000 )
+				float(3) m_rotation = ( 0.000000, 0.000000, 0.000000 )
+			}
+			string[] m_Keywords = 
+			[
+				
+			]
+			CVAnimResourceSequenceParams m_sequenceParams = CVAnimResourceSequenceParams
+			{
+				float m_flFadeInTime = 0.200000
+				float m_flFadeOutTime = 0.200000
+			}
+		},
+		CVanim
+		{
+			string m_Animationname = "Soldiers_near_green_1_Walk"
+			string m_Filepath = "models/thd2/soldiers_near_green/soldiers_near_green_1_walk.smd"
+			int m_nStartframe = 0
+			int m_nEndframe = 35
+			float m_flFps = 30.000000
+			CAnimationLoop m_Loop = CAnimationLoop
+			{
+				bool m_bLoop = true
+				bool m_bSmoothLoop = false
+				int m_nSmoothLoopStart = 0
+				int m_nSmoothLoopEnd = 0
+				CVAnimCmdStartLoop m_StartLoop = CVAnimCmdStartLoop
+				{
+					bool m_bEnabled = false
+					int m_nLoopRestart = 0
+				}
+			}
+			bool m_bHidden = false
+			CActivity[] m_Activities = 
+			[
+				CActivity
+				{
+					string m_Name = "ACT_DOTA_RUN"
+					int m_nWeight = 1
+				}
+			]
+			CAnimationEvent[] m_AnimationEvents = 
+			[
+				
+			]
+			CMotionFrame[] m_MotionFrames = 
+			[
+				CMotionFrame
+				{
+					int m_nFrame = 0
+					bool m_bExtractTX = true
+					bool m_bExtractTY = true
+					bool m_bExtractTZ = false
+					bool m_bExtractRX = false
+					bool m_bExtractRY = false
+					bool m_bExtractRZ = false
+					bool m_bDiscardTX = false
+					bool m_bDiscardTY = false
+					bool m_bDiscardTZ = false
+					bool m_bDiscardRX = false
+					bool m_bDiscardRY = false
+					bool m_bDiscardRZ = false
+				},
+				CMotionFrame
+				{
+					int m_nFrame = 0
+					bool m_bExtractTX = false
+					bool m_bExtractTY = false
+					bool m_bExtractTZ = false
+					bool m_bExtractRX = false
+					bool m_bExtractRY = false
+					bool m_bExtractRZ = false
+					bool m_bDiscardTX = false
+					bool m_bDiscardTY = false
+					bool m_bDiscardTZ = false
+					bool m_bDiscardRX = false
+					bool m_bDiscardRY = false
+					bool m_bDiscardRZ = false
+				}
+			]
+			CIKrule*[] m_pIkRules = 
+			[
+				
+			]
+			CAdjustAnimation m_adjustAnimation = CAdjustAnimation
+			{
+				float(3) m_translation = ( 0.000000, 0.000000, 0.000000 )
+				float(3) m_rotation = ( 0.000000, 0.000000, 0.000000 )
+			}
+			string[] m_Keywords = 
+			[
+				
+			]
+			CVAnimResourceSequenceParams m_sequenceParams = CVAnimResourceSequenceParams
+			{
+				float m_flFadeInTime = 0.200000
+				float m_flFadeOutTime = 0.200000
+			}
+		}
+	]
+	string[] m_sScripts = 
+	[
+		
+	]
+}
+
+CVMaterialRemapList CVMaterialRemapList_0
+{
+	CVMaterialRemap[] m_vMaterialRemapList = 
+	[
+		CVMaterialRemap
+		{
+			string m_sSearchMaterial = "01_-_default.vmat"
+			string m_sReplaceMaterial = "materials/models/thd2/soldiers_near_green.vmat"
+		}
+	]
+}

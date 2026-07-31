@@ -1,0 +1,786 @@
+<!-- schema text {7e125a45-3d83-4043-b292-9e24f8ef27b4} generic {198980d8-3a93-4919-b4c6-dd1fb07a3a4b} -->
+CVModel CVModel_0
+{
+	CVmeshList m_meshList = CVmeshList
+	{
+		CVmesh[] m_meshList = 
+		[
+			CVmesh
+			{
+				string m_meshName = "soldiers_far_red_1"
+				string m_meshFile = "models/thd2/soldiers_far_red/soldiers_far_red_1.smd"
+				string m_materialSearchPath = ""
+				bool m_bSkinParentedObjects = true
+				bool m_bLegacySkinParentedTransforms = false
+				bool m_bExpensiveTangents = false
+				bool m_bExpensiveVertices = false
+				bool m_bIgnoreCloth = false
+				bool m_bGetSkinningFromLod0 = false
+				CVmorphInfo* m_pMorphInfo = NULL
+			}
+		]
+	}
+	CVClothProxyMeshList m_clothProxyMeshList = CVClothProxyMeshList
+	{
+		CVClothProxyMesh[] m_clothProxyMeshList = 
+		[
+			
+		]
+		float m_flClothEnableThreshold = 0.050000
+		bool m_bCreateStaticBone = false
+		int m_nMaxBonesPerVertex = 4
+		bool m_bRemoveUnusedBonesEnabled = false
+		bool m_bDriveMeshesWithBacksolvedJointsOnly = true
+		float m_flMatchProxiesToMeshes = 1.000000
+		float m_flReservedFloat = 0.000000
+		int m_nReservedInt = 0
+		bool m_bReservedBool1 = false
+		bool m_bReservedBool2 = false
+		bool m_bReservedBool3 = false
+		bool m_bReservedBool4 = false
+	}
+	CVphysicsMeshList m_physicsMeshList = CVphysicsMeshList
+	{
+		CVphysicsMesh[] m_meshList = 
+		[
+			
+		]
+	}
+	CVmodelInfo* m_pModelInfo = NULL
+	CVBoneFlagListReference m_pBoneFlagList = CVBoneFlagListReference
+	{
+		CVBoneFlagList* m_pObject = NULL
+		string m_sFileName = ""
+	}
+	CVhitBoxSetListReference[] m_pHitBoxSetLists = 
+	[
+		CVhitBoxSetListReference
+		{
+			CVhitBoxSetList* m_pObject = &CVhitBoxSetList_0
+			string m_sFileName = ""
+		}
+	]
+	CVattachmentListReference[] m_pAttachmentLists = 
+	[
+		CVattachmentListReference
+		{
+			CVattachmentList* m_pObject = &CVattachmentList_0
+			string m_sFileName = ""
+		}
+	]
+	CVanimGroupReference[] m_pAnimGroups = 
+	[
+		CVanimGroupReference
+		{
+			CVanimGroup* m_pObject = &CVanimGroup_0
+			string m_sFileName = ""
+		}
+	]
+	CVNodeMaterialGroupListReference m_pMaterialGroupList = CVNodeMaterialGroupListReference
+	{
+		NodeMaterialGroupList_t* m_pObject = NULL
+		string m_sFileName = ""
+	}
+	CVMeshGroupListReference m_pMeshGroupList = CVMeshGroupListReference
+	{
+		MeshGroupList_t* m_pObject = NULL
+		string m_sFileName = ""
+	}
+	CVLODGroupListReference m_pLodGroupList = CVLODGroupListReference
+	{
+		LODGroupList_t* m_pObject = NULL
+		string m_sFileName = ""
+	}
+	CVpropBreakableListReference m_pPropBreakableList = CVpropBreakableListReference
+	{
+		CVpropBreakableList* m_pObject = NULL
+		string m_sFileName = ""
+	}
+	CVpropDataListReference m_pPropDataList = CVpropDataListReference
+	{
+		CVpropDataList* m_pObject = NULL
+		string m_sFileName = ""
+	}
+	CVConstraintListReference[] m_pConstraintLists = 
+	[
+		
+	]
+	string m_collision = ""
+	string m_softbody = ""
+	string m_sMDLFilename = ""
+	string[] m_sOffsetHitboxSets = 
+	[
+		
+	]
+	float(3) m_vHitboxSetOffset = ( 0.000000, 0.000000, 0.000000 )
+	string[] m_scriptFiles = 
+	[
+		
+	]
+	CVMaterialRemapList* m_pMaterialRemapList = &CVMaterialRemapList_0
+	float m_flFbxScale = 1.000000
+	float m_flQCScale = 1.000000
+	float(3) m_vOrigin = ( 0.000000, 0.000000, 0.000000 )
+	CVPsf* m_pvPsf = NULL
+	string m_keyValueText = ""
+	bool m_bStaticProp = false
+	bool m_bEnableClothProcessing = true
+	float m_flClothEnableThreshold = 0.050000
+	int m_nMaxClothVertsPerMesh = 2048
+	bool m_bBuildClothBoneHierarchy = false
+	symbol m_nNavType = AUTH_NAV_MESH
+	bool m_bMakeUniqueVMeshes = false
+	bool m_bMakeImplicitBindPoseSequence = false
+	bool m_bAdjustSkeletonFromBoneFlags = false
+}
+
+CVhitBoxSetList CVhitBoxSetList_0
+{
+	CVhitBoxSet[] m_HitBoxSets = 
+	[
+		CVhitBoxSet
+		{
+			string m_name = "default"
+			CVhitBox[] m_HitBoxes = 
+			[
+				CVhitBox
+				{
+					string m_name = "bone21"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bone21"
+					float(3) m_vMinBounds = ( -30.000000, -30.000000, -60.000000 )
+					float(3) m_vMaxBounds = ( 30.000000, 30.000000, 60.000000 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bone03"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bone03"
+					float(3) m_vMinBounds = ( -11.805632, -11.535311, 0.255402 )
+					float(3) m_vMaxBounds = ( 12.033609, 8.310419, 28.387657 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bone20"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bone20"
+					float(3) m_vMinBounds = ( -17.037861, -19.046434, -14.793610 )
+					float(3) m_vMaxBounds = ( 17.266293, 15.110327, -14.793602 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bone08"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bone08"
+					float(3) m_vMinBounds = ( -17.406673, -6.481196, -19.064713 )
+					float(3) m_vMaxBounds = ( 1.154079, 7.118380, 4.371384 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bone07"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bone07"
+					float(3) m_vMinBounds = ( -22.507763, -31.005081, -33.324959 )
+					float(3) m_vMaxBounds = ( 7.919113, 29.587162, 1.931404 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bone14"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bone14"
+					float(3) m_vMinBounds = ( -8.245777, -32.129524, -33.953545 )
+					float(3) m_vMaxBounds = ( 22.181278, 28.462719, 1.302818 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bone05"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bone05"
+					float(3) m_vMinBounds = ( -9.773495, -6.476171, -12.481163 )
+					float(3) m_vMaxBounds = ( 1.569260, 2.492350, 1.408691 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bone02"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bone02"
+					float(3) m_vMinBounds = ( -2.174905, -6.681283, -19.229767 )
+					float(3) m_vMaxBounds = ( 16.385828, 6.918293, 4.206329 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bone22"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bone22"
+					float(3) m_vMinBounds = ( -5.194786, -4.171494, -32.064587 )
+					float(3) m_vMaxBounds = ( 3.880895, 5.446892, 0.146500 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bone16"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bone16"
+					float(3) m_vMinBounds = ( -4.376046, -4.199234, -31.859760 )
+					float(3) m_vMaxBounds = ( 4.699417, 5.419153, 0.351331 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bone09"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bone09"
+					float(3) m_vMinBounds = ( -7.035103, -5.858199, -10.546112 )
+					float(3) m_vMaxBounds = ( 0.606064, 2.731868, -1.410866 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bone04"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bone04"
+					float(3) m_vMinBounds = ( -1.653551, -6.450167, -12.533012 )
+					float(3) m_vMaxBounds = ( 9.689207, 2.518353, 1.356850 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bone18"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bone18"
+					float(3) m_vMinBounds = ( -7.172823, -18.907040, -11.020315 )
+					float(3) m_vMaxBounds = ( 6.468839, 7.791305, 0.358313 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bone19"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bone19"
+					float(3) m_vMinBounds = ( -6.435789, -19.047749, -11.020296 )
+					float(3) m_vMaxBounds = ( 7.205954, 7.650595, 0.358334 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bone06"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bone06"
+					float(3) m_vMinBounds = ( -24.117292, -21.165409, -6.515663 )
+					float(3) m_vMaxBounds = ( 23.340002, 19.260468, 41.538895 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "BOX001"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "BOX001"
+					float(3) m_vMinBounds = ( -41.072983, -37.454113, 75.413383 )
+					float(3) m_vMaxBounds = ( -31.906466, 1.495823, 83.413948 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				},
+				CVhitBox
+				{
+					string m_name = "bone10"
+					string m_sSurfaceProperty = ""
+					int m_nGroupId = 0
+					string m_sBoneName = "bone10"
+					float(3) m_vMinBounds = ( -1.938124, -5.855041, -10.451958 )
+					float(3) m_vMaxBounds = ( 6.963411, 2.735024, 1.613457 )
+					uint(4) m_cRenderColor = ( 0, 0, 0, 0 )
+				}
+			]
+		}
+	]
+}
+
+CVattachmentList CVattachmentList_0
+{
+	string m_name = ""
+	CVattachment[] m_attachments = 
+	[
+		CVattachment
+		{
+			string m_name = "attach_attack1"
+			CVattachmentInfluence[] m_influences = 
+			[
+				CVattachmentInfluence
+				{
+					string m_influenceName = "bone11"
+					float(3) m_vTranslationOffset = ( 0.000000, 0.000000, 0.000000 )
+					float(3) m_vRotationOffset = ( 0.000000, 0.000000, 0.000000 )
+					float m_flWeight = 1.000000
+					bool m_bRoot = false
+				}
+			]
+		},
+		CVattachment
+		{
+			string m_name = "attach_attack2"
+			CVattachmentInfluence[] m_influences = 
+			[
+				CVattachmentInfluence
+				{
+					string m_influenceName = "bone11"
+					float(3) m_vTranslationOffset = ( 0.000000, 0.000000, 0.000000 )
+					float(3) m_vRotationOffset = ( 0.000000, 0.000000, 0.000000 )
+					float m_flWeight = 1.000000
+					bool m_bRoot = false
+				}
+			]
+		},
+		CVattachment
+		{
+			string m_name = "attach_hitloc"
+			CVattachmentInfluence[] m_influences = 
+			[
+				CVattachmentInfluence
+				{
+					string m_influenceName = "bone03"
+					float(3) m_vTranslationOffset = ( 0.000000, 0.000000, 0.000000 )
+					float(3) m_vRotationOffset = ( 0.000000, 0.000000, 0.000000 )
+					float m_flWeight = 1.000000
+					bool m_bRoot = false
+				}
+			]
+		}
+	]
+}
+
+CVanimGroup CVanimGroup_0
+{
+	string m_Name = ""
+	CVReferenceSkeletonReference m_pReferenceSkeleton = CVReferenceSkeletonReference
+	{
+		CVReferenceSkeleton* m_pObject = NULL
+		string m_sFileName = ""
+	}
+	CVBoneFlagListReference m_pBoneFlagList = CVBoneFlagListReference
+	{
+		CVBoneFlagList* m_pObject = NULL
+		string m_sFileName = ""
+	}
+	CVseqGroupReference m_pSeqGroup = CVseqGroupReference
+	{
+		CVseqGroup* m_pObject = NULL
+		string m_sFileName = ""
+	}
+	CVanimGroupReference[] m_pAnimGroups = 
+	[
+		
+	]
+	CVanim[] m_Vanim = 
+	[
+		CVanim
+		{
+			string m_Animationname = "Soldiers_far_red_1_Attack_1"
+			string m_Filepath = "models/thd2/soldiers_far_red/Soldiers_far_red_1_Attack_1.SMD"
+			int m_nStartframe = 0
+			int m_nEndframe = 35
+			float m_flFps = 30.000000
+			CAnimationLoop m_Loop = CAnimationLoop
+			{
+				bool m_bLoop = false
+				bool m_bSmoothLoop = false
+				int m_nSmoothLoopStart = 0
+				int m_nSmoothLoopEnd = 0
+				CVAnimCmdStartLoop m_StartLoop = CVAnimCmdStartLoop
+				{
+					bool m_bEnabled = false
+					int m_nLoopRestart = 0
+				}
+			}
+			bool m_bHidden = false
+			CActivity[] m_Activities = 
+			[
+				CActivity
+				{
+					string m_Name = "ACT_DOTA_ATTACK"
+					int m_nWeight = 1
+				}
+			]
+			CAnimationEvent[] m_AnimationEvents = 
+			[
+				
+			]
+			CMotionFrame[] m_MotionFrames = 
+			[
+				CMotionFrame
+				{
+					int m_nFrame = 0
+					bool m_bExtractTX = true
+					bool m_bExtractTY = true
+					bool m_bExtractTZ = false
+					bool m_bExtractRX = false
+					bool m_bExtractRY = false
+					bool m_bExtractRZ = false
+					bool m_bDiscardTX = false
+					bool m_bDiscardTY = false
+					bool m_bDiscardTZ = false
+					bool m_bDiscardRX = false
+					bool m_bDiscardRY = false
+					bool m_bDiscardRZ = false
+				}
+			]
+			CIKrule*[] m_pIkRules = 
+			[
+				
+			]
+			CAlignAnimation* m_pAlignAnimation = NULL
+			CAdjustAnimation m_adjustAnimation = CAdjustAnimation
+			{
+				float(3) m_translation = ( 0.000000, 0.000000, 0.000000 )
+				float(3) m_rotation = ( 0.000000, 0.000000, 0.000000 )
+			}
+			string[] m_Keywords = 
+			[
+				
+			]
+			CVAnimResourceSequenceParams m_sequenceParams = CVAnimResourceSequenceParams
+			{
+				float m_flFadeInTime = 0.200000
+				float m_flFadeOutTime = 0.200000
+			}
+		},
+		CVanim
+		{
+			string m_Animationname = "Soldiers_far_red_1_Attack_2"
+			string m_Filepath = "models/thd2/soldiers_far_red/Soldiers_far_red_1_Attack_2.SMD"
+			int m_nStartframe = 0
+			int m_nEndframe = 35
+			float m_flFps = 30.000000
+			CAnimationLoop m_Loop = CAnimationLoop
+			{
+				bool m_bLoop = false
+				bool m_bSmoothLoop = false
+				int m_nSmoothLoopStart = 0
+				int m_nSmoothLoopEnd = 0
+				CVAnimCmdStartLoop m_StartLoop = CVAnimCmdStartLoop
+				{
+					bool m_bEnabled = false
+					int m_nLoopRestart = 0
+				}
+			}
+			bool m_bHidden = false
+			CActivity[] m_Activities = 
+			[
+				CActivity
+				{
+					string m_Name = "ACT_DOTA_ATTACK2"
+					int m_nWeight = 1
+				}
+			]
+			CAnimationEvent[] m_AnimationEvents = 
+			[
+				
+			]
+			CMotionFrame[] m_MotionFrames = 
+			[
+				CMotionFrame
+				{
+					int m_nFrame = 0
+					bool m_bExtractTX = true
+					bool m_bExtractTY = true
+					bool m_bExtractTZ = false
+					bool m_bExtractRX = false
+					bool m_bExtractRY = false
+					bool m_bExtractRZ = false
+					bool m_bDiscardTX = false
+					bool m_bDiscardTY = false
+					bool m_bDiscardTZ = false
+					bool m_bDiscardRX = false
+					bool m_bDiscardRY = false
+					bool m_bDiscardRZ = false
+				}
+			]
+			CIKrule*[] m_pIkRules = 
+			[
+				
+			]
+			CAlignAnimation* m_pAlignAnimation = NULL
+			CAdjustAnimation m_adjustAnimation = CAdjustAnimation
+			{
+				float(3) m_translation = ( 0.000000, 0.000000, 0.000000 )
+				float(3) m_rotation = ( 0.000000, 0.000000, 0.000000 )
+			}
+			string[] m_Keywords = 
+			[
+				
+			]
+			CVAnimResourceSequenceParams m_sequenceParams = CVAnimResourceSequenceParams
+			{
+				float m_flFadeInTime = 0.200000
+				float m_flFadeOutTime = 0.200000
+			}
+		},
+		CVanim
+		{
+			string m_Animationname = "Soldiers_far_red_1_Death"
+			string m_Filepath = "models/thd2/soldiers_far_red/Soldiers_far_red_1_Death.SMD"
+			int m_nStartframe = 0
+			int m_nEndframe = 30
+			float m_flFps = 30.000000
+			CAnimationLoop m_Loop = CAnimationLoop
+			{
+				bool m_bLoop = false
+				bool m_bSmoothLoop = false
+				int m_nSmoothLoopStart = 0
+				int m_nSmoothLoopEnd = 0
+				CVAnimCmdStartLoop m_StartLoop = CVAnimCmdStartLoop
+				{
+					bool m_bEnabled = false
+					int m_nLoopRestart = 0
+				}
+			}
+			bool m_bHidden = false
+			CActivity[] m_Activities = 
+			[
+				CActivity
+				{
+					string m_Name = "ACT_DOTA_DIE"
+					int m_nWeight = 1
+				}
+			]
+			CAnimationEvent[] m_AnimationEvents = 
+			[
+				
+			]
+			CMotionFrame[] m_MotionFrames = 
+			[
+				CMotionFrame
+				{
+					int m_nFrame = 0
+					bool m_bExtractTX = true
+					bool m_bExtractTY = true
+					bool m_bExtractTZ = false
+					bool m_bExtractRX = false
+					bool m_bExtractRY = false
+					bool m_bExtractRZ = false
+					bool m_bDiscardTX = false
+					bool m_bDiscardTY = false
+					bool m_bDiscardTZ = false
+					bool m_bDiscardRX = false
+					bool m_bDiscardRY = false
+					bool m_bDiscardRZ = false
+				}
+			]
+			CIKrule*[] m_pIkRules = 
+			[
+				
+			]
+			CAlignAnimation* m_pAlignAnimation = NULL
+			CAdjustAnimation m_adjustAnimation = CAdjustAnimation
+			{
+				float(3) m_translation = ( 0.000000, 0.000000, 0.000000 )
+				float(3) m_rotation = ( 0.000000, 0.000000, 0.000000 )
+			}
+			string[] m_Keywords = 
+			[
+				
+			]
+			CVAnimResourceSequenceParams m_sequenceParams = CVAnimResourceSequenceParams
+			{
+				float m_flFadeInTime = 0.200000
+				float m_flFadeOutTime = 0.200000
+			}
+		},
+		CVanim
+		{
+			string m_Animationname = "Soldiers_far_red_1_Stand"
+			string m_Filepath = "models/thd2/soldiers_far_red/Soldiers_far_red_1_Stand.SMD"
+			int m_nStartframe = 0
+			int m_nEndframe = 30
+			float m_flFps = 30.000000
+			CAnimationLoop m_Loop = CAnimationLoop
+			{
+				bool m_bLoop = false
+				bool m_bSmoothLoop = false
+				int m_nSmoothLoopStart = 0
+				int m_nSmoothLoopEnd = 0
+				CVAnimCmdStartLoop m_StartLoop = CVAnimCmdStartLoop
+				{
+					bool m_bEnabled = false
+					int m_nLoopRestart = 0
+				}
+			}
+			bool m_bHidden = false
+			CActivity[] m_Activities = 
+			[
+				CActivity
+				{
+					string m_Name = "ACT_DOTA_IDLE"
+					int m_nWeight = 1
+				}
+			]
+			CAnimationEvent[] m_AnimationEvents = 
+			[
+				
+			]
+			CMotionFrame[] m_MotionFrames = 
+			[
+				CMotionFrame
+				{
+					int m_nFrame = 0
+					bool m_bExtractTX = true
+					bool m_bExtractTY = true
+					bool m_bExtractTZ = false
+					bool m_bExtractRX = false
+					bool m_bExtractRY = false
+					bool m_bExtractRZ = false
+					bool m_bDiscardTX = false
+					bool m_bDiscardTY = false
+					bool m_bDiscardTZ = false
+					bool m_bDiscardRX = false
+					bool m_bDiscardRY = false
+					bool m_bDiscardRZ = false
+				}
+			]
+			CIKrule*[] m_pIkRules = 
+			[
+				
+			]
+			CAlignAnimation* m_pAlignAnimation = NULL
+			CAdjustAnimation m_adjustAnimation = CAdjustAnimation
+			{
+				float(3) m_translation = ( 0.000000, 0.000000, 0.000000 )
+				float(3) m_rotation = ( 0.000000, 0.000000, 0.000000 )
+			}
+			string[] m_Keywords = 
+			[
+				
+			]
+			CVAnimResourceSequenceParams m_sequenceParams = CVAnimResourceSequenceParams
+			{
+				float m_flFadeInTime = 0.200000
+				float m_flFadeOutTime = 0.200000
+			}
+		},
+		CVanim
+		{
+			string m_Animationname = "Soldiers_far_red_1_Walk"
+			string m_Filepath = "models/thd2/soldiers_far_red/Soldiers_far_red_1_Walk.SMD"
+			int m_nStartframe = 0
+			int m_nEndframe = 25
+			float m_flFps = 30.000000
+			CAnimationLoop m_Loop = CAnimationLoop
+			{
+				bool m_bLoop = true
+				bool m_bSmoothLoop = false
+				int m_nSmoothLoopStart = 0
+				int m_nSmoothLoopEnd = 0
+				CVAnimCmdStartLoop m_StartLoop = CVAnimCmdStartLoop
+				{
+					bool m_bEnabled = false
+					int m_nLoopRestart = 0
+				}
+			}
+			bool m_bHidden = false
+			CActivity[] m_Activities = 
+			[
+				CActivity
+				{
+					string m_Name = "ACT_DOTA_RUN"
+					int m_nWeight = 1
+				}
+			]
+			CAnimationEvent[] m_AnimationEvents = 
+			[
+				
+			]
+			CMotionFrame[] m_MotionFrames = 
+			[
+				CMotionFrame
+				{
+					int m_nFrame = 0
+					bool m_bExtractTX = true
+					bool m_bExtractTY = true
+					bool m_bExtractTZ = false
+					bool m_bExtractRX = false
+					bool m_bExtractRY = false
+					bool m_bExtractRZ = false
+					bool m_bDiscardTX = false
+					bool m_bDiscardTY = false
+					bool m_bDiscardTZ = false
+					bool m_bDiscardRX = false
+					bool m_bDiscardRY = false
+					bool m_bDiscardRZ = false
+				},
+				CMotionFrame
+				{
+					int m_nFrame = 0
+					bool m_bExtractTX = false
+					bool m_bExtractTY = false
+					bool m_bExtractTZ = false
+					bool m_bExtractRX = false
+					bool m_bExtractRY = false
+					bool m_bExtractRZ = false
+					bool m_bDiscardTX = false
+					bool m_bDiscardTY = false
+					bool m_bDiscardTZ = false
+					bool m_bDiscardRX = false
+					bool m_bDiscardRY = false
+					bool m_bDiscardRZ = false
+				}
+			]
+			CIKrule*[] m_pIkRules = 
+			[
+				
+			]
+			CAlignAnimation* m_pAlignAnimation = NULL
+			CAdjustAnimation m_adjustAnimation = CAdjustAnimation
+			{
+				float(3) m_translation = ( 0.000000, 0.000000, 0.000000 )
+				float(3) m_rotation = ( 0.000000, 0.000000, 0.000000 )
+			}
+			string[] m_Keywords = 
+			[
+				
+			]
+			CVAnimResourceSequenceParams m_sequenceParams = CVAnimResourceSequenceParams
+			{
+				float m_flFadeInTime = 0.200000
+				float m_flFadeOutTime = 0.200000
+			}
+		}
+	]
+	string[] m_sScripts = 
+	[
+		
+	]
+}
+
+CVMaterialRemapList CVMaterialRemapList_0
+{
+	CVMaterialRemap[] m_vMaterialRemapList = 
+	[
+		CVMaterialRemap
+		{
+			string m_sSearchMaterial = "soldiers_far_red.vmat"
+			string m_sReplaceMaterial = "materials/models/thd2/soldiers_far_red.vmat"
+		}
+	]
+}

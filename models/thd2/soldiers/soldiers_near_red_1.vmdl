@@ -1,0 +1,756 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	_class = "CVModel"
+	m_meshList = 
+	{
+		m_meshList = 
+		[
+			{
+				m_meshName = "soldiers_near_red_1"
+				m_meshFile = "models/thd2/soldiers/soldiers_near_red_1.smd"
+				m_materialSearchPath = ""
+				m_bSkinParentedObjects = true
+				m_bLegacySkinParentedTransforms = false
+				m_bExpensiveTangents = false
+				m_bHighPrecisionTexCoords = false
+				m_bIgnoreCloth = false
+				m_bGetSkinningFromLod0 = false
+				m_pMorphInfo = null
+			},
+		]
+	}
+	m_clothProxyMeshList = 
+	{
+		_class = "CVClothProxyMeshList"
+		m_flClothEnableThreshold = 0.05
+		m_bCreateStaticBone = false
+		m_nMaxBonesPerVertex = 4
+		m_bRemoveUnusedBonesEnabled = false
+		m_bDriveMeshesWithBacksolvedJointsOnly = true
+		m_flMatchProxiesToMeshes = 1.0
+		m_flReservedFloat = 0.0
+		m_nReservedInt = 0
+		m_bReservedBool1 = false
+		m_bReservedBool2 = false
+		m_bReservedBool3 = false
+		m_bReservedBool4 = false
+		m_clothProxyMeshList = [  ]
+	}
+	m_physicsMeshList = 
+	{
+		m_meshList = [  ]
+	}
+	m_pModelInfo = null
+	m_pBoneFlagList = 
+	{
+		_class = "CVBoneFlagListReference"
+		m_pObject = null
+	}
+	m_pHitBoxSetLists = 
+	[
+		{
+			_class = "CVhitBoxSetListReference"
+			m_pObject = 
+			{
+				m_HitBoxSets = 
+				[
+					{
+						m_name = "default"
+						m_HitBoxes = 
+						[
+							{
+								m_name = "bone01"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone01"
+								m_vMinBounds = [ -2.0, -2.0, -2.0 ]
+								m_vMaxBounds = [ 2.0, 2.0, 2.0 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone19"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone19"
+								m_vMinBounds = [ -12.400919, -15.691387, -2.013596 ]
+								m_vMaxBounds = [ 12.633608, 15.198498, -0.836014 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone08"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone08"
+								m_vMinBounds = [ -11.843708, -4.135096, -14.035782 ]
+								m_vMaxBounds = [ -2.559157, 5.475769, 6.403313 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone05"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone05"
+								m_vMinBounds = [ -14.332996, -5.256118, -18.755081 ]
+								m_vMaxBounds = [ 2.74131, 2.24581, 0.829277 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone02"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone02"
+								m_vMinBounds = [ 1.623245, -4.073466, -14.130424 ]
+								m_vMaxBounds = [ 10.907772, 5.53737, 6.308678 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone16"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone16"
+								m_vMinBounds = [ -3.551994, -5.634663, -28.695415 ]
+								m_vMaxBounds = [ 5.238696, 5.40902, 0.207226 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone20"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone20"
+								m_vMinBounds = [ -5.202613, -5.374623, -29.024231 ]
+								m_vMaxBounds = [ 3.499625, 5.669061, -0.121578 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone09"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone09"
+								m_vMinBounds = [ -8.059099, -4.041351, -9.027008 ]
+								m_vMaxBounds = [ 2.441349, 3.968708, 2.059242 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone04"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone04"
+								m_vMinBounds = [ -2.724843, -5.293542, -18.737823 ]
+								m_vMaxBounds = [ 14.349463, 2.077454, 0.846535 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone06"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone06"
+								m_vMinBounds = [ -20.0, -20.0, -100.0 ]
+								m_vMaxBounds = [ 20.0, 20.0, 25.0 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone18"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone18"
+								m_vMinBounds = [ -5.875145, -20.080616, -10.583396 ]
+								m_vMaxBounds = [ 7.130619, 6.251561, -0.729777 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone17"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone17"
+								m_vMinBounds = [ -7.483569, -20.080616, -10.411187 ]
+								m_vMaxBounds = [ 5.522379, 6.251562, -0.557569 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone10"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone10"
+								m_vMinBounds = [ -2.620682, -2.913131, -9.15313 ]
+								m_vMaxBounds = [ 7.879751, 5.053031, 1.933121 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+						]
+					},
+				]
+				m_AutoCreateSetName = ""
+			}
+		},
+	]
+	m_pAttachmentLists = 
+	[
+		{
+			_class = "CVattachmentListReference"
+			m_pObject = 
+			{
+				m_name = ""
+				m_attachments = 
+				[
+					{
+						m_name = "attach_attack1"
+						m_influences = 
+						[
+							{
+								m_influenceName = "bone11"
+								m_vTranslationOffset = [ 0.0, 0.0, 0.0 ]
+								m_vRotationOffset = [ 0.0, 0.0, 0.0 ]
+								m_flWeight = 1.0
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						m_name = "attach_attack2"
+						m_influences = 
+						[
+							{
+								m_influenceName = "bone11"
+								m_vTranslationOffset = [ 0.0, 0.0, 0.0 ]
+								m_vRotationOffset = [ 0.0, 0.0, 0.0 ]
+								m_flWeight = 1.0
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						m_name = "attach_hitloc"
+						m_influences = 
+						[
+							{
+								m_influenceName = "bone01"
+								m_vTranslationOffset = [ 0.0, 0.0, 0.0 ]
+								m_vRotationOffset = [ 0.0, 0.0, 0.0 ]
+								m_flWeight = 1.0
+								m_bRoot = false
+							},
+						]
+					},
+				]
+			}
+		},
+	]
+	m_pAnimGroup = 
+	{
+		_class = "CVanimGroupReference"
+		m_pObject = 
+		{
+			m_Name = ""
+			m_pReferenceSkeleton = 
+			{
+				_class = "CVReferenceSkeletonReference"
+				m_pObject = null
+			}
+			m_pBoneFlagList = 
+			{
+				_class = "CVBoneFlagListReference"
+				m_pObject = null
+			}
+			m_pSeqGroup = 
+			{
+				_class = "CVseqGroupReference"
+				m_pObject = null
+			}
+			m_pAnimGroups = 
+			[
+				{
+					_class = "CVanimGroupReference"
+					m_pObject = 
+					{
+						m_Name = ""
+						m_pReferenceSkeleton = 
+						{
+							_class = "CVReferenceSkeletonReference"
+							m_pObject = null
+						}
+						m_pBoneFlagList = 
+						{
+							_class = "CVBoneFlagListReference"
+							m_pObject = null
+						}
+						m_pSeqGroup = 
+						{
+							_class = "CVseqGroupReference"
+							m_pObject = null
+						}
+						m_pAnimGroups = [  ]
+						m_Vanim = 
+						[
+							{
+								m_Animationname = "Soldiers_near_red_1_Attack_1"
+								m_Filepath = "models/thd2/soldiers/Soldiers_near_red_1_Attack_1.SMD"
+								m_nStartframe = 0
+								m_nEndframe = 35
+								m_flFps = 30.0
+								m_Loop = 
+								{
+									m_bLoop = false
+									m_bSmoothLoop = false
+									m_nSmoothLoopStart = 0
+									m_nSmoothLoopEnd = 0
+									m_StartLoop = 
+									{
+										_class = "CVAnimCmdStartLoop"
+										m_bEnabled = false
+										m_nLoopRestart = 0
+									}
+								}
+								m_bHidden = false
+								m_bDisable = false
+								m_Activities = 
+								[
+									{
+										m_Name = "ACT_DOTA_ATTACK"
+										m_nWeight = 1
+									},
+								]
+								m_AnimationEvents = [  ]
+								m_MotionFrames = 
+								[
+									{
+										m_nFrame = 0
+										m_bExtractTX = true
+										m_bExtractTY = true
+										m_bExtractTZ = false
+										m_bExtractRX = false
+										m_bExtractRY = false
+										m_bExtractRZ = false
+										m_bDiscardTX = false
+										m_bDiscardTY = false
+										m_bDiscardTZ = false
+										m_bDiscardRX = false
+										m_bDiscardRY = false
+										m_bDiscardRZ = false
+									},
+								]
+								m_pIkRules = [  ]
+								m_pAlignAnimation = null
+								m_adjustAnimation = 
+								{
+									m_translation = [ 0.0, 0.0, 0.0 ]
+									m_rotation = [ 0.0, 0.0, 0.0 ]
+								}
+								m_Keywords = [  ]
+								m_sequenceParams = 
+								{
+									m_flFadeInTime = 0.2
+									m_flFadeOutTime = 0.2
+								}
+								m_folderName = ""
+								m_MotionFramesRootBone = ""
+							},
+							{
+								m_Animationname = "Soldiers_near_red_1_Attack_2"
+								m_Filepath = "models/thd2/soldiers/Soldiers_near_red_1_Attack_2.SMD"
+								m_nStartframe = 0
+								m_nEndframe = 30
+								m_flFps = 30.0
+								m_Loop = 
+								{
+									m_bLoop = false
+									m_bSmoothLoop = false
+									m_nSmoothLoopStart = 0
+									m_nSmoothLoopEnd = 0
+									m_StartLoop = 
+									{
+										_class = "CVAnimCmdStartLoop"
+										m_bEnabled = false
+										m_nLoopRestart = 0
+									}
+								}
+								m_bHidden = false
+								m_bDisable = false
+								m_Activities = 
+								[
+									{
+										m_Name = "ACT_DOTA_ATTACK2"
+										m_nWeight = 1
+									},
+								]
+								m_AnimationEvents = [  ]
+								m_MotionFrames = 
+								[
+									{
+										m_nFrame = 0
+										m_bExtractTX = true
+										m_bExtractTY = true
+										m_bExtractTZ = false
+										m_bExtractRX = false
+										m_bExtractRY = false
+										m_bExtractRZ = false
+										m_bDiscardTX = false
+										m_bDiscardTY = false
+										m_bDiscardTZ = false
+										m_bDiscardRX = false
+										m_bDiscardRY = false
+										m_bDiscardRZ = false
+									},
+								]
+								m_pIkRules = [  ]
+								m_pAlignAnimation = null
+								m_adjustAnimation = 
+								{
+									m_translation = [ 0.0, 0.0, 0.0 ]
+									m_rotation = [ 0.0, 0.0, 0.0 ]
+								}
+								m_Keywords = [  ]
+								m_sequenceParams = 
+								{
+									m_flFadeInTime = 0.2
+									m_flFadeOutTime = 0.2
+								}
+								m_folderName = ""
+								m_MotionFramesRootBone = ""
+							},
+							{
+								m_Animationname = "Soldiers_near_red_1_Attack_3"
+								m_Filepath = "models/thd2/soldiers/Soldiers_near_red_1_Attack_3.SMD"
+								m_nStartframe = 0
+								m_nEndframe = 35
+								m_flFps = 30.0
+								m_Loop = 
+								{
+									m_bLoop = false
+									m_bSmoothLoop = false
+									m_nSmoothLoopStart = 0
+									m_nSmoothLoopEnd = 0
+									m_StartLoop = 
+									{
+										_class = "CVAnimCmdStartLoop"
+										m_bEnabled = false
+										m_nLoopRestart = 0
+									}
+								}
+								m_bHidden = false
+								m_bDisable = false
+								m_Activities = [  ]
+								m_AnimationEvents = [  ]
+								m_MotionFrames = 
+								[
+									{
+										m_nFrame = 0
+										m_bExtractTX = true
+										m_bExtractTY = true
+										m_bExtractTZ = false
+										m_bExtractRX = false
+										m_bExtractRY = false
+										m_bExtractRZ = false
+										m_bDiscardTX = false
+										m_bDiscardTY = false
+										m_bDiscardTZ = false
+										m_bDiscardRX = false
+										m_bDiscardRY = false
+										m_bDiscardRZ = false
+									},
+								]
+								m_pIkRules = [  ]
+								m_pAlignAnimation = null
+								m_adjustAnimation = 
+								{
+									m_translation = [ 0.0, 0.0, 0.0 ]
+									m_rotation = [ 0.0, 0.0, 0.0 ]
+								}
+								m_Keywords = [  ]
+								m_sequenceParams = 
+								{
+									m_flFadeInTime = 0.2
+									m_flFadeOutTime = 0.2
+								}
+								m_folderName = ""
+								m_MotionFramesRootBone = ""
+							},
+							{
+								m_Animationname = "Soldiers_near_red_1_Death"
+								m_Filepath = "models/thd2/soldiers/Soldiers_near_red_1_Death.SMD"
+								m_nStartframe = 0
+								m_nEndframe = 30
+								m_flFps = 30.0
+								m_Loop = 
+								{
+									m_bLoop = false
+									m_bSmoothLoop = false
+									m_nSmoothLoopStart = 0
+									m_nSmoothLoopEnd = 0
+									m_StartLoop = 
+									{
+										_class = "CVAnimCmdStartLoop"
+										m_bEnabled = false
+										m_nLoopRestart = 0
+									}
+								}
+								m_bHidden = false
+								m_bDisable = false
+								m_Activities = 
+								[
+									{
+										m_Name = "ACT_DOTA_DIE"
+										m_nWeight = 1
+									},
+								]
+								m_AnimationEvents = [  ]
+								m_MotionFrames = 
+								[
+									{
+										m_nFrame = 0
+										m_bExtractTX = true
+										m_bExtractTY = true
+										m_bExtractTZ = false
+										m_bExtractRX = false
+										m_bExtractRY = false
+										m_bExtractRZ = false
+										m_bDiscardTX = false
+										m_bDiscardTY = false
+										m_bDiscardTZ = false
+										m_bDiscardRX = false
+										m_bDiscardRY = false
+										m_bDiscardRZ = false
+									},
+								]
+								m_pIkRules = [  ]
+								m_pAlignAnimation = null
+								m_adjustAnimation = 
+								{
+									m_translation = [ 0.0, 0.0, 0.0 ]
+									m_rotation = [ 0.0, 0.0, 0.0 ]
+								}
+								m_Keywords = [  ]
+								m_sequenceParams = 
+								{
+									m_flFadeInTime = 0.2
+									m_flFadeOutTime = 0.2
+								}
+								m_folderName = ""
+								m_MotionFramesRootBone = ""
+							},
+							{
+								m_Animationname = "Soldiers_near_red_1_Walk"
+								m_Filepath = "models/thd2/soldiers/Soldiers_near_red_1_Walk.SMD"
+								m_nStartframe = 0
+								m_nEndframe = 30
+								m_flFps = 30.0
+								m_Loop = 
+								{
+									m_bLoop = true
+									m_bSmoothLoop = false
+									m_nSmoothLoopStart = 0
+									m_nSmoothLoopEnd = 0
+									m_StartLoop = 
+									{
+										_class = "CVAnimCmdStartLoop"
+										m_bEnabled = false
+										m_nLoopRestart = 0
+									}
+								}
+								m_bHidden = false
+								m_bDisable = false
+								m_Activities = 
+								[
+									{
+										m_Name = "ACT_DOTA_RUN"
+										m_nWeight = 1
+									},
+								]
+								m_AnimationEvents = [  ]
+								m_MotionFrames = 
+								[
+									{
+										m_nFrame = 0
+										m_bExtractTX = true
+										m_bExtractTY = true
+										m_bExtractTZ = false
+										m_bExtractRX = false
+										m_bExtractRY = false
+										m_bExtractRZ = false
+										m_bDiscardTX = false
+										m_bDiscardTY = false
+										m_bDiscardTZ = false
+										m_bDiscardRX = false
+										m_bDiscardRY = false
+										m_bDiscardRZ = false
+									},
+									{
+										m_nFrame = 0
+										m_bExtractTX = false
+										m_bExtractTY = false
+										m_bExtractTZ = false
+										m_bExtractRX = false
+										m_bExtractRY = false
+										m_bExtractRZ = false
+										m_bDiscardTX = false
+										m_bDiscardTY = false
+										m_bDiscardTZ = false
+										m_bDiscardRX = false
+										m_bDiscardRY = false
+										m_bDiscardRZ = false
+									},
+								]
+								m_pIkRules = [  ]
+								m_pAlignAnimation = null
+								m_adjustAnimation = 
+								{
+									m_translation = [ 0.0, 0.0, 0.0 ]
+									m_rotation = [ 0.0, 0.0, 0.0 ]
+								}
+								m_Keywords = [  ]
+								m_sequenceParams = 
+								{
+									m_flFadeInTime = 0.2
+									m_flFadeOutTime = 0.2
+								}
+								m_folderName = ""
+								m_MotionFramesRootBone = ""
+							},
+							{
+								m_Animationname = "Soldiers_near_red_1_Stand"
+								m_Filepath = "models/thd2/soldiers/Soldiers_near_red_1_Stand.SMD"
+								m_nStartframe = 0
+								m_nEndframe = 40
+								m_flFps = 30.0
+								m_Loop = 
+								{
+									m_bLoop = true
+									m_bSmoothLoop = false
+									m_nSmoothLoopStart = 0
+									m_nSmoothLoopEnd = 0
+									m_StartLoop = 
+									{
+										_class = "CVAnimCmdStartLoop"
+										m_bEnabled = false
+										m_nLoopRestart = 0
+									}
+								}
+								m_bHidden = false
+								m_bDisable = false
+								m_Activities = 
+								[
+									{
+										m_Name = "ACT_DOTA_IDLE"
+										m_nWeight = 1
+									},
+								]
+								m_AnimationEvents = [  ]
+								m_MotionFrames = 
+								[
+									{
+										m_nFrame = 0
+										m_bExtractTX = true
+										m_bExtractTY = true
+										m_bExtractTZ = false
+										m_bExtractRX = false
+										m_bExtractRY = false
+										m_bExtractRZ = false
+										m_bDiscardTX = false
+										m_bDiscardTY = false
+										m_bDiscardTZ = false
+										m_bDiscardRX = false
+										m_bDiscardRY = false
+										m_bDiscardRZ = false
+									},
+								]
+								m_pIkRules = [  ]
+								m_pAlignAnimation = null
+								m_adjustAnimation = 
+								{
+									m_translation = [ 0.0, 0.0, 0.0 ]
+									m_rotation = [ 0.0, 0.0, 0.0 ]
+								}
+								m_Keywords = [  ]
+								m_sequenceParams = 
+								{
+									m_flFadeInTime = 0.2
+									m_flFadeOutTime = 0.2
+								}
+								m_folderName = ""
+								m_MotionFramesRootBone = ""
+							},
+						]
+						m_sScripts = [  ]
+						m_folderNames = [  ]
+					}
+				},
+			]
+			m_Vanim = [  ]
+			m_sScripts = [  ]
+			m_folderNames = [  ]
+		}
+	}
+	m_pMaterialGroupList = 
+	{
+		_class = "CVNodeMaterialGroupListReference"
+		m_pObject = null
+	}
+	m_pMeshGroupList = 
+	{
+		_class = "CVMeshGroupListReference"
+		m_pObject = null
+	}
+	m_pLodGroupList = 
+	{
+		_class = "CVLODGroupListReference"
+		m_pObject = null
+	}
+	m_pPropBreakableList = 
+	{
+		_class = "CVpropBreakableListReference"
+		m_pObject = null
+	}
+	m_pPropDataList = 
+	{
+		_class = "CVpropDataListReference"
+		m_pObject = null
+	}
+	m_pConstraintLists = [  ]
+	m_collision = ""
+	m_softbody = ""
+	m_sMDLFilename = ""
+	m_sOffsetHitboxSets = [  ]
+	m_vHitboxSetOffset = [ 0.0, 0.0, 0.0 ]
+	m_scriptFiles = [  ]
+	m_pMaterialRemapList = 
+	{
+		m_vMaterialRemapList = 
+		[
+			{
+				m_sSearchMaterial = "01_-_default.vmat"
+				m_sReplaceMaterial = "materials/models/thd2/soldiers_near_red_1.vmat"
+			},
+			{
+				m_sSearchMaterial = "02_-_default.vmat"
+				m_sReplaceMaterial = "materials/models/thd2/soldiers_near_red_2.vmat"
+			},
+		]
+	}
+	m_flFbxScale = 1.0
+	m_flQCScale = 1.0
+	m_vOrigin = [ 0.0, 0.0, 0.0 ]
+	m_nLoadDmxAnimVersion = 0
+	m_pPsfList = null
+	m_keyValueText = ""
+	m_bStaticProp = false
+	m_bEnableClothProcessing = true
+	m_flClothEnableThreshold = 0.05
+	m_nMaxClothVertsPerMesh = 2048
+	m_bBuildClothBoneHierarchy = false
+	m_nNavType = "AUTH_NAV_MESH"
+	m_bMakeUniqueVMeshes = false
+	m_bMakeImplicitBindPoseSequence = false
+	m_bAdjustSkeletonFromBoneFlags = false
+	m_pAnimGroups = [  ]
+}

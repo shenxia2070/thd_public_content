@@ -1,0 +1,571 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	m_meshList = 
+	{
+		m_meshList = 
+		[
+			{
+				m_meshName = "soldiers_siege_red_1"
+				m_meshFile = "models/thd2/soldiers/soldiers_siege_red_1.smd"
+				m_materialSearchPath = ""
+				m_bSkinParentedObjects = true
+				m_bLegacySkinParentedTransforms = false
+				m_bExpensiveTangents = false
+				m_bHighPrecisionTexCoords = false
+				m_bPerVertexCurvature = false
+				m_bBentNormals = false
+				m_bIgnoreCloth = false
+				m_bGetSkinningFromLod0 = false
+				m_bPreferHighDensityTrianglesInUvDensityCalculation = false
+				m_pMorphInfo = null
+			},
+		]
+	}
+	m_clothProxyMeshList = 
+	{
+		_class = "CVClothProxyMeshList"
+		m_flClothEnableThreshold = 0.05
+		m_bCreateStaticBone = false
+		m_nMaxBonesPerVertex = 4
+		m_bRemoveUnusedBonesEnabled = false
+		m_bDriveMeshesWithBacksolvedJointsOnly = true
+		m_flMatchProxiesToMeshes = 1.0
+		m_flFallbackEnvelope = 1.0
+		m_nReservedInt = 0
+		m_bSoftSkinAnimation = false
+		m_bReservedBool2 = false
+		m_bReservedBool3 = false
+		m_bReservedBool4 = false
+		m_clothProxyMeshList = [  ]
+	}
+	m_physicsMeshList = 
+	{
+		m_meshList = [  ]
+	}
+	m_pModelInfo = null
+	m_pBoneFlagList = 
+	{
+		m_pObject = null
+	}
+	m_pHitBoxSetLists = 
+	[
+		{
+			m_pObject = 
+			{
+				m_HitBoxSets = 
+				[
+					{
+						m_name = "default"
+						m_HitBoxes = 
+						[
+							{
+								m_name = "bone_26"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_26"
+								m_vMinBounds = [ -15.948339, -27.477409, -17.419937 ]
+								m_vMaxBounds = [ 12.600733, 21.138599, 41.195282 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_0"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_0"
+								m_vMinBounds = [ -27.065155, -18.925423, -32.315201 ]
+								m_vMaxBounds = [ 0.733416, 19.759361, 8.781479 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_14"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_14"
+								m_vMinBounds = [ -28.002024, -18.517614, -27.710648 ]
+								m_vMaxBounds = [ 2.807142, 7.517778, 4.058456 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_1"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_1"
+								m_vMinBounds = [ -53.454197, -30.860966, -65.491486 ]
+								m_vMaxBounds = [ 8.41787, 49.506237, 7.66523 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_23"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_23"
+								m_vMinBounds = [ -0.195112, -19.243664, -33.385056 ]
+								m_vMaxBounds = [ 27.743582, 19.441212, 7.711639 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_29"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_29"
+								m_vMinBounds = [ -34.215179, -38.384056, -52.914734 ]
+								m_vMaxBounds = [ 34.07547, 37.323921, -52.914726 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_28"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_28"
+								m_vMinBounds = [ -46.573574, -23.66239, -34.251801 ]
+								m_vMaxBounds = [ 44.140385, 43.856731, 55.694469 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bons_041"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bons_041"
+								m_vMinBounds = [ -13.495918, -38.135487, -13.507633 ]
+								m_vMaxBounds = [ 13.495815, 38.135483, 13.507517 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_24"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_24"
+								m_vMinBounds = [ -4.734596, -5.745271, -2.421127 ]
+								m_vMaxBounds = [ 2.659985, 3.189864, 3.60437 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_30"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_30"
+								m_vMinBounds = [ -51.607075, -48.72496, -63.890259 ]
+								m_vMaxBounds = [ 50.332664, 51.349064, -0.488319 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_10"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_10"
+								m_vMinBounds = [ -7.21575, -21.446772, -54.227722 ]
+								m_vMaxBounds = [ 14.335646, 8.739611, -0.000015 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_11"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_11"
+								m_vMinBounds = [ -14.703482, -19.082905, -54.227707 ]
+								m_vMaxBounds = [ 7.534079, 6.186596, -0.000015 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_12"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_12"
+								m_vMinBounds = [ -49.745491, -18.780575, -72.75901 ]
+								m_vMaxBounds = [ 62.460564, 32.074825, 0.081589 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bons_40"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bons_40"
+								m_vMinBounds = [ -15.182898, -43.99308, -10.82246 ]
+								m_vMaxBounds = [ 15.182802, 43.99308, 10.822368 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "bone_2"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "bone_2"
+								m_vMinBounds = [ -3.474945, -11.796743, -22.798714 ]
+								m_vMaxBounds = [ 16.998323, 16.335649, 2.804422 ]
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+						]
+					},
+				]
+				m_AutoCreateSetName = ""
+			}
+		},
+	]
+	m_pAttachmentLists = [  ]
+	m_pAnimGroup = 
+	{
+		m_pObject = 
+		{
+			m_Name = ""
+			m_pBoneFlagList = 
+			{
+				m_pObject = null
+			}
+			m_pSeqGroup = 
+			{
+				m_pObject = null
+			}
+			m_pAnimGroups = 
+			[
+				{
+					m_pObject = 
+					{
+						m_Name = ""
+						m_pBoneFlagList = 
+						{
+							m_pObject = null
+						}
+						m_pSeqGroup = 
+						{
+							m_pObject = null
+						}
+						m_pAnimGroups = [  ]
+						m_Vanim = 
+						[
+							{
+								m_Animationname = "Soldiers_Siege_red_1_Attack_1"
+								m_Filepath = "models/thd2/soldiers/Soldiers_Siege_red_1_Attack_1.SMD"
+								m_nStartframe = 0
+								m_nEndframe = 35
+								m_flFps = 30.0
+								m_Loop = 
+								{
+									m_bLoop = false
+									m_bSmoothLoop = false
+									m_nSmoothLoopStart = 0
+									m_nSmoothLoopEnd = 0
+									m_StartLoop = 
+									{
+										_class = "CVAnimCmdStartLoop"
+										m_bEnabled = false
+										m_nLoopRestart = 0
+									}
+								}
+								m_bHidden = false
+								m_bDisable = false
+								m_Activities = [  ]
+								m_AnimationEvents = [  ]
+								m_MotionFrames = 
+								[
+									{
+										m_nFrame = 0
+										m_bExtractTX = true
+										m_bExtractTY = true
+										m_bExtractTZ = false
+										m_bExtractRX = false
+										m_bExtractRY = false
+										m_bExtractRZ = false
+										m_bDiscardTX = false
+										m_bDiscardTY = false
+										m_bDiscardTZ = false
+										m_bDiscardRX = false
+										m_bDiscardRY = false
+										m_bDiscardRZ = false
+									},
+								]
+								m_pIkRules = [  ]
+								m_pAlignAnimation = null
+								m_adjustAnimation = 
+								{
+									m_translation = [ 0.0, 0.0, 0.0 ]
+									m_rotation = [ 0.0, 0.0, 0.0 ]
+								}
+								m_Keywords = [  ]
+								m_sequenceParams = 
+								{
+									m_flFadeInTime = 0.2
+									m_flFadeOutTime = 0.2
+								}
+								m_folderName = ""
+								m_MotionFramesRootBone = ""
+							},
+							{
+								m_Animationname = "Soldiers_Siege_red_1_Death"
+								m_Filepath = "models/thd2/soldiers/Soldiers_Siege_red_1_Death.SMD"
+								m_nStartframe = 0
+								m_nEndframe = 30
+								m_flFps = 30.0
+								m_Loop = 
+								{
+									m_bLoop = false
+									m_bSmoothLoop = false
+									m_nSmoothLoopStart = 0
+									m_nSmoothLoopEnd = 0
+									m_StartLoop = 
+									{
+										_class = "CVAnimCmdStartLoop"
+										m_bEnabled = false
+										m_nLoopRestart = 0
+									}
+								}
+								m_bHidden = false
+								m_bDisable = false
+								m_Activities = [  ]
+								m_AnimationEvents = [  ]
+								m_MotionFrames = 
+								[
+									{
+										m_nFrame = 0
+										m_bExtractTX = true
+										m_bExtractTY = true
+										m_bExtractTZ = false
+										m_bExtractRX = false
+										m_bExtractRY = false
+										m_bExtractRZ = false
+										m_bDiscardTX = false
+										m_bDiscardTY = false
+										m_bDiscardTZ = false
+										m_bDiscardRX = false
+										m_bDiscardRY = false
+										m_bDiscardRZ = false
+									},
+								]
+								m_pIkRules = [  ]
+								m_pAlignAnimation = null
+								m_adjustAnimation = 
+								{
+									m_translation = [ 0.0, 0.0, 0.0 ]
+									m_rotation = [ 0.0, 0.0, 0.0 ]
+								}
+								m_Keywords = [  ]
+								m_sequenceParams = 
+								{
+									m_flFadeInTime = 0.2
+									m_flFadeOutTime = 0.2
+								}
+								m_folderName = ""
+								m_MotionFramesRootBone = ""
+							},
+							{
+								m_Animationname = "Soldiers_Siege_red_1_Stand"
+								m_Filepath = "models/thd2/soldiers/Soldiers_Siege_red_1_Stand.SMD"
+								m_nStartframe = 0
+								m_nEndframe = 35
+								m_flFps = 30.0
+								m_Loop = 
+								{
+									m_bLoop = false
+									m_bSmoothLoop = false
+									m_nSmoothLoopStart = 0
+									m_nSmoothLoopEnd = 0
+									m_StartLoop = 
+									{
+										_class = "CVAnimCmdStartLoop"
+										m_bEnabled = false
+										m_nLoopRestart = 0
+									}
+								}
+								m_bHidden = false
+								m_bDisable = false
+								m_Activities = [  ]
+								m_AnimationEvents = [  ]
+								m_MotionFrames = 
+								[
+									{
+										m_nFrame = 0
+										m_bExtractTX = true
+										m_bExtractTY = true
+										m_bExtractTZ = false
+										m_bExtractRX = false
+										m_bExtractRY = false
+										m_bExtractRZ = false
+										m_bDiscardTX = false
+										m_bDiscardTY = false
+										m_bDiscardTZ = false
+										m_bDiscardRX = false
+										m_bDiscardRY = false
+										m_bDiscardRZ = false
+									},
+								]
+								m_pIkRules = [  ]
+								m_pAlignAnimation = null
+								m_adjustAnimation = 
+								{
+									m_translation = [ 0.0, 0.0, 0.0 ]
+									m_rotation = [ 0.0, 0.0, 0.0 ]
+								}
+								m_Keywords = [  ]
+								m_sequenceParams = 
+								{
+									m_flFadeInTime = 0.2
+									m_flFadeOutTime = 0.2
+								}
+								m_folderName = ""
+								m_MotionFramesRootBone = ""
+							},
+							{
+								m_Animationname = "Soldiers_Siege_red_1_Walk"
+								m_Filepath = "models/thd2/soldiers/Soldiers_Siege_red_1_Walk.SMD"
+								m_nStartframe = 0
+								m_nEndframe = 35
+								m_flFps = 30.0
+								m_Loop = 
+								{
+									m_bLoop = true
+									m_bSmoothLoop = false
+									m_nSmoothLoopStart = 0
+									m_nSmoothLoopEnd = 0
+									m_StartLoop = 
+									{
+										_class = "CVAnimCmdStartLoop"
+										m_bEnabled = false
+										m_nLoopRestart = 0
+									}
+								}
+								m_bHidden = false
+								m_bDisable = false
+								m_Activities = [  ]
+								m_AnimationEvents = [  ]
+								m_MotionFrames = 
+								[
+									{
+										m_nFrame = 0
+										m_bExtractTX = true
+										m_bExtractTY = true
+										m_bExtractTZ = false
+										m_bExtractRX = false
+										m_bExtractRY = false
+										m_bExtractRZ = false
+										m_bDiscardTX = false
+										m_bDiscardTY = false
+										m_bDiscardTZ = false
+										m_bDiscardRX = false
+										m_bDiscardRY = false
+										m_bDiscardRZ = false
+									},
+									{
+										m_nFrame = 0
+										m_bExtractTX = false
+										m_bExtractTY = false
+										m_bExtractTZ = false
+										m_bExtractRX = false
+										m_bExtractRY = false
+										m_bExtractRZ = false
+										m_bDiscardTX = false
+										m_bDiscardTY = false
+										m_bDiscardTZ = false
+										m_bDiscardRX = false
+										m_bDiscardRY = false
+										m_bDiscardRZ = false
+									},
+								]
+								m_pIkRules = [  ]
+								m_pAlignAnimation = null
+								m_adjustAnimation = 
+								{
+									m_translation = [ 0.0, 0.0, 0.0 ]
+									m_rotation = [ 0.0, 0.0, 0.0 ]
+								}
+								m_Keywords = [  ]
+								m_sequenceParams = 
+								{
+									m_flFadeInTime = 0.2
+									m_flFadeOutTime = 0.2
+								}
+								m_folderName = ""
+								m_MotionFramesRootBone = ""
+							},
+						]
+						m_sScripts = [  ]
+						m_folderNames = [  ]
+						m_sCompileScripts = [  ]
+						m_pActivityWhiteList = 
+						{
+							m_pObject = null
+						}
+					}
+				},
+			]
+			m_Vanim = [  ]
+			m_sScripts = [  ]
+			m_folderNames = [  ]
+			m_sCompileScripts = [  ]
+			m_pActivityWhiteList = 
+			{
+				m_pObject = null
+			}
+		}
+	}
+	m_pMaterialGroupList = 
+	{
+		m_pObject = null
+	}
+	m_pMeshGroupList = 
+	{
+		m_pObject = null
+	}
+	m_pLodGroupList = 
+	{
+		m_pObject = null
+	}
+	m_pPropBreakableList = 
+	{
+		m_pObject = null
+	}
+	m_pPropDataList = 
+	{
+		m_pObject = null
+	}
+	m_pConstraintLists = [  ]
+	m_collision = ""
+	m_softbody = ""
+	m_sMDLFilename = ""
+	m_sOffsetHitboxSets = [  ]
+	m_vHitboxSetOffset = [ 0.0, 0.0, 0.0 ]
+	m_scriptFiles = [  ]
+	m_pMaterialRemapList = 
+	{
+		m_vMaterialRemapList = 
+		[
+			{
+				m_sSearchMaterial = "soldiers_siege_red_1.vmat"
+				m_sReplaceMaterial = "materials/models/thd2/soldiers_siege_red_1.vmat"
+			},
+			{
+				m_sSearchMaterial = "soldiers_siege_red_2.vmat"
+				m_sReplaceMaterial = "materials/models/thd2/soldiers_siege_red_2.vmat"
+			},
+		]
+	}
+	m_flFbxScale = 1.0
+	m_flQCScale = 1.0
+	m_vOrigin = [ 0.0, 0.0, 0.0 ]
+	m_bEmbedAnimsInAnimGroup = false
+	m_pPsfList = null
+	m_keyValueText = ""
+	m_bStaticProp = false
+	m_bEnableClothProcessing = true
+	m_flClothEnableThreshold = 0.05
+	m_nMaxClothVertsPerMesh = 2048
+	m_bBuildClothBoneHierarchy = false
+	m_nNavType = "AUTH_NAV_MESH"
+	m_bMakeUniqueVMeshes = false
+	m_bMakeImplicitBindPoseSequence = false
+	m_bAdjustSkeletonFromBoneFlags = false
+	m_bHiddenAssetFlag = false
+	m_pAnimGroups = [  ]
+}
