@@ -1,5 +1,11 @@
 .image_precache
 {
+    background-image: url("file://{images}/heroes/npc_dota_hero_ember_spirit.png");
+    background-image: url("file://{images}/heroes/thd2_npc_dota_hero_ember_spirit.png");
+    background-image: url("file://{images}/heroes/icons/npc_dota_hero_ember_spirit.png");
+    background-image: url("file://{images}/heroes/icons/thd2_npc_dota_hero_ember_spirit.png");
+    background-image: url("file://{images}/heroes/selection/npc_dota_hero_ember_spirit.png");
+    background-image: url("file://{images}/heroes/selection/thd2_npc_dota_hero_ember_spirit.png");
     background-image: url("file://{images}/items/9ball.png");
     background-image: url("file://{images}/items/anchor.png");
     background-image: url("file://{images}/items/aunt_clothes.png");
