@@ -1,0 +1,10 @@
+<root>
+	<styles>
+		<include src="file://{resources}/styles/dotastyles.css" />
+		<include src="file://{resources}/styles/custom_game/thd_end.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/scripts/custom_game/thd_end.js" />
+	</scripts>
+	<Panel class="end_layout" hittest="false" />
+</root>

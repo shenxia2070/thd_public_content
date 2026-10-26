@@ -1,0 +1,174 @@
+/* 结算界面（原生 Panorama），行数按每队实际人数生成 */
+
+.end_layout
+{
+	width: 100%;
+	height: 100%;
+}
+
+.end_screen
+{
+	width: 100%;
+	height: 100%;
+	background-color: #252525;
+	flow-children: down;
+}
+
+.end_winner
+{
+	horizontal-align: center;
+	margin-top: 2%;
+	font-size: 56px;
+	color: #66ccff;
+}
+
+.end_info
+{
+	horizontal-align: center;
+	margin-top: 8px;
+	font-size: 18px;
+	color: #c0c0c0;
+}
+
+.end_table
+{
+	width: 1840px;
+	height: fill-parent-flow(1.0);
+	max-height: 820px;
+	margin-top: 16px;
+	horizontal-align: center;
+	flow-children: down;
+	overflow: squish scroll;
+}
+
+.end_team_title
+{
+	width: 100%;
+	height: 44px;
+	margin-top: 8px;
+}
+
+.end_team_name
+{
+	margin-left: 12px;
+	vertical-align: center;
+	font-size: 30px;
+	color: #94e3e3;
+}
+
+.end_team_winner .end_team_name
+{
+	color: #ffd700;
+}
+
+.end_row
+{
+	width: 100%;
+	height: 56px;
+	margin-top: 2px;
+	flow-children: right;
+	background-color: #404040;
+}
+
+.end_row.end_header
+{
+	height: 28px;
+	background-color: transparent;
+}
+
+.end_row.end_local
+{
+	background-color: #4a4a3a;
+}
+
+.end_cell
+{
+	height: 100%;
+	flow-children: right;
+}
+
+.col_player { width: 230px; }
+.col_score { width: 80px; }
+.col_title { width: 170px; flow-children: right-wrap; }
+.col_lvl { width: 50px; }
+.col_combo { width: 230px; }
+.col_kda { width: 110px; }
+.col_gold { width: 90px; }
+.col_items { width: 450px; }
+.col_num { width: 86px; }
+
+.end_head_text
+{
+	vertical-align: center;
+	font-size: 16px;
+	color: #94e3e3;
+}
+
+.end_text
+{
+	vertical-align: center;
+	font-size: 18px;
+	color: #94e3e3;
+}
+
+.end_avatar
+{
+	width: 46px;
+	height: 46px;
+	margin-left: 6px;
+	vertical-align: center;
+}
+
+.end_name
+{
+	width: 170px;
+	margin-left: 8px;
+	vertical-align: center;
+	font-size: 16px;
+	color: #c0c0c0;
+	text-overflow: shrink;
+}
+
+.end_title_image
+{
+	height: 24px;
+	width: height-percentage(300%);
+	vertical-align: center;
+}
+
+.end_hero
+{
+	width: 80px;
+	height: 45px;
+	vertical-align: center;
+}
+
+.end_ability
+{
+	width: 46px;
+	height: 46px;
+	margin-left: 5px;
+	vertical-align: center;
+}
+
+.end_item
+{
+	width: 56px;
+	height: 41px;
+	margin-left: 4px;
+	vertical-align: center;
+}
+
+.end_neutral
+{
+	margin-left: 14px;
+}
+
+.end_finish
+{
+	width: 180px;
+	height: 60px;
+	margin: 16px 0px;
+	horizontal-align: center;
+	font-size: 36px;
+}

@@ -1,0 +1,9 @@
+<root>
+	<styles>
+		<include src="file://{resources}/styles/custom_game/thd_bp.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/scripts/custom_game/thd_bp.js" />
+	</scripts>
+	<Panel class="bp_layout" hittest="false" />
+</root>

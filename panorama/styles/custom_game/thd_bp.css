@@ -1,0 +1,259 @@
+/* BP 面板（原生 Panorama），5v5 与 6v6 共用 */
+
+.bp_layout
+{
+	width: 100%;
+	height: 100%;
+}
+
+.bp_container
+{
+	width: 100%;
+	height: 820px;
+	margin-top: 100px;
+	horizontal-align: center;
+	flow-children: right;
+}
+
+.bp_box
+{
+	width: 300px;
+	height: 100%;
+	margin: 0px 4px;
+	padding: 6px;
+	flow-children: down;
+	background-color: #1c1c1ce6;
+	border: 1px solid #3a3a3a;
+	border-radius: 4px;
+}
+
+/* 6 人时收窄席位，保证 16:10 与 16:9 都放得下 */
+.bp_six .bp_box
+{
+	width: 262px;
+	margin: 0px 3px;
+}
+
+.bp_box.bp_local
+{
+	border: 1px solid #c9a24a;
+}
+
+.bp_header
+{
+	width: 100%;
+	height: 36px;
+	flow-children: right;
+}
+
+.bp_header_avatar
+{
+	width: 30px;
+	height: 30px;
+	vertical-align: center;
+}
+
+.bp_header_name
+{
+	margin-left: 8px;
+	vertical-align: center;
+	font-size: 16px;
+	color: #c0c0c0;
+	text-overflow: shrink;
+	width: fill-parent-flow(1.0);
+}
+
+.bp_show
+{
+	width: 100%;
+	height: 110px;
+	margin-top: 4px;
+	flow-children: right;
+}
+
+.bp_show_movie
+{
+	width: 96px;
+	height: 106px;
+}
+
+.bp_show_info
+{
+	width: fill-parent-flow(1.0);
+	height: 100%;
+	margin-left: 6px;
+	flow-children: down;
+}
+
+.bp_show_name
+{
+	font-size: 15px;
+	color: #c0c0c0;
+	text-overflow: shrink;
+	width: 100%;
+}
+
+.bp_show_abilities
+{
+	margin-top: 6px;
+	flow-children: right;
+}
+
+.bp_show_ability
+{
+	width: 46px;
+	height: 46px;
+	margin-right: 6px;
+}
+
+.bp_grids
+{
+	width: 100%;
+	flow-children: down;
+}
+
+.bp_grid_title
+{
+	margin-top: 6px;
+	font-size: 15px;
+	color: #c0c0c0;
+}
+
+.bp_grid
+{
+	width: 100%;
+	flow-children: right-wrap;
+}
+
+.bp_icon
+{
+	margin: 3px;
+}
+
+.bp_icon_hero
+{
+	width: 86px;
+	height: 48px;
+}
+
+.bp_six .bp_icon_hero
+{
+	width: 76px;
+	height: 43px;
+}
+
+.bp_icon_ability
+{
+	width: 48px;
+	height: 48px;
+}
+
+.bp_six .bp_icon_ability
+{
+	width: 44px;
+	height: 44px;
+}
+
+.bp_icon_image
+{
+	width: 100%;
+	height: 100%;
+}
+
+.bp_icon:hover
+{
+	brightness: 1.4;
+}
+
+.bp_icon.banned .bp_icon_image
+{
+	saturation: 0;
+	opacity: 0.45;
+}
+
+.bp_icon.picked
+{
+	border: 2px solid #ff4a4a;
+}
+
+.bp_icon.suggested
+{
+	border: 1px solid #66ccff;
+}
+
+/* 建议者小头像：右下角，多人从右向左排列 */
+.bp_suggest
+{
+	horizontal-align: right;
+	vertical-align: bottom;
+	flow-children: left;
+}
+
+.bp_suggest_avatar
+{
+	width: 16px;
+	height: 16px;
+	margin-left: 1px;
+	border: 1px solid #000000;
+}
+
+.bp_enemy
+{
+	visibility: collapse;
+}
+
+/* 决策阶段：隐藏候选，显示对位 */
+.state_show .bp_grids
+{
+	visibility: collapse;
+}
+
+.state_show .bp_enemy
+{
+	visibility: visible;
+	margin-top: 24px;
+}
+
+.bp_swap_button
+{
+	margin-top: 6px;
+	padding: 2px 6px;
+	horizontal-align: center;
+	font-size: 14px;
+	color: #c0c0c0;
+	border: 1px solid #555555;
+}
+
+.bp_swap_button:hover
+{
+	border: 1px solid #aaaaaa;
+}
+
+.bp_requests
+{
+	width: 100%;
+	flow-children: down;
+}
+
+.bp_request
+{
+	width: 100%;
+	flow-children: right;
+	margin-top: 4px;
+}
+
+.bp_request_label
+{
+	font-size: 13px;
+	color: #c0c0c0;
+	vertical-align: center;
+	width: fill-parent-flow(1.0);
+}
+
+.bp_spectator
+{
+	horizontal-align: center;
+	margin-top: 30%;
+	font-size: 60px;
+	color: #ffffff;
+}
