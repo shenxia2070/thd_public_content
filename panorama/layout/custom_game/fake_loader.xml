@@ -80,6 +80,7 @@
 		<Image src="file://{images}/heroes/thd2_npc_dota_hero_undying.png"/>
 		<Image src="file://{images}/heroes/thd2_npc_dota_hero_bristleback.png"/>
 		<Image src="file://{images}/heroes/thd2_npc_dota_hero_dawnbreaker.png"/>
+		<Image src="file://{images}/heroes/thd2_npc_dota_hero_ember_spirit.png"/>
 		<Image src="file://{images}/heroes/thd2_npc_dota_hero_death_prophet.png"/>
 		<Image src="file://{images}/heroes/thd2_npc_dota_hero_tusk.png"/>
 		<Image src="file://{images}/heroes/thd2_npc_dota_hero_dark_willow.png"/>
@@ -155,7 +156,6 @@
 		<Image src="file://{images}/heroes/icons/thd2_npc_dota_hero_broodmother.png"/>
 		<Image src="file://{images}/heroes/icons/thd2_npc_dota_hero_nyx_assassin.png"/>
 		<Image src="file://{images}/heroes/icons/thd2_npc_dota_hero_void_spirit.png"/>
-		<Image src="file://{images}/heroes/icons/thd2_npc_dota_hero_winter_wyvern.png"/>
 		<Image src="file://{images}/heroes/icons/thd2_npc_dota_hero_pugna.png"/>
 		<Image src="file://{images}/heroes/icons/thd2_npc_dota_hero_disruptor.png"/>
 		<Image src="file://{images}/heroes/icons/thd2_npc_dota_hero_omniknight.png"/>
@@ -164,8 +164,7 @@
 		<Image src="file://{images}/heroes/icons/thd2_npc_dota_hero_undying.png"/>
 		<Image src="file://{images}/heroes/icons/thd2_npc_dota_hero_bristleback.png"/>
 		<Image src="file://{images}/heroes/icons/thd2_npc_dota_hero_dawnbreaker.png"/>
-		<Image src="file://{images}/heroes/icons/thd2_npc_dota_hero_death_prophet.png"/>
-		<Image src="file://{images}/heroes/icons/thd2_npc_dota_hero_tusk.png"/>
+		<Image src="file://{images}/heroes/icons/thd2_npc_dota_hero_ember_spirit.png"/>
 		<Image src="file://{images}/heroes/icons/thd2_npc_dota_hero_dark_willow.png"/>
 
 
@@ -208,7 +207,6 @@
 		<Image src="file://{images}/heroes/selection/thd2_npc_dota_hero_tinker.png"/>
 		<Image src="file://{images}/heroes/selection/thd2_npc_dota_hero_viper.png"/>
 		<Image src="file://{images}/heroes/selection/thd2_npc_dota_hero_rubick.png"/>
-		<Image src="file://{images}/heroes/selection/thd2_npc_dota_hero_doom_bringer.png"/>
 		<Image src="file://{images}/heroes/selection/thd2_npc_dota_hero_dragon_knight.png"/>
 		<Image src="file://{images}/heroes/selection/thd2_npc_dota_hero_dazzle.png"/>
 		<Image src="file://{images}/heroes/selection/thd2_npc_dota_hero_weaver.png"/>
@@ -247,9 +245,7 @@
 		<Image src="file://{images}/heroes/selection/thd2_npc_dota_hero_undying.png"/>
 		<Image src="file://{images}/heroes/selection/thd2_npc_dota_hero_bristleback.png"/>
 		<Image src="file://{images}/heroes/selection/thd2_npc_dota_hero_dawnbreaker.png"/>
-		<Image src="file://{images}/heroes/selection/thd2_npc_dota_hero_death_prophet.png"/>
-		<Image src="file://{images}/heroes/selection/thd2_npc_dota_hero_tusk.png"/>
-		<Image src="file://{images}/heroes/selection/thd2_npc_dota_hero_dark_willow.png"/>
+		<Image src="file://{images}/heroes/selection/thd2_npc_dota_hero_ember_spirit.png"/>
 
 		<!-- 以上的用于手动重载,*必须*使用不同于dota2的文件名,否则无效 -->
 
@@ -333,6 +329,7 @@
 		<Image src="file://{images}/heroes/npc_dota_hero_undying.png"/>
 		<Image src="file://{images}/heroes/npc_dota_hero_bristleback.png"/>
 		<Image src="file://{images}/heroes/npc_dota_hero_dawnbreaker.png"/>
+		<Image src="file://{images}/heroes/npc_dota_hero_ember_spirit.png"/>
 		<Image src="file://{images}/heroes/npc_dota_hero_death_prophet.png"/>
 		<Image src="file://{images}/heroes/npc_dota_hero_tusk.png"/>
 		<Image src="file://{images}/heroes/npc_dota_hero_dark_willow.png"/>
@@ -417,8 +414,7 @@
 		<Image src="file://{images}/heroes/icons/npc_dota_hero_undying.png"/>
 		<Image src="file://{images}/heroes/icons/npc_dota_hero_bristleback.png"/>
 		<Image src="file://{images}/heroes/icons/npc_dota_hero_dawnbreaker.png"/>
-		<Image src="file://{images}/heroes/icons/npc_dota_hero_death_prophet.png"/>
-		<Image src="file://{images}/heroes/icons/npc_dota_hero_tusk.png"/>
+		<Image src="file://{images}/heroes/icons/npc_dota_hero_ember_spirit.png"/>
 		<Image src="file://{images}/heroes/icons/npc_dota_hero_dark_willow.png"/>
 
 
@@ -461,7 +457,6 @@
 		<Image src="file://{images}/heroes/selection/npc_dota_hero_tinker.png"/>
 		<Image src="file://{images}/heroes/selection/npc_dota_hero_viper.png"/>
 		<Image src="file://{images}/heroes/selection/npc_dota_hero_rubick.png"/>
-		<Image src="file://{images}/heroes/selection/npc_dota_hero_doom_bringer.png"/>
 		<Image src="file://{images}/heroes/selection/npc_dota_hero_dragon_knight.png"/>
 		<Image src="file://{images}/heroes/selection/npc_dota_hero_dazzle.png"/>
 		<Image src="file://{images}/heroes/selection/npc_dota_hero_weaver.png"/>
@@ -500,9 +495,7 @@
 		<Image src="file://{images}/heroes/selection/npc_dota_hero_undying.png"/>
 		<Image src="file://{images}/heroes/selection/npc_dota_hero_bristleback.png"/>
 		<Image src="file://{images}/heroes/selection/npc_dota_hero_dawnbreaker.png"/>
-		<Image src="file://{images}/heroes/selection/npc_dota_hero_death_prophet.png"/>
-		<Image src="file://{images}/heroes/selection/npc_dota_hero_tusk.png"/>
-		<Image src="file://{images}/heroes/selection/npc_dota_hero_dark_willow.png"/>
+		<Image src="file://{images}/heroes/selection/npc_dota_hero_ember_spirit.png"/>
 
 
 
